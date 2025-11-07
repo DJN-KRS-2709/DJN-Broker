@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  trading-bot:
+    build: .
+    container_name: djn-broker-bot
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Berlin
+    env_file:
+      - .env
+    volumes:
+      # Persist learning data and logs
+      - ./storage:/app/storage
+      - ./scheduler.log:/app/scheduler.log
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
