@@ -1,0 +1,57 @@
+/Users/dejank/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-11-07 16:24:12,223 | INFO | scheduler | 🚀 Running initial trade on startup...
+2025-11-07 16:24:12,223 | INFO | scheduler | 🤖 Running scheduled trading job...
+2025-11-07 16:24:12,226 | INFO | main | ============================================================
+2025-11-07 16:24:12,226 | INFO | main | 🤖 LEARNING-ENABLED TRADING BOT STARTING
+2025-11-07 16:24:12,226 | INFO | main | ============================================================
+2025-11-07 16:24:12,226 | INFO | main | 🧠 Learning system: ENABLED
+2025-11-07 16:24:12,226 | INFO | analyzer | No trades to analyze yet
+2025-11-07 16:24:12,226 | INFO | main | 📊 Win rate: 0.0%, Total P&L: $0.00
+2025-11-07 16:24:13,401 | ERROR | yfinance | Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-07 16:24:13,401 | ERROR | yfinance | Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-07 16:24:13,401 | ERROR | yfinance | Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-07 16:24:13,403 | ERROR | yfinance | Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-07 16:24:13,404 | ERROR | yfinance | Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-07 16:24:13,919 | ERROR | yfinance | 
+5 Failed downloads:
+2025-11-07 16:24:13,919 | ERROR | yfinance | ['AAPL', 'TSLA', 'GOOGL', 'NVDA', 'MSFT']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+2025-11-07 16:24:13,924 | INFO | main | Fetched prices with shape (0, 0)
+Version 7.7.1 of praw is outdated. Version 7.8.1 was released Friday October 25, 2024.
+2025-11-07 16:24:17,780 | INFO | strategy_optimizer | 📚 Not enough data for optimization yet
+2025-11-07 16:24:17,780 | INFO | main | 🎯 Optimized sentiment threshold: 0.40
+2025-11-07 16:24:17,780 | INFO | main | Avg sentiment=-0.078, generated 0 signals
+2025-11-07 16:24:17,780 | INFO | main | 🚀 Executing orders via Alpaca (PAPER trading)
+2025-11-07 16:24:18,211 | INFO | alpaca_broker | Connected to Alpaca (PAPER trading)
+2025-11-07 16:24:18,212 | INFO | alpaca_broker | Account status: ACTIVE, Buying power: $199925.57
+2025-11-07 16:24:18,437 | INFO | main | Account: $100000.56 portfolio, $199925.57 buying power, 1 positions
+2025-11-07 16:24:18,859 | INFO | alpaca_broker | Connected to Alpaca (PAPER trading)
+2025-11-07 16:24:18,859 | INFO | alpaca_broker | Account status: ACTIVE, Buying power: $199925.57
+2025-11-07 16:24:18,968 | INFO | main | ✅ Executed 0 orders, cash_left=$500.00
+2025-11-07 16:24:18,972 | INFO | main | ============================================================
+2025-11-07 16:24:18,972 | INFO | main | ✅ TRADING RUN COMPLETE
+2025-11-07 16:24:18,972 | INFO | main | 🧠 System is learning from every trade!
+2025-11-07 16:24:18,972 | INFO | main | ============================================================
+2025-11-07 16:24:18,973 | INFO | analyzer | No trades to analyze yet
+2025-11-07 16:24:18,973 | INFO | scheduler | ============================================================
+2025-11-07 16:24:18,973 | INFO | scheduler | 📊 WEEKLY PERFORMANCE SUMMARY
+2025-11-07 16:24:18,973 | INFO | scheduler | ============================================================
+2025-11-07 16:24:18,973 | INFO | scheduler | Total Trades: 0
+2025-11-07 16:24:18,973 | INFO | scheduler | Win Rate: 0.0%
+2025-11-07 16:24:18,973 | INFO | scheduler | Total P&L: $0.00
+2025-11-07 16:24:18,973 | INFO | scheduler | Best Stock: N/A
+2025-11-07 16:24:18,973 | INFO | scheduler | ============================================================
+2025-11-07 16:24:18,974 | INFO | scheduler | ============================================================
+2025-11-07 16:24:18,974 | INFO | scheduler | ⏰ AGGRESSIVE SCHEDULER STARTED
+2025-11-07 16:24:18,974 | INFO | scheduler | ============================================================
+2025-11-07 16:24:18,974 | INFO | scheduler | Current time: 2025-11-07 16:24:18.974307+01:00
+2025-11-07 16:24:18,974 | INFO | scheduler | Timezone: Europe/Berlin
+2025-11-07 16:24:18,974 | INFO | scheduler | 
+2025-11-07 16:24:18,974 | INFO | scheduler | 📅 Daily Schedule:
+2025-11-07 16:24:18,974 | INFO | scheduler |   • 09:00 - Morning pre-market analysis
+2025-11-07 16:24:18,974 | INFO | scheduler |   • 15:35 - Right after US market open
+2025-11-07 16:24:18,974 | INFO | scheduler |   • 18:00 - US market midday
+2025-11-07 16:24:18,974 | INFO | scheduler |   • 21:30 - Before US market close
+2025-11-07 16:24:18,974 | INFO | scheduler | ============================================================
+2025-11-07 16:24:18,974 | INFO | scheduler | 🧠 Learning system will optimize after each run
+2025-11-07 16:24:18,974 | INFO | scheduler | ============================================================
