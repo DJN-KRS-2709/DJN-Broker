@@ -24,11 +24,16 @@ def get_alpaca_client(paper: bool = True) -> Optional[TradingClient]:
     Returns:
         TradingClient or None if credentials missing
     """
-    api_key = os.getenv("ALPACA_API_KEY")
-    api_secret = os.getenv("ALPACA_API_SECRET")
+    # Use separate credentials for paper vs live
+    if paper:
+        api_key = os.getenv("ALPACA_PAPER_API_KEY") or os.getenv("ALPACA_API_KEY")
+        api_secret = os.getenv("ALPACA_PAPER_API_SECRET") or os.getenv("ALPACA_API_SECRET")
+    else:
+        api_key = os.getenv("ALPACA_LIVE_API_KEY")
+        api_secret = os.getenv("ALPACA_LIVE_API_SECRET")
     
     if not api_key or not api_secret:
-        log.error("Alpaca credentials missing in .env file")
+        log.error(f"Alpaca {'paper' if paper else 'LIVE'} credentials missing in .env file")
         return None
     
     try:

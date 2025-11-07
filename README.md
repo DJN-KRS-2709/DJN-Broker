@@ -115,9 +115,14 @@ DJN-Broker/
 ## Warning ⚠️
 - **Start with paper trading** to test your strategy
 - This system executes real trades when `use_alpaca: true` and `paper_trading: false`
+- **READ [LIVE_TRADING_GUIDE.md](LIVE_TRADING_GUIDE.md) BEFORE enabling live trading**
 - Only use live trading if you understand the risks
 - Past performance does not guarantee future results
 - You can lose money trading
+
+## 📚 Documentation
+- **[README.md](README.md)** - Quick start and overview
+- **[LIVE_TRADING_GUIDE.md](LIVE_TRADING_GUIDE.md)** - ⚠️ CRITICAL: Read before live trading
 
 ## Support
 Built for automated trading research. Use responsibly! 🚀
