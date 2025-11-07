@@ -1,11 +1,20 @@
 # Basic configuration
 timezone: "Europe/Berlin"
 capital_eur: 500
+
+# AGGRESSIVE TRADING MODE (Paper Trading Learning)
 risk:
-  max_positions: 4
-  max_alloc_per_trade: 0.15   # 15% of capital
-  stop_loss_pct: 0.05         # 5%
-  take_profit_pct: 0.08       # 8%
+  max_positions: 5            # More simultaneous positions
+  max_alloc_per_trade: 0.20   # 20% per trade (was 15%)
+  stop_loss_pct: 0.04         # Tighter 4% stop
+  take_profit_pct: 0.10       # Higher 10% target
+  
+# Learning System Settings
+learning:
+  enabled: true               # Enable RAG learning system
+  min_trades_for_learning: 10 # Start adapting after 10 trades
+  strategy_update_frequency: 5 # Re-evaluate strategy every 5 trades
+  performance_lookback_days: 7 # Analyze last 7 days
 
 universe:
   # US stocks for Alpaca trading
