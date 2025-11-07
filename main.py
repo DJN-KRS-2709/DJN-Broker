@@ -175,6 +175,7 @@ def run_once(cfg):
     
     # Save a tiny daily summary
     summary = {
+        'timestamp': pd.Timestamp.now().isoformat(),
         'avg_sentiment': avg_sent,
         'n_signals': len(signals),
         'cash_left': res.get('cash_left', 0),
@@ -182,7 +183,25 @@ def run_once(cfg):
         'mode': 'alpaca_paper' if (use_alpaca and paper_trading) else ('alpaca_live' if use_alpaca else 'simulation'),
         'learning_enabled': learning_enabled
     }
+    
+    # Add performance metrics if available
+    if learning_enabled:
+        metrics = memory.get_performance_metrics()
+        summary['win_rate'] = metrics.get('win_rate', 0)
+        summary['total_pnl'] = metrics.get('total_pnl', 0)
+        summary['total_trades'] = metrics.get('total_trades', 0)
+    
     pd.DataFrame([summary]).to_csv(os.path.join('storage', 'daily_summary.csv'), mode='a', header=not os.path.exists(os.path.join('storage', 'daily_summary.csv')), index=False)
+    
+    # Send email notification if configured
+    recipient_email = os.getenv('NOTIFICATION_EMAIL')
+    if recipient_email:
+        try:
+            from utils.email_notifier import send_trading_summary
+            send_trading_summary(summary, recipient_email)
+            log.info(f"📧 Email summary sent to {recipient_email}")
+        except Exception as e:
+            log.warning(f"Failed to send email: {e}")
     
     log.info("=" * 60)
     log.info("✅ TRADING RUN COMPLETE")

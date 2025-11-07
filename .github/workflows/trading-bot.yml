@@ -50,6 +50,9 @@ jobs:
         echo "ALPACA_PAPER_API_SECRET=${{ secrets.ALPACA_PAPER_API_SECRET }}" >> .env
         echo "ALPACA_LIVE_API_KEY=${{ secrets.ALPACA_LIVE_API_KEY }}" >> .env
         echo "ALPACA_LIVE_API_SECRET=${{ secrets.ALPACA_LIVE_API_SECRET }}" >> .env
+        echo "NOTIFICATION_EMAIL=${{ secrets.NOTIFICATION_EMAIL }}" >> .env
+        echo "SMTP_EMAIL=${{ secrets.SMTP_EMAIL }}" >> .env
+        echo "SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }}" >> .env
         
     - name: Create storage directory
       run: mkdir -p storage/learning
