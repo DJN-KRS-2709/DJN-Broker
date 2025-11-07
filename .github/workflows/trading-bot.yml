@@ -33,8 +33,12 @@ jobs:
         
     - name: Install dependencies
       run: |
+        pip install --upgrade pip
         pip install -r requirements.txt
-        python -c "import nltk; nltk.download('vader_lexicon')"
+        
+    - name: Download NLTK data
+      run: |
+        python -c "import nltk; nltk.download('vader_lexicon', quiet=True)"
         
     - name: Create .env file
       run: |
@@ -73,9 +77,7 @@ jobs:
       with:
         name: trading-logs-${{ github.run_number }}
         path: |
-          scheduler.log
-          storage/daily_summary.csv
-          storage/executed_orders.csv
+          storage/
         retention-days: 30
         
     - name: Notify on failure
