@@ -8,12 +8,12 @@ risk:
   take_profit_pct: 0.08       # 8%
 
 universe:
-  # A tiny EU universe for MVP
-  - "SAP.DE"
-  - "BMW.DE"
-  - "DTE.DE"
-  - "ADS.DE"   # Adidas
-  - "AIR.PA"  # Airbus
+  # US stocks for Alpaca trading
+  - "AAPL"   # Apple
+  - "MSFT"   # Microsoft
+  - "GOOGL"  # Google
+  - "TSLA"   # Tesla
+  - "NVDA"   # NVIDIA
 
 data:
   yfinance:
@@ -29,5 +29,9 @@ data:
       - "https://www.investing.com/rss/news_285.rss"
 
 reddit:
-  subreddits: ["stocks", "investing", "europeanstocks"]
+  subreddits: ["stocks", "investing", "wallstreetbets", "StockMarket"]
   limit_per_sub: 25
+
+alpaca:
+  paper_trading: true  # Set to false for live trading (careful!)
+  use_alpaca: true     # Set to false to use paper simulation instead
