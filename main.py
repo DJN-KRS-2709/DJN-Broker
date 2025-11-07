@@ -8,6 +8,7 @@ from nlp.sentiment import score_texts
 from trade.strategy import simple_sentiment_momentum
 from trade.simulation import run_simulation
 from trade.alpaca_broker import execute_orders, get_account_summary
+from trade.position_manager import manage_swing_positions
 
 # Learning system imports
 from learning.trade_memory import TradeMemory
@@ -112,6 +113,11 @@ def run_once(cfg):
     
     if use_alpaca:
         log.info(f"🚀 Executing orders via Alpaca ({'PAPER' if paper_trading else 'LIVE'} trading)")
+        
+        # Manage existing positions (for swing trading)
+        if cfg.get('trading_style') == 'swing':
+            log.info("📊 Managing swing positions...")
+            manage_swing_positions(cfg, paper=paper_trading)
         
         # Get current account status
         account_summary = get_account_summary(paper=paper_trading)

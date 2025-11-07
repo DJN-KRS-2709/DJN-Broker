@@ -2,12 +2,17 @@
 timezone: "Europe/Berlin"
 capital_eur: 500
 
-# AGGRESSIVE TRADING MODE (Paper Trading Learning)
+# SWING TRADING MODE - Hold 2-5 days
 risk:
-  max_positions: 5            # More simultaneous positions
-  max_alloc_per_trade: 0.20   # 20% per trade (was 15%)
-  stop_loss_pct: 0.04         # Tighter 4% stop
-  take_profit_pct: 0.10       # Higher 10% target
+  max_positions: 4            # 4 swing positions
+  max_alloc_per_trade: 0.25   # 25% per trade (aggressive for swings)
+  stop_loss_pct: 0.05         # 5% stop (room for intraday noise)
+  take_profit_pct: 0.12       # 12% target (capture bigger moves)
+  
+# Swing Trading Parameters
+trading_style: "swing"        # swing or day
+min_hold_hours: 24           # Hold at least 24 hours
+max_hold_days: 7             # Exit after 7 days max
   
 # Learning System Settings
 learning:
@@ -26,8 +31,8 @@ universe:
 
 data:
   yfinance:
-    period: "7d"
-    interval: "1h"
+    period: "14d"    # Longer lookback for swing trends
+    interval: "1h"   # 1-hour bars perfect for swing trading
   news:
     use_newsapi: true          # if NEWSAPI_KEY absent, code falls back to RSS automatically
     languages: ["en", "de"]
