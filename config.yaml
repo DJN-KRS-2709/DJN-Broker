@@ -1,0 +1,40 @@
+# Basic configuration
+timezone: "Europe/Berlin"
+capital_eur: 500
+run_time: "09:05"              # Daily run time (weekday trading / weekend analysis)
+weekend_run_time: "10:00"      # Optional extra weekend run
+weekend_extra_run: false       # Enable extra Saturday run
+use_weekend_insights: true     # Use Tree of Thoughts insights in Monday trading
+
+risk:
+  max_positions: 4
+  max_alloc_per_trade: 0.15   # 15% of capital
+  stop_loss_pct: 0.05         # 5%
+  take_profit_pct: 0.08       # 8%
+
+universe:
+  # A tiny EU universe for MVP
+  - "SAP.DE"
+  - "BMW.DE"
+  - "DTE.DE"
+  - "ADS.DE"   # Adidas
+  - "AIR.PA"  # Airbus
+
+data:
+  yfinance:
+    period: "7d"
+    interval: "1h"
+  news:
+    use_newsapi: true          # if NEWSAPI_KEY absent, code falls back to RSS automatically
+    languages: ["en", "de"]
+    query: "stocks OR market OR DAX OR ECB OR earnings"
+    weekend_query: "stocks OR market OR DAX OR ECB OR earnings OR economy OR Germany OR Europe"
+    rss_feeds:
+      - "https://www.reuters.com/finance/markets/europe/rss"
+      - "https://www.ecb.europa.eu/press/pressconf/2024/html/index.en.html"
+      - "https://www.investing.com/rss/news_285.rss"
+
+reddit:
+  subreddits: ["stocks", "investing", "europeanstocks"]
+  limit_per_sub: 25
+  weekend_limit_per_sub: 50    # Fetch more posts on weekends for deeper analysis
