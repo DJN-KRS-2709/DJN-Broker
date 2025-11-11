@@ -8,7 +8,7 @@ use_weekend_insights: true     # Use Tree of Thoughts insights in Monday trading
 
 # RAG Memory System
 rag:
-  enabled: true                         # Enable RAG long-term memory
+  enabled: false                        # Enable RAG long-term memory (temporarily disabled due to dependency issue)
   storage_path: "./storage/chroma_db"   # Where to store ChromaDB
   model: "all-MiniLM-L6-v2"            # Sentence transformer model
   query_similar_insights: true          # Query historical insights before trading
@@ -50,3 +50,31 @@ reddit:
   subreddits: ["stocks", "investing", "wallstreetbets", "options"]
   limit_per_sub: 25
   weekend_limit_per_sub: 50    # Fetch more posts on weekends for deeper analysis
+
+# ⚠️  LIVE TRADING SETTINGS - REAL MONEY AT RISK ⚠️
+# Only enable after completing LIVE_TRADING_PLAN.md checklist
+live_trading:
+  enabled: false                          # KEEP FALSE until ready!
+  broker: "alpaca"                        # alpaca, interactive_brokers, td_ameritrade
+  account_number: "987064219"             # Your brokerage account
+  paper_mode: true                        # ALWAYS start with paper trading
+  
+  # Conservative starting settings
+  initial_capital: 500                    # Start small!
+  max_position_size_pct: 0.10            # 10% per trade (conservative)
+  
+  # Safety limits - CIRCUIT BREAKERS
+  daily_loss_limit_pct: 0.03             # Stop if down 3% for the day
+  max_trades_per_day: 5                   # Limit to 5 trades per day
+  max_consecutive_losses: 3               # Stop after 3 losses in a row
+  
+  # Enhanced risk management for live
+  stop_loss_pct: 0.04                    # Tighter stop: 4%
+  take_profit_pct: 0.08                  # Take profit: 8%
+  trailing_stop: true                     # Use trailing stops
+  
+  # Monitoring & alerts
+  send_alerts: true
+  alert_email: "your_email@example.com"   # UPDATE THIS!
+  alert_on_trade: true
+  alert_on_error: true
