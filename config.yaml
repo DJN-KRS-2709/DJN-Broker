@@ -1,10 +1,19 @@
 # Basic configuration
-timezone: "Europe/Berlin"
-capital_eur: 500
-run_time: "09:05"              # Daily run time (weekday trading / weekend analysis)
+timezone: "America/New_York"   # US Eastern Time (NYSE/NASDAQ timezone)
+capital_usd: 500
+run_time: "09:35"              # Daily run time (30 min after market open at 9:30 AM ET)
 weekend_run_time: "10:00"      # Optional extra weekend run
 weekend_extra_run: false       # Enable extra Saturday run
 use_weekend_insights: true     # Use Tree of Thoughts insights in Monday trading
+
+# RAG Memory System
+rag:
+  enabled: true                         # Enable RAG long-term memory
+  storage_path: "./storage/chroma_db"   # Where to store ChromaDB
+  model: "all-MiniLM-L6-v2"            # Sentence transformer model
+  query_similar_insights: true          # Query historical insights before trading
+  n_similar_results: 5                  # Number of similar insights to retrieve
+  min_confidence_boost: 0.65            # Min confidence to boost signals with history
 
 risk:
   max_positions: 4
@@ -13,12 +22,14 @@ risk:
   take_profit_pct: 0.08       # 8%
 
 universe:
-  # A tiny EU universe for MVP
-  - "SAP.DE"
-  - "BMW.DE"
-  - "DTE.DE"
-  - "ADS.DE"   # Adidas
-  - "AIR.PA"  # Airbus
+  # US stocks for Alpaca trading
+  - "AAPL"    # Apple
+  - "MSFT"    # Microsoft
+  - "GOOGL"   # Google
+  - "TSLA"    # Tesla
+  - "NVDA"    # Nvidia
+  - "META"    # Meta
+  - "AMZN"    # Amazon
 
 data:
   yfinance:
@@ -26,15 +37,16 @@ data:
     interval: "1h"
   news:
     use_newsapi: true          # if NEWSAPI_KEY absent, code falls back to RSS automatically
-    languages: ["en", "de"]
-    query: "stocks OR market OR DAX OR ECB OR earnings"
-    weekend_query: "stocks OR market OR DAX OR ECB OR earnings OR economy OR Germany OR Europe"
+    languages: ["en"]
+    query: "stocks OR market OR nasdaq OR sp500 OR dow OR fed OR earnings OR tech stocks"
+    weekend_query: "stocks OR market OR nasdaq OR sp500 OR dow OR fed OR earnings OR economy OR tech stocks OR wall street OR interest rates"
     rss_feeds:
-      - "https://www.reuters.com/finance/markets/europe/rss"
-      - "https://www.ecb.europa.eu/press/pressconf/2024/html/index.en.html"
-      - "https://www.investing.com/rss/news_285.rss"
+      - "https://www.reuters.com/finance/markets/us/rss"
+      - "https://feeds.finance.yahoo.com/rss/2.0/headline?s=^GSPC&region=US&lang=en-US"
+      - "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+      - "https://www.investing.com/rss/news.rss"
 
 reddit:
-  subreddits: ["stocks", "investing", "europeanstocks"]
+  subreddits: ["stocks", "investing", "wallstreetbets", "options"]
   limit_per_sub: 25
   weekend_limit_per_sub: 50    # Fetch more posts on weekends for deeper analysis

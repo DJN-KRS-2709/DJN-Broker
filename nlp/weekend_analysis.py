@@ -438,6 +438,21 @@ def run_weekend_analysis(cfg: Dict) -> Dict:
     log.info("🌳 WEEKEND DEEP ANALYSIS - Tree of Thoughts Pattern")
     log.info("=" * 80)
     
+    # Initialize RAG memory if enabled
+    memory = None
+    if cfg.get('rag', {}).get('enabled', False):
+        try:
+            from utils.rag_memory import TradingMemory
+            memory = TradingMemory(
+                storage_path=cfg['rag'].get('storage_path', './storage/chroma_db'),
+                model_name=cfg['rag'].get('model', 'all-MiniLM-L6-v2')
+            )
+            stats = memory.get_stats()
+            log.info(f"🧠 RAG Memory initialized: {stats.get('total_insights', 0)} insights, {stats.get('total_patterns', 0)} patterns stored")
+        except Exception as e:
+            log.warning(f"Failed to initialize RAG memory: {e}")
+            memory = None
+    
     tickers = cfg['universe']
     
     # Fetch extended data for deeper analysis
@@ -534,6 +549,14 @@ def run_weekend_analysis(cfg: Dict) -> Dict:
         json.dump(output, f, indent=2)
     
     log.info(f"💾 Saved weekend insights to {output_path}")
+    
+    # Store in RAG memory for long-term learning
+    if memory:
+        try:
+            memory.store_weekend_analysis(output)
+            log.info("🧠 Stored insights in RAG memory for historical learning")
+        except Exception as e:
+            log.warning(f"Failed to store in RAG memory: {e}")
     
     # Log summary
     log.info("\n" + "=" * 80)

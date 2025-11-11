@@ -46,6 +46,21 @@ def run_once(cfg):
     reddit = fetch_submissions(cfg['reddit']['subreddits'], cfg['reddit']['limit_per_sub'])
     reddit_scored = score_texts(reddit, text_key="title")
 
+    # Initialize RAG memory if enabled
+    rag_memory = None
+    if cfg.get('rag', {}).get('enabled', False):
+        try:
+            from utils.rag_memory import TradingMemory
+            rag_memory = TradingMemory(
+                storage_path=cfg['rag'].get('storage_path', './storage/chroma_db'),
+                model_name=cfg['rag'].get('model', 'all-MiniLM-L6-v2')
+            )
+            stats = rag_memory.get_stats()
+            log.info(f"🧠 RAG Memory: {stats.get('total_insights', 0)} insights, {stats.get('total_trades', 0)} trades stored")
+        except Exception as e:
+            log.warning(f"Failed to initialize RAG memory: {e}")
+            rag_memory = None
+
     # Try to load weekend insights
     weekend_insights = load_weekend_insights()
     
@@ -54,7 +69,7 @@ def run_once(cfg):
         log.info(f"🌳 Using enhanced strategy with {len(weekend_insights)} weekend insights")
         signals, avg_sent = enhanced_strategy_with_insights(
             prices, news_scored, reddit_scored, tickers, weekend_insights,
-            momentum_window=6, min_sentiment=0.4
+            momentum_window=6, min_sentiment=0.4, rag_memory=rag_memory
         )
     else:
         log.info("📊 Using simple sentiment momentum strategy")
@@ -66,7 +81,7 @@ def run_once(cfg):
     res = run_simulation(
         prices=prices,
         signals=signals,
-        capital=cfg['capital_eur'],
+        capital=cfg.get('capital_usd', cfg.get('capital_eur', 500)),  # Support both USD and EUR
         max_alloc_per_trade=cfg['risk']['max_alloc_per_trade'],
         path=os.path.join('storage', 'intended_orders.csv')
     )
