@@ -42,6 +42,7 @@ def enhanced_strategy_with_insights(
     weekend_insights: List[Dict],
     momentum_window: int = 6,
     min_sentiment: float = 0.4,
+    rag_memory = None,
 ):
     """
     Enhanced strategy that combines real-time signals with weekend Tree of Thoughts insights
@@ -51,6 +52,7 @@ def enhanced_strategy_with_insights(
     2. Boosts signals that align with weekend insights
     3. Filters out signals that contradict high-confidence weekend analysis
     4. Adds new signals from high-confidence weekend insights
+    5. Queries RAG memory for similar historical patterns (if available)
     """
     from utils.logger import get_logger
     log = get_logger("strategy")
@@ -70,11 +72,41 @@ def enhanced_strategy_with_insights(
     log.info(f"📊 Base strategy generated {len(base_signals)} signals")
     log.info(f"🌳 Weekend insights available for {len(insights_map)} tickers")
     
+    # Query RAG memory for historical patterns (if available)
+    historical_context = {}
+    if rag_memory:
+        log.info("🧠 Querying RAG memory for historical patterns...")
+        for ticker in tickers:
+            try:
+                history = rag_memory.get_ticker_history(ticker, n_results=3)
+                if history.get('insights') or history.get('trades'):
+                    historical_context[ticker] = history
+                    log.info(f"📚 {ticker}: Found {len(history.get('insights', []))} historical insights, {len(history.get('trades', []))} past trades")
+            except Exception as e:
+                log.debug(f"RAG query failed for {ticker}: {e}")
+    
     enhanced_signals = []
     
     # Enhance existing signals
     for sig in base_signals:
         ticker = sig['ticker']
+        
+        # Check historical context from RAG
+        historical_success = False
+        if ticker in historical_context:
+            history = historical_context[ticker]
+            # Check if similar past insights led to successful trades
+            past_insights = history.get('insights', [])
+            past_trades = history.get('trades', [])
+            
+            # Count wins vs losses from historical trades
+            wins = sum(1 for t in past_trades if t.get('outcome') == 'WIN')
+            losses = sum(1 for t in past_trades if t.get('outcome') == 'LOSS')
+            
+            if wins > losses and wins > 0:
+                historical_success = True
+                sig['historical_win_rate'] = wins / (wins + losses) if (wins + losses) > 0 else 0
+                log.info(f"📈 {ticker} has positive history: {wins}W-{losses}L")
         
         if ticker in insights_map:
             insight = insights_map[ticker]
@@ -83,7 +115,14 @@ def enhanced_strategy_with_insights(
             
             # If weekend insight agrees with signal, boost it
             if signal_type == 'BULLISH' and sig['action'] == 'BUY':
-                sig['strength'] = min(1.0, sig['strength'] * (1 + confidence * 0.5))
+                boost_multiplier = 1 + confidence * 0.5
+                
+                # Additional boost if historical success
+                if historical_success:
+                    boost_multiplier *= 1.2
+                    log.info(f"🚀 {ticker} gets historical success boost!")
+                
+                sig['strength'] = min(1.0, sig['strength'] * boost_multiplier)
                 sig['weekend_boost'] = True
                 sig['weekend_confidence'] = confidence
                 sig['weekend_reasoning'] = insight.get('reasoning', '')
