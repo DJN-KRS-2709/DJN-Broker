@@ -118,5 +118,35 @@
     "news_count": 116,
     "reddit_count": 100,
     "num_signals": 5
+  },
+  {
+    "timestamp": "2025-11-12T14:20:11.395963",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.17266034482758624,
+    "news_sentiment": 0.17266034482758624,
+    "reddit_sentiment": 0,
+    "news_count": 116,
+    "reddit_count": 0,
+    "num_signals": 0
+  },
+  {
+    "timestamp": "2025-11-12T14:24:49.330803",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.17107931034482765,
+    "news_sentiment": 0.17107931034482765,
+    "reddit_sentiment": 0,
+    "news_count": 116,
+    "reddit_count": 0,
+    "num_signals": 0
+  },
+  {
+    "timestamp": "2025-11-12T14:48:01.095676",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.1395956896551725,
+    "news_sentiment": 0.1395956896551725,
+    "reddit_sentiment": 0,
+    "news_count": 116,
+    "reddit_count": 0,
+    "num_signals": 0
   }
 ]

@@ -82,9 +82,26 @@ def fetch_prices_alpaca(tickers: List[str], days: int = 7, interval: str = "1h")
 def fetch_prices(tickers: List[str], period: str = "7d", interval: str = "1h") -> pd.DataFrame:
     """
     Return a multi-index DataFrame: columns (ticker, field).
-    Tries yfinance first, falls back to Alpaca if yfinance fails.
+    Priority order: Twelve Data API → Alpaca → yfinance (last resort)
     """
-    # Try yfinance first
+    days = int(period.replace('d', '')) if 'd' in period else 14
+    
+    # PRIORITY 1: Try Twelve Data and other paid APIs first (most reliable)
+    log.info("🔄 Trying Twelve Data API (primary source)...")
+    prices = fetch_prices_with_fallback(tickers, days=days)
+    if not prices.empty:
+        log.info(f"✅ Successfully fetched data from alternative APIs")
+        return prices
+    
+    # PRIORITY 2: Try Alpaca as backup
+    log.warning("Twelve Data failed, trying Alpaca...")
+    alpaca_prices = fetch_prices_alpaca(tickers, days=days, interval=interval)
+    if not alpaca_prices.empty:
+        log.info(f"✅ Successfully fetched data from Alpaca")
+        return alpaca_prices
+    
+    # PRIORITY 3: Try yfinance as last resort (least reliable)
+    log.warning("Alpaca failed, trying yfinance as last resort...")
     try:
         data = yf.download(
             tickers=tickers,
@@ -112,24 +129,13 @@ def fetch_prices(tickers: List[str], period: str = "7d", interval: str = "1h") -
         
         df = pd.DataFrame(closes).dropna(how='all')
         
-        # Check if we got valid data
         if len(df) > 0:
             log.info(f"✅ Fetched {len(df)} bars from yfinance for {len(closes)} tickers")
             return df
         else:
-            log.warning("yfinance returned empty data, trying Alpaca...")
-            raise ValueError("Empty data from yfinance")
+            log.error("❌ All price sources failed - no data available")
+            return pd.DataFrame()
             
     except Exception as e:
-        log.warning(f"yfinance failed: {e}. Trying alternative sources...")
-        
-        # Try multiple alternative sources (Twelve Data, Finnhub, Alpha Vantage, etc.)
-        days = int(period.replace('d', '')) if 'd' in period else 14
-        prices = fetch_prices_with_fallback(tickers, days=days)
-        
-        if not prices.empty:
-            return prices
-        
-        # Last resort: Try Alpaca
-        log.warning("Alternative sources failed, trying Alpaca as last resort...")
-        return fetch_prices_alpaca(tickers, days=days, interval=interval)
+        log.error(f"❌ yfinance (last resort) also failed: {e}")
+        return pd.DataFrame()

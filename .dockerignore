@@ -1,48 +1,39 @@
-# Git
-.git
-.gitignore
-.github
-
-# Environment
+# Don't include these in the Docker image
 .env
-.env.example
-
-# Python
+*.log
+.git
+.github
 __pycache__
 *.pyc
 *.pyo
 *.pyd
 .Python
+*.so
+*.egg
 *.egg-info
 dist
 build
-
-# IDE
+.DS_Store
 .vscode
 .idea
 *.swp
 *.swo
-
-# Logs
-*.log
-scheduler.log
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Documentation
-*.md
-!README.md
-
-# Deployment files (not needed in container)
+*~
+.cursorignore
+README.md
+DEPLOYMENT.md
+LIVE_TRADING_GUIDE.md
+TRADING_STYLES.md
+AGENTIC_PATTERNS.md
+DATA_SOURCES.md
+FREE_DATA_SOURCES.md
+PRICE_DATA_SETUP.md
+docker-compose.yml
 railway.json
 render.yaml
-docker-compose.yml
-
-# Local storage (will be mounted as volume)
-storage/
-
-
-
-
+fly.toml
+com.djnbroker.scheduler.plist
+setup_github_actions.sh
+check_*.py
+show_*.py
+run_strategy_exploration.py

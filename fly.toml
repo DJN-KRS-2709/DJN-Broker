@@ -1,0 +1,23 @@
+# fly.toml app configuration file generated for djn-broker
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+
+app = "djn-broker"
+primary_region = "fra"  # Frankfurt, Germany (closest to CET timezone)
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  TZ = "Europe/Berlin"
+  PYTHONUNBUFFERED = "1"
+
+# Use small VM size (free tier eligible)
+[vm]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
+
+# Keep machine running (this is a background scheduler, not a web service)
+[processes]
+  app = "python schedule_runner.py"
+
