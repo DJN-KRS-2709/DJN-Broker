@@ -8238,5 +8238,2477 @@
       "stock_analysis": 5,
       "simply_wall_st": 1
     }
+  },
+  {
+    "timestamp": "2025-11-12T14:20:11.385481",
+    "date": "2025-11-12",
+    "total_count": 106,
+    "sources": {
+      "yahoo_finance": [
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Rezolve Ai\u2019s Acceleration Toward $500 Million ARR Exit Rate for 2026 Attracts Industry Titans from Apple, Google, Microsoft, SAP and Tata Digital",
+          "url": "https://finance.yahoo.com/news/rezolve-ai-acceleration-toward-500-130000016.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Top global executives are joining Rezolve Ai to lead the trillion-dollar Agentic Commerce transformationNEW YORK , Nov. 12, 2025 (GLOBE NEWSWIRE) -- Rezolve Ai (NASDAQ: RZLV), the AI-commerce company redefining digital engagement through its proprietary brainpowa LLM, has become a destination for some of the most accomplished leaders in global technology. Executives from Apple, Google, Microsoft, SAP, Tata Digital and other world-leading firms have joined the company, which we believe is a power"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Nvidia Supplier Foxconn Posts 17% Profit Jump on AI Server Demand",
+          "url": "https://finance.yahoo.com/news/nvidia-supplier-foxconn-posts-17-121019595.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:10:19 +0000",
+          "content": "AI boom boosts Foxconn's server business as Nvidia partnership drives growth."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Foxconn's profits rise on AI server demand, teases OpenAI announcement",
+          "url": "https://finance.yahoo.com/video/foxconns-profits-rise-ai-server-115730028.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:57:30 +0000",
+          "content": "<p>STORY: Foxconn posted a forecast-beating 17% rise in Q3 profit Wednesday (November 12).\u00a0</p><p>It was fueled by continued strength in demand for AI servers that it also expects to drive growth next year.</p><p>The Taiwanese firm is the the world's largest contract electronics maker and supplies U.S. majors like Apple and Nvidia.</p><p>It said third-quarter net profit hit $1.89 billion.\u00a0</p><p>Looking ahead, Foxconn feels bullish and said it should see year-on-year revenue growth in Q4.\u00a0</p><p>It expects AI server revenue to increase quarter-on-quarter.\u00a0</p><p>And for its full year revenue, it forecast significant year-on-year growth - in line with its earlier projections.</p><p>The firm also teased an announcement next week with ChatGPT-maker OpenAI, though it didn't provide details.</p><p>Foxconn's shares have surged 36% so far this year.</p><p>Its shares closed up 1.8% on Wednesday ahead of the earnings release.</p>"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "The Global MicroLED Displays Market Report 2026: Industry Enters Commercial Era in 2025 - ENNOSTAR, HC SemiTek, Sanan Optoelectronics, and AU Optronics Lead High-Volume Production",
+          "url": "https://finance.yahoo.com/news/global-microled-displays-market-report-115500558.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:55:00 +0000",
+          "content": "In 2025, the global microLED display market is at a pivotal stage as it shifts from extensive R&amp;D to initial commercialization, overcoming setbacks like Apple's 2024 microLED smartwatch project cancellation. This market, containing around 120 companies globally, is primarily concentrated in Taiwan, China, South Korea, and the US/Europe. With significant production capacity ramp-ups in Taiwan and China, the first commercial microLED products, including the Garmin f\u0113nix 8 Pro, are emerging. Despit"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:30:05 +0000",
+          "content": "Charles Schwab clients were net buyers of equities in October despite many believing the market is overvalued. Charles Schwab head trading and derivatives strategist Joe Mazzola joins Market Domination Overtime to discuss the current market dynamics. To watch more expert insights and analysis on the latest market action, check out more Market Domination Overtime."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "VEIR Successfully Demonstrates 3-Megawatt Superconducting Power Delivery for AI Data Centers, Eliminating Critical Growth Bottleneck",
+          "url": "https://finance.yahoo.com/news/veir-successfully-demonstrates-3-megawatt-130000133.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "WOBURN, Mass., November 12, 2025--Superconducting tech startup VEIR demonstrates first-generation power delivery solution for critical AI data center energy bottleneck."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "Rezolve Ai\u2019s Acceleration Toward $500 Million ARR Exit Rate for 2026 Attracts Industry Titans from Apple, Google, Microsoft, SAP and Tata Digital",
+          "url": "https://finance.yahoo.com/news/rezolve-ai-acceleration-toward-500-130000016.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Top global executives are joining Rezolve Ai to lead the trillion-dollar Agentic Commerce transformationNEW YORK , Nov. 12, 2025 (GLOBE NEWSWIRE) -- Rezolve Ai (NASDAQ: RZLV), the AI-commerce company redefining digital engagement through its proprietary brainpowa LLM, has become a destination for some of the most accomplished leaders in global technology. Executives from Apple, Google, Microsoft, SAP, Tata Digital and other world-leading firms have joined the company, which we believe is a power"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "Groww raises nearly $750M in IPO as India\u2019s retail investing boom continues",
+          "url": "https://finance.yahoo.com/news/groww-raises-nearly-750m-ipo-124006782.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:40:06 +0000",
+          "content": "The company's shares opened 12% above their issue price, at \u20b9112, and closed at \u20b9128.85, lending it a market cap of \u20b9795 billion (approximately $9 billion)."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
+          "url": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:50:43 +0000",
+          "content": "Hon Hai's Nvidia-powered server surge is rewriting the playbook--just as tech giants double down on AI spending."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:30:05 +0000",
+          "content": "Charles Schwab clients were net buyers of equities in October despite many believing the market is overvalued. Charles Schwab head trading and derivatives strategist Joe Mazzola joins Market Domination Overtime to discuss the current market dynamics. To watch more expert insights and analysis on the latest market action, check out more Market Domination Overtime."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "Rezolve Ai\u2019s Acceleration Toward $500 Million ARR Exit Rate for 2026 Attracts Industry Titans from Apple, Google, Microsoft, SAP and Tata Digital",
+          "url": "https://finance.yahoo.com/news/rezolve-ai-acceleration-toward-500-130000016.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Top global executives are joining Rezolve Ai to lead the trillion-dollar Agentic Commerce transformationNEW YORK , Nov. 12, 2025 (GLOBE NEWSWIRE) -- Rezolve Ai (NASDAQ: RZLV), the AI-commerce company redefining digital engagement through its proprietary brainpowa LLM, has become a destination for some of the most accomplished leaders in global technology. Executives from Apple, Google, Microsoft, SAP, Tata Digital and other world-leading firms have joined the company, which we believe is a power"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "Gaxos to Participate in Upcoming WAWTech Conference on December 16th and 17th in Warsaw, Poland",
+          "url": "https://finance.yahoo.com/news/gaxos-participate-upcoming-wawtech-conference-130000338.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Roseland, NJ, Nov. 12, 2025 (GLOBE NEWSWIRE) -- Gaxos.ai Inc. (\"Gaxos\" or the \"Company\"), a company developing artificial intelligence applications across various high-growth sectors, today announced its participation in the upcoming WAWTech Conference, taking place on December 16-17, 2025 in Warsaw, Poland. \u201cWe\u2019re thrilled to take part in this year\u2019s WAWTech Conference ,\u201d said Vadim Mats, CEO of Gaxos. \u201cThis event offers a tremendous opportunity to engage with technology leaders and innovators"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "S&P 500 May Break 7,000 Barrier Before Year-End, Wells Fargo Predicts",
+          "url": "https://finance.yahoo.com/news/p-500-may-break-7-120049178.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:49 +0000",
+          "content": "Wells Fargo Predicts Risk-On Rally as S&amp;P 500 Eyes Record Close"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "The Best Stocks to Buy With $1,000 Right Now",
+          "url": "https://www.fool.com/investing/2025/11/12/the-best-stocks-to-buy-with-1000-right-now/?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:00 +0000",
+          "content": "There are several companies making a ton of money from AI infrastructure build-outs."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "SOFR Academy Appoints R. Martin \"Marty\" Ch\u00e1vez as Senior Advisor",
+          "url": "https://finance.yahoo.com/news/sofr-academy-appoints-r-martin-120000536.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:00 +0000",
+          "content": "NEW YORK, November 12, 2025--SOFR Academy, Inc., a leading financial engineering firm, today announced the appointment of R. Martin \"Marty\" Ch\u00e1vez as Senior Advisor."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "Latest News In Electric Vehicles - Aptera Motors Advances Toward Scalable Solar Vehicle Production",
+          "url": "https://finance.yahoo.com/news/latest-news-electric-vehicles-aptera-123729729.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:37:29 +0000",
+          "content": "Aptera Motors Corp., a solar mobility company focused on ultra-efficient transportation, has commenced construction of its validation vehicle assembly line at its Southern California facility. This development marks a shift from prototype builds to a systematic assembly process, with engineers and technicians refining the systems to aid Aptera\u2019s progression toward scalable manufacturing. The assembly line setup, which includes precision assembly fixtures for consistent production, is crucial..."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "Cathie Wood Dumps $2.4 Million Worth Of Tesla Shares, Doubles Down On These AI Stocks",
+          "url": "https://finance.yahoo.com/news/cathie-wood-dumps-2-4-123111483.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:31:11 +0000",
+          "content": "On Monday, Cathie Wood-led Ark Invest executed significant trades involving Tesla Inc. (NASDAQ:TSLA), Pony AI Inc. (NASDAQ:PONY), Taiwan Semiconductor Manufacturing Co. Ltd. (NYSE:TSM), and Baidu Inc. (NASDAQ:BIDU). These trades highlight Ark\u2019s ..."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "Rivian Surges as CEO RJ Scaringe Lands $4.6 Billion Payday",
+          "url": "https://finance.yahoo.com/news/rivian-surges-ceo-rj-scaringe-121215479.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:12:15 +0000",
+          "content": "Tesla-style performance deal fires up investors and stock momentum"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "The Zacks Analyst Blog Highlights Tesla and QuantumScape",
+          "url": "https://finance.yahoo.com/news/zacks-analyst-blog-highlights-tesla-113200204.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:32:00 +0000",
+          "content": "Tesla's EV dominance faces pressure as QuantumScape gains traction with real-world solid-state battery breakthroughs and growing automaker partnerships."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:30:05 +0000",
+          "content": "Charles Schwab clients were net buyers of equities in October despite many believing the market is overvalued. Charles Schwab head trading and derivatives strategist Joe Mazzola joins Market Domination Overtime to discuss the current market dynamics. To watch more expert insights and analysis on the latest market action, check out more Market Domination Overtime."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Cathie Wood Dumps $2.4 Million Worth Of Tesla Shares, Doubles Down On These AI Stocks",
+          "url": "https://finance.yahoo.com/news/cathie-wood-dumps-2-4-123111483.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:31:11 +0000",
+          "content": "On Monday, Cathie Wood-led Ark Invest executed significant trades involving Tesla Inc. (NASDAQ:TSLA), Pony AI Inc. (NASDAQ:PONY), Taiwan Semiconductor Manufacturing Co. Ltd. (NYSE:TSM), and Baidu Inc. (NASDAQ:BIDU). These trades highlight Ark\u2019s ..."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "SoftBank completes $5.8bn sale of Nvidia shares",
+          "url": "https://www.verdict.co.uk/softbank-sale-nvidia-shares/?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:19:07 +0000",
+          "content": "SoftBank said that the proceeds from the sale of Nvidia shares would be allocated to its AI initiatives."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Nvidia Supplier Foxconn Posts 17% Profit Jump on AI Server Demand",
+          "url": "https://finance.yahoo.com/news/nvidia-supplier-foxconn-posts-17-121019595.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:10:19 +0000",
+          "content": "AI boom boosts Foxconn's server business as Nvidia partnership drives growth."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Stocks Gain Pre-Bell Ahead of Looming House Vote to End Government Shutdown",
+          "url": "https://finance.yahoo.com/news/stocks-gain-pre-bell-ahead-120554573.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:05:54 +0000",
+          "content": "The main US stock measures were pointing higher in Wednesday's premarket activity as traders await a"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "The Best Stocks to Buy With $1,000 Right Now",
+          "url": "https://www.fool.com/investing/2025/11/12/the-best-stocks-to-buy-with-1000-right-now/?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:00 +0000",
+          "content": "There are several companies making a ton of money from AI infrastructure build-outs."
+        }
+      ],
+      "investing_com": [
+        {
+          "source": "Investing.com",
+          "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+          "publishedAt": "2025-11-07 21:03:40",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+          "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+          "publishedAt": "2025-11-07 12:44:15",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+          "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+          "publishedAt": "2025-11-07 10:02:41",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+          "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+          "publishedAt": "2025-11-07 13:14:53",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+          "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+          "publishedAt": "2025-11-07 11:36:11",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+          "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+          "publishedAt": "2025-11-07 14:35:29",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+          "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+          "publishedAt": "2025-11-07 10:38:34",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+          "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+          "publishedAt": "2025-11-07 11:43:18",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+          "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+          "publishedAt": "2025-11-07 10:18:41",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+          "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+          "publishedAt": "2025-11-07 02:25:10",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "What will matter to Tesla stock price over the next 6 to 12 months?",
+          "url": "https://www.investing.com/news/stock-market-news/what-will-matter-to-tesla-stock-price-over-the-next-6-to-12-months-4351021",
+          "publishedAt": "2025-11-12 12:58:13",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "AMD, Cisco, Alphabet and Clearwater Analytics rise premarket",
+          "url": "https://www.investing.com/news/stock-market-news/amd-cisco-alphabet-and-clearwater-analytics-rise-premarket-4350935",
+          "publishedAt": "2025-11-12 12:50:37",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Saudi Arabia stocks lower at close of trade; Tadawul All Share down 0.14%",
+          "url": "https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-lower-at-close-of-trade-tadawul-all-share-down-014-4350990",
+          "publishedAt": "2025-11-12 12:50:03",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Jefferies boosts BMW stock target, citing success of Neue Klasse iX3",
+          "url": "https://www.investing.com/news/stock-market-news/jefferies-boosts-bmw-stock-target-citing-success-of-neue-klasse-ix3-4350989",
+          "publishedAt": "2025-11-12 12:49:46",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Polestar plans reverse stock split to keep Nasdaq listing as losses mount",
+          "url": "https://www.investing.com/news/stock-market-news/polestar-plans-reverse-stock-split-to-keep-nasdaq-listing-as-losses-mount-4350732",
+          "publishedAt": "2025-11-12 12:48:27",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "IBM says \u2019Loon\u2019 chip shows path to useful quantum\u00a0computers by 2029",
+          "url": "https://www.investing.com/news/stock-market-news/ibm-says-loon-chip-shows-path-to-useful-quantumcomputers-by-2029-4350427",
+          "publishedAt": "2025-11-12 12:42:46",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "US shutdown relief catapults stocks higher, traders go on yen watch",
+          "url": "https://www.investing.com/news/stock-market-news/asian-markets-make-tepid-gains-as-us-shutdown-set-to-end-4349871",
+          "publishedAt": "2025-11-12 12:36:47",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "US stock futures climb on expectations of end to federal shutdown",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-advance-as-investors-cheer-possible-end-to-federal-shutdown-4350541",
+          "publishedAt": "2025-11-12 12:36:31",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "ECB\u2019s Lagarde replaces Fed\u2019s Powell on two key BIS committees",
+          "url": "https://www.investing.com/news/stock-market-news/ecbs-lagarde-replaces-feds-powell-on-two-key-bis-committees-4350876",
+          "publishedAt": "2025-11-12 12:30:34",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Trump to host financial industry executives at White House dinner - Bloomberg",
+          "url": "https://www.investing.com/news/stock-market-news/trump-to-host-financial-industry-executives-at-white-house-dinner--bloomberg-93CH-4350871",
+          "publishedAt": "2025-11-12 12:28:16",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Dollar drifts higher ahead of U.S. government reopening",
+          "url": "https://www.investing.com/news/forex-news/dollar-drifts-higher-ahead-of-us-government-reopening-4350189",
+          "publishedAt": "2025-11-12 09:41:28",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Pound faces pressure from U.K. job data and political uncertainty",
+          "url": "https://www.investing.com/news/forex-news/pound-faces-pressure-from-uk-job-data-and-political-uncertainty-4350124",
+          "publishedAt": "2025-11-12 08:58:07",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Asia FX muted amid rate cut uncertainty, dollar steady with shutdown end in sight",
+          "url": "https://www.investing.com/news/forex-news/asia-fx-muted-amid-rate-cut-uncertainty-dollar-steady-with-shutdown-end-in-sight-4349894",
+          "publishedAt": "2025-11-12 04:10:43",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Japan\u2019s yen faces bearish outlook, intervention risks rise",
+          "url": "https://www.investing.com/news/forex-news/japans-yen-faces-bearish-outlook-intervention-risks-rise-93CH-4348381",
+          "publishedAt": "2025-11-11 09:18:24",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Dollar just higher on shutdown news; sterling retreats after jobs data",
+          "url": "https://www.investing.com/news/forex-news/dollar-just-higher-on-shutdown-news-sterling-retreats-after-jobs-data-4348369",
+          "publishedAt": "2025-11-11 09:16:54",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Asia FX weakens, yen at 9-mth low as dollar firms on US shutdown progress",
+          "url": "https://www.investing.com/news/forex-news/asia-fx-weakens-yen-at-9mth-low-as-dollar-firms-on-us-shutdown-progress-4348068",
+          "publishedAt": "2025-11-11 04:27:55",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Yen remains undervalued against dollar- UBS",
+          "url": "https://www.investing.com/news/forex-news/yen-remains-undervalued-against-dollar-ubs-93CH-4344881",
+          "publishedAt": "2025-11-10 09:59:14",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "UBS lowers EUR/CHF fair value to 1.05 as Swiss inflation slows",
+          "url": "https://www.investing.com/news/forex-news/ubs-lowers-eurchf-fair-value-to-105-as-swiss-inflation-slows-93CH-4344878",
+          "publishedAt": "2025-11-10 09:58:57",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Dollar lower as end to U.S. government shutdown draws nearer",
+          "url": "https://www.investing.com/news/forex-news/dollar-lower-as-end-to-us-government-shutdown-draws-nearer-4344714",
+          "publishedAt": "2025-11-10 09:01:41",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "GBP faces pressure ahead of UK jobs data, BoE rate cut prospects",
+          "url": "https://www.investing.com/news/forex-news/gbp-faces-pressure-ahead-of-uk-jobs-data-boe-rate-cut-prospects-4344688",
+          "publishedAt": "2025-11-10 08:24:06",
+          "content": ""
+        }
+      ],
+      "marketwatch": [
+        {
+          "source": "MarketWatch",
+          "title": "What typically come next after the stock market sputters at the start of November",
+          "url": "https://www.marketwatch.com/story/the-santa-rally-still-arrives-when-the-stock-market-sputters-to-open-november-history-shows-cc272981?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:59:00 GMT",
+          "content": "The S&amp;P 500 slumped 1.6% last week \u2014 but bad first weeks in November usually don\u2019t hang over the stock market."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "It might not be Peak Oil after all. What the IEA\u2019s new scenarios mean for oil prices.",
+          "url": "https://www.marketwatch.com/story/it-might-not-be-peak-oil-after-all-iea-now-says-on-current-path-that-demand-will-grow-until-2050-5c7f8c3d?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:53:00 GMT",
+          "content": "The key international agency forecasting energy demand now says the current path will have consumption of oil and gas growing through 2050, as electric-vehicle adoption misses its earlier estimates."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "I\u2019m in my 50s and divorced with a $1.7 million home. I fell in love with an old school friend. Does it make financial sense to marry?",
+          "url": "https://www.marketwatch.com/story/im-in-my-50s-happily-divorced-and-fell-in-love-with-an-old-school-friend-do-we-marry-5aac37ee?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:37:00 GMT",
+          "content": "\u201cI have a $500,000 Roth IRA, a portfolio account of $500,000 and $300,000 in 529 plans.\u201d"
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Where Goldman Sachs says the S&P 500 is headed next year and the next decade",
+          "url": "https://www.marketwatch.com/story/where-goldman-sachs-says-the-s-p-500-is-headed-next-year-and-the-next-decade-721dc97b?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:35:00 GMT",
+          "content": "Goldman strategists expect the S&amp;P 500 will see annualized gains of 6.5% in the next 10 years. But that\u2019s not exactly shooting for the moon."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "U.S. stocks and gold are rallying on hopes that the shutdown ends. What happens once the government reopens?",
+          "url": "https://www.marketwatch.com/story/u-s-stocks-and-gold-are-rallying-on-hopes-that-the-shutdown-ends-what-happens-once-the-government-reopens-3929055a?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:30:00 GMT",
+          "content": "The S&amp;P 500 and gold are both rallying, with stocks nearing a return to record territory. Why the assets could diverge when the shutdown finally ends."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Citi strategists say a narrowing of index performance doesn\u2019t mean the market won\u2019t rise",
+          "url": "https://www.marketwatch.com/story/citi-strategists-say-a-narrowing-of-index-performance-doesnt-mean-the-market-wont-rise-9ff310fc?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:23:00 GMT",
+          "content": "Citi predicts modest global-equity gains through mid-2026, despite the concentration of stock-market performance."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Banks just sent this upbeat signal about the economy. Here\u2019s why investors aren\u2019t buying it.",
+          "url": "https://www.marketwatch.com/story/banks-just-sent-this-upbeat-signal-about-the-economy-heres-why-investors-arent-buying-it-6433652f?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:19:00 GMT",
+          "content": "Banks stockpiled less money for troubled loans during the most recent quarter despite fears over bad-debt \u201ccockroaches.\u201d"
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Sick of hearing about the AI trade? BofA offers 16 hot stock picks that go far beyond tech.",
+          "url": "https://www.marketwatch.com/story/sick-of-hearing-about-the-ai-trade-bofa-offers-16-hot-stock-picks-that-go-far-beyond-tech-cbf0975a?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:00 GMT",
+          "content": "Valuations for AI stocks could come down if monetization doesn\u2019t play out as expected. But BofA sees plenty of opportunities elsewhere among stocks \u201covershadowed\u201d by the tech buzz."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "IBM sees a big milestone ahead for quantum computing \u2014\u00a0and it hinges on these new chips",
+          "url": "https://www.marketwatch.com/story/ibm-sees-a-big-milestone-ahead-for-quantum-computing-and-it-hinges-on-these-new-chips-4ca0521f?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 11:04:00 GMT",
+          "content": "IBM announced new processors that it said will help it build a \u201cfault-tolerant quantum computer\u201d by the end of the decade."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Professional and wealthy investors still plan to boost crypto holdings even after sharp slide",
+          "url": "https://www.marketwatch.com/story/professional-and-wealthy-investors-still-plan-to-boost-crypto-holdings-even-after-sharp-slide-6354ee75?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 10:38:00 GMT",
+          "content": "The recent drop in crypto prices isn\u2019t denting enthusiasm from wealthy and professional investors to boost allocations."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Jobless claims fall to lowest level since mid-May",
+          "url": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
+          "publishedAt": "Thu, 03 Jul 2025 12:36:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Jobless claims stay low in latest week",
+          "url": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
+          "publishedAt": "Thu, 13 Feb 2025 13:33:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Consumer credit growth soars in December",
+          "url": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
+          "publishedAt": "Fri, 07 Feb 2025 20:26:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "U.S. productivity slows down in fourth quarter while unit labor costs accelerate",
+          "url": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
+          "publishedAt": "Thu, 06 Feb 2025 13:34:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Beyond to buy rights to Buy Buy Baby brand and reunite it with Bed Bath & Beyond",
+          "url": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse",
+          "publishedAt": "Mon, 03 Feb 2025 13:46:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Trump asks Supreme Court to pause TikTok ban",
+          "url": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse",
+          "publishedAt": "Sat, 28 Dec 2024 00:32:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Amazon says it had best-ever Thanksgiving Holiday week with record sales and number of items sold",
+          "url": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse",
+          "publishedAt": "Tue, 03 Dec 2024 14:05:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "U.S. stock futures and bond yields drop on reports Putin has updated nuclear doctrine",
+          "url": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse",
+          "publishedAt": "Tue, 19 Nov 2024 08:55:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Charter Communications announces buyout deal for Liberty Broadband at terms above its previous proposal",
+          "url": "https://www.marketwatch.com/story/charter-communications-announces-buyout-deal-for-liberty-broadband-at-terms-above-its-previous-proposal-552f7acd?mod=mw_rss_marketpulse",
+          "publishedAt": "Wed, 13 Nov 2024 13:52:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "General Motors unveils new all-electric Cadillac called the Vistiq with 300-mile range",
+          "url": "https://www.marketwatch.com/story/general-motors-unveils-new-all-electric-cadillac-called-the-vistiq-with-300-mile-range-c16fb8a6?mod=mw_rss_marketpulse",
+          "publishedAt": "Tue, 12 Nov 2024 13:53:00 GMT",
+          "content": ""
+        }
+      ],
+      "finviz": [
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Nvidia Supplier Foxconn Posts 17% Profit Jump on AI Server Demand",
+          "url": "https://finance.yahoo.com/news/nvidia-supplier-foxconn-posts-17-121019595.html",
+          "publishedAt": "2025-11-12T14:20:10.121193",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Foxconn's profits rise on AI server demand, teases OpenAI announcement",
+          "url": "https://finance.yahoo.com/video/foxconns-profits-rise-ai-server-115730028.html",
+          "publishedAt": "2025-11-12T14:20:10.121218",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html",
+          "publishedAt": "2025-11-12T14:20:10.121233",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Foxconn Profit Tops Estimates Amid Robust AI Server Business",
+          "url": "https://finance.yahoo.com/m/77b0b695-16b9-3a33-b129-ab5d4726a2c0/foxconn-profit-tops-estimates.html",
+          "publishedAt": "2025-11-12T14:20:10.121248",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Nvidia supplier Foxconn bullish on AI demand, teases OpenAI announcement",
+          "url": "https://finance.yahoo.com/news/taiwanese-electronics-firm-foxconns-q3-062652165.html",
+          "publishedAt": "2025-11-12T14:20:10.121263",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "Groww raises nearly $750M in IPO as Indias retail investing boom continues",
+          "url": "https://finance.yahoo.com/news/groww-raises-nearly-750m-ipo-124006782.html",
+          "publishedAt": "2025-11-12T14:20:10.430807",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
+          "url": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html",
+          "publishedAt": "2025-11-12T14:20:10.430830",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html",
+          "publishedAt": "2025-11-12T14:20:10.430845",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "The Zacks Analyst Blog Highlights Oracle, Amazon, Microsoft and Alphabet",
+          "url": "/news/227071/the-zacks-analyst-blog-highlights-oracle-amazon-microsoft-and-alphabet",
+          "publishedAt": "2025-11-12T14:20:10.430860",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "Investors Now See Some Companies as Safer Bets Than Governments",
+          "url": "https://finance.yahoo.com/news/investors-now-see-companies-safer-110012648.html",
+          "publishedAt": "2025-11-12T14:20:10.430875",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "Google Sued Over Claims Gemini AI Spied on Users",
+          "url": "https://finance.yahoo.com/m/7d7ce15e-481d-3e93-8804-4cffee707cb3/google-sued-over-claims.html",
+          "publishedAt": "2025-11-12T14:20:10.716901",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "Google Sues Cybercrime Network Behind Global Text Phishing Scams",
+          "url": "https://finance.yahoo.com/m/c1c1cdeb-9ed5-3e69-a171-f0308b8210fe/google-sues-cybercrime.html",
+          "publishedAt": "2025-11-12T14:20:10.716924",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "S&P 500 May Break 7,000 Barrier Before Year-End, Wells Fargo Predicts",
+          "url": "https://finance.yahoo.com/news/p-500-may-break-7-120049178.html",
+          "publishedAt": "2025-11-12T14:20:10.716938",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "The Best Stocks to Buy With $1,000 Right Now",
+          "url": "/news/227049/the-best-stocks-to-buy-with-1000-right-now",
+          "publishedAt": "2025-11-12T14:20:10.716953",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
+          "url": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html",
+          "publishedAt": "2025-11-12T14:20:10.716967",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Tesla's October Sales Were Awful. The Stock Is Rising.",
+          "url": "https://www.barrons.com/articles/tesla-stock-price-october-sales-b7582880?mod=bar_FV",
+          "publishedAt": "2025-11-12T14:20:11.022164",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Tesla Stock Rises. October Electric Vehicle Sales Were Tougher Than Expected.",
+          "url": "https://www.barrons.com/articles/tesla-stock-october-ev-sales-b7582880?mod=bar_FV",
+          "publishedAt": "2025-11-12T14:20:11.022193",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Cathie Wood Dumps $2.4 Million Worth Of Tesla Shares, Doubles Down On These AI Stocks",
+          "url": "https://finance.yahoo.com/news/cathie-wood-dumps-2-4-123111483.html",
+          "publishedAt": "2025-11-12T14:20:11.022212",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Rivian Surges as CEO RJ Scaringe Lands $4.6 Billion Payday",
+          "url": "https://finance.yahoo.com/news/rivian-surges-ceo-rj-scaringe-121215479.html",
+          "publishedAt": "2025-11-12T14:20:11.022228",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "The Zacks Analyst Blog Highlights Tesla and QuantumScape",
+          "url": "/news/227090/the-zacks-analyst-blog-highlights-tesla-and-quantumscape",
+          "publishedAt": "2025-11-12T14:20:11.022245",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "CoreWeave, Nebius, IREN Stocks Steady After AI Bubble Fears. They're Still High Risk.",
+          "url": "https://www.barrons.com/articles/coreweave-stock-nebius-iren-ai-fears-b538a68a?mod=bar_FV",
+          "publishedAt": "2025-11-12T14:20:11.368213",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "Cathie Wood Dumps $2.4 Million Worth Of Tesla Shares, Doubles Down On These AI Stocks",
+          "url": "https://finance.yahoo.com/news/cathie-wood-dumps-2-4-123111483.html",
+          "publishedAt": "2025-11-12T14:20:11.368238",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "SoftBank completes $5.8bn sale of Nvidia shares",
+          "url": "https://finance.yahoo.com/m/f8865a72-20f7-3a52-bcdf-915c34cbb53e/softbank-completes-%245.8bn.html",
+          "publishedAt": "2025-11-12T14:20:11.368254",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "Nvidia Supplier Foxconn Posts 17% Profit Jump on AI Server Demand",
+          "url": "https://finance.yahoo.com/news/nvidia-supplier-foxconn-posts-17-121019595.html",
+          "publishedAt": "2025-11-12T14:20:11.368269",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "The Best Stocks to Buy With $1,000 Right Now",
+          "url": "/news/227049/the-best-stocks-to-buy-with-1000-right-now",
+          "publishedAt": "2025-11-12T14:20:11.368284",
+          "content": ""
+        }
+      ],
+      "stock_analysis": [
+        {
+          "source": "Stock Analysis",
+          "ticker": "AAPL",
+          "url": "https://stockanalysis.com/stocks/aapl/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:20:11.368805"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "MSFT",
+          "url": "https://stockanalysis.com/stocks/msft/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:20:11.368808"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "GOOGL",
+          "url": "https://stockanalysis.com/stocks/googl/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:20:11.368809"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "TSLA",
+          "url": "https://stockanalysis.com/stocks/tsla/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:20:11.368810"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "NVDA",
+          "url": "https://stockanalysis.com/stocks/nvda/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:20:11.368811"
+        }
+      ],
+      "simply_wall_st": [
+        {
+          "source": "Simply Wall St",
+          "note": "Requires API key for automation",
+          "url": "https://simplywall.st/",
+          "tickers": [
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "TSLA",
+            "NVDA"
+          ]
+        }
+      ]
+    },
+    "source_counts": {
+      "yahoo_finance": 25,
+      "investing_com": 30,
+      "marketwatch": 20,
+      "finviz": 25,
+      "stock_analysis": 5,
+      "simply_wall_st": 1
+    }
+  },
+  {
+    "timestamp": "2025-11-12T14:24:49.319209",
+    "date": "2025-11-12",
+    "total_count": 106,
+    "sources": {
+      "yahoo_finance": [
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Rezolve Ai\u2019s Acceleration Toward $500 Million ARR Exit Rate for 2026 Attracts Industry Titans from Apple, Google, Microsoft, SAP and Tata Digital",
+          "url": "https://finance.yahoo.com/news/rezolve-ai-acceleration-toward-500-130000016.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Top global executives are joining Rezolve Ai to lead the trillion-dollar Agentic Commerce transformationNEW YORK , Nov. 12, 2025 (GLOBE NEWSWIRE) -- Rezolve Ai (NASDAQ: RZLV), the AI-commerce company redefining digital engagement through its proprietary brainpowa LLM, has become a destination for some of the most accomplished leaders in global technology. Executives from Apple, Google, Microsoft, SAP, Tata Digital and other world-leading firms have joined the company, which we believe is a power"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Nvidia Supplier Foxconn Posts 17% Profit Jump on AI Server Demand",
+          "url": "https://finance.yahoo.com/news/nvidia-supplier-foxconn-posts-17-121019595.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:10:19 +0000",
+          "content": "AI boom boosts Foxconn's server business as Nvidia partnership drives growth."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Foxconn's profits rise on AI server demand, teases OpenAI announcement",
+          "url": "https://finance.yahoo.com/video/foxconns-profits-rise-ai-server-115730028.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:57:30 +0000",
+          "content": "<p>STORY: Foxconn posted a forecast-beating 17% rise in Q3 profit Wednesday (November 12).\u00a0</p><p>It was fueled by continued strength in demand for AI servers that it also expects to drive growth next year.</p><p>The Taiwanese firm is the the world's largest contract electronics maker and supplies U.S. majors like Apple and Nvidia.</p><p>It said third-quarter net profit hit $1.89 billion.\u00a0</p><p>Looking ahead, Foxconn feels bullish and said it should see year-on-year revenue growth in Q4.\u00a0</p><p>It expects AI server revenue to increase quarter-on-quarter.\u00a0</p><p>And for its full year revenue, it forecast significant year-on-year growth - in line with its earlier projections.</p><p>The firm also teased an announcement next week with ChatGPT-maker OpenAI, though it didn't provide details.</p><p>Foxconn's shares have surged 36% so far this year.</p><p>Its shares closed up 1.8% on Wednesday ahead of the earnings release.</p>"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "The Global MicroLED Displays Market Report 2026: Industry Enters Commercial Era in 2025 - ENNOSTAR, HC SemiTek, Sanan Optoelectronics, and AU Optronics Lead High-Volume Production",
+          "url": "https://finance.yahoo.com/news/global-microled-displays-market-report-115500558.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:55:00 +0000",
+          "content": "In 2025, the global microLED display market is at a pivotal stage as it shifts from extensive R&amp;D to initial commercialization, overcoming setbacks like Apple's 2024 microLED smartwatch project cancellation. This market, containing around 120 companies globally, is primarily concentrated in Taiwan, China, South Korea, and the US/Europe. With significant production capacity ramp-ups in Taiwan and China, the first commercial microLED products, including the Garmin f\u0113nix 8 Pro, are emerging. Despit"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:30:05 +0000",
+          "content": "Charles Schwab clients were net buyers of equities in October despite many believing the market is overvalued. Charles Schwab head trading and derivatives strategist Joe Mazzola joins Market Domination Overtime to discuss the current market dynamics. To watch more expert insights and analysis on the latest market action, check out more Market Domination Overtime."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "VEIR Successfully Demonstrates 3-Megawatt Superconducting Power Delivery for AI Data Centers, Eliminating Critical Growth Bottleneck",
+          "url": "https://finance.yahoo.com/news/veir-successfully-demonstrates-3-megawatt-130000133.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "WOBURN, Mass., November 12, 2025--Superconducting tech startup VEIR demonstrates first-generation power delivery solution for critical AI data center energy bottleneck."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "Rezolve Ai\u2019s Acceleration Toward $500 Million ARR Exit Rate for 2026 Attracts Industry Titans from Apple, Google, Microsoft, SAP and Tata Digital",
+          "url": "https://finance.yahoo.com/news/rezolve-ai-acceleration-toward-500-130000016.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Top global executives are joining Rezolve Ai to lead the trillion-dollar Agentic Commerce transformationNEW YORK , Nov. 12, 2025 (GLOBE NEWSWIRE) -- Rezolve Ai (NASDAQ: RZLV), the AI-commerce company redefining digital engagement through its proprietary brainpowa LLM, has become a destination for some of the most accomplished leaders in global technology. Executives from Apple, Google, Microsoft, SAP, Tata Digital and other world-leading firms have joined the company, which we believe is a power"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "Groww raises nearly $750M in IPO as India\u2019s retail investing boom continues",
+          "url": "https://finance.yahoo.com/news/groww-raises-nearly-750m-ipo-124006782.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:40:06 +0000",
+          "content": "The company's shares opened 12% above their issue price, at \u20b9112, and closed at \u20b9128.85, lending it a market cap of \u20b9795 billion (approximately $9 billion)."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
+          "url": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:50:43 +0000",
+          "content": "Hon Hai's Nvidia-powered server surge is rewriting the playbook--just as tech giants double down on AI spending."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:30:05 +0000",
+          "content": "Charles Schwab clients were net buyers of equities in October despite many believing the market is overvalued. Charles Schwab head trading and derivatives strategist Joe Mazzola joins Market Domination Overtime to discuss the current market dynamics. To watch more expert insights and analysis on the latest market action, check out more Market Domination Overtime."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "Rezolve Ai\u2019s Acceleration Toward $500 Million ARR Exit Rate for 2026 Attracts Industry Titans from Apple, Google, Microsoft, SAP and Tata Digital",
+          "url": "https://finance.yahoo.com/news/rezolve-ai-acceleration-toward-500-130000016.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Top global executives are joining Rezolve Ai to lead the trillion-dollar Agentic Commerce transformationNEW YORK , Nov. 12, 2025 (GLOBE NEWSWIRE) -- Rezolve Ai (NASDAQ: RZLV), the AI-commerce company redefining digital engagement through its proprietary brainpowa LLM, has become a destination for some of the most accomplished leaders in global technology. Executives from Apple, Google, Microsoft, SAP, Tata Digital and other world-leading firms have joined the company, which we believe is a power"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "Gaxos to Participate in Upcoming WAWTech Conference on December 16th and 17th in Warsaw, Poland",
+          "url": "https://finance.yahoo.com/news/gaxos-participate-upcoming-wawtech-conference-130000338.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Roseland, NJ, Nov. 12, 2025 (GLOBE NEWSWIRE) -- Gaxos.ai Inc. (\"Gaxos\" or the \"Company\"), a company developing artificial intelligence applications across various high-growth sectors, today announced its participation in the upcoming WAWTech Conference, taking place on December 16-17, 2025 in Warsaw, Poland. \u201cWe\u2019re thrilled to take part in this year\u2019s WAWTech Conference ,\u201d said Vadim Mats, CEO of Gaxos. \u201cThis event offers a tremendous opportunity to engage with technology leaders and innovators"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "S&P 500 May Break 7,000 Barrier Before Year-End, Wells Fargo Predicts",
+          "url": "https://finance.yahoo.com/news/p-500-may-break-7-120049178.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:49 +0000",
+          "content": "Wells Fargo Predicts Risk-On Rally as S&amp;P 500 Eyes Record Close"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "The Best Stocks to Buy With $1,000 Right Now",
+          "url": "https://www.fool.com/investing/2025/11/12/the-best-stocks-to-buy-with-1000-right-now/?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:00 +0000",
+          "content": "There are several companies making a ton of money from AI infrastructure build-outs."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "SOFR Academy Appoints R. Martin \"Marty\" Ch\u00e1vez as Senior Advisor",
+          "url": "https://finance.yahoo.com/news/sofr-academy-appoints-r-martin-120000536.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:00 +0000",
+          "content": "NEW YORK, November 12, 2025--SOFR Academy, Inc., a leading financial engineering firm, today announced the appointment of R. Martin \"Marty\" Ch\u00e1vez as Senior Advisor."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "Latest News In Electric Vehicles - Aptera Motors Advances Toward Scalable Solar Vehicle Production",
+          "url": "https://finance.yahoo.com/news/latest-news-electric-vehicles-aptera-123729729.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:37:29 +0000",
+          "content": "Aptera Motors Corp., a solar mobility company focused on ultra-efficient transportation, has commenced construction of its validation vehicle assembly line at its Southern California facility. This development marks a shift from prototype builds to a systematic assembly process, with engineers and technicians refining the systems to aid Aptera\u2019s progression toward scalable manufacturing. The assembly line setup, which includes precision assembly fixtures for consistent production, is crucial..."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "Cathie Wood Dumps $2.4 Million Worth Of Tesla Shares, Doubles Down On These AI Stocks",
+          "url": "https://finance.yahoo.com/news/cathie-wood-dumps-2-4-123111483.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:31:11 +0000",
+          "content": "On Monday, Cathie Wood-led Ark Invest executed significant trades involving Tesla Inc. (NASDAQ:TSLA), Pony AI Inc. (NASDAQ:PONY), Taiwan Semiconductor Manufacturing Co. Ltd. (NYSE:TSM), and Baidu Inc. (NASDAQ:BIDU). These trades highlight Ark\u2019s ..."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "Rivian Surges as CEO RJ Scaringe Lands $4.6 Billion Payday",
+          "url": "https://finance.yahoo.com/news/rivian-surges-ceo-rj-scaringe-121215479.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:12:15 +0000",
+          "content": "Tesla-style performance deal fires up investors and stock momentum"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "The Zacks Analyst Blog Highlights Tesla and QuantumScape",
+          "url": "https://finance.yahoo.com/news/zacks-analyst-blog-highlights-tesla-113200204.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:32:00 +0000",
+          "content": "Tesla's EV dominance faces pressure as QuantumScape gains traction with real-world solid-state battery breakthroughs and growing automaker partnerships."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:30:05 +0000",
+          "content": "Charles Schwab clients were net buyers of equities in October despite many believing the market is overvalued. Charles Schwab head trading and derivatives strategist Joe Mazzola joins Market Domination Overtime to discuss the current market dynamics. To watch more expert insights and analysis on the latest market action, check out more Market Domination Overtime."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Stocks to Watch Wednesday: AMD, Circle, Oklo, SoftBank",
+          "url": "https://finance.yahoo.com/m/2c158658-bc47-30dc-ab1f-de95e185b6e3/stocks-to-watch-wednesday%3A.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:13:43 +0000",
+          "content": "\u2197\ufe0f Advanced Micro Devices (AMD): The chip maker said it expects revenue growth to accelerate in coming years due to strong data-center demand. Shares rose about 5% in premarket trading. \u2198\ufe0f Circle (CRCL): Quarterly results from the stablecoin issuer trumped expectations, but the stock sold off ahead of the open."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Cathie Wood Dumps $2.4 Million Worth Of Tesla Shares, Doubles Down On These AI Stocks",
+          "url": "https://finance.yahoo.com/news/cathie-wood-dumps-2-4-123111483.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:31:11 +0000",
+          "content": "On Monday, Cathie Wood-led Ark Invest executed significant trades involving Tesla Inc. (NASDAQ:TSLA), Pony AI Inc. (NASDAQ:PONY), Taiwan Semiconductor Manufacturing Co. Ltd. (NYSE:TSM), and Baidu Inc. (NASDAQ:BIDU). These trades highlight Ark\u2019s ..."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "SoftBank completes $5.8bn sale of Nvidia shares",
+          "url": "https://www.verdict.co.uk/softbank-sale-nvidia-shares/?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:19:07 +0000",
+          "content": "SoftBank said that the proceeds from the sale of Nvidia shares would be allocated to its AI initiatives."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Nvidia Supplier Foxconn Posts 17% Profit Jump on AI Server Demand",
+          "url": "https://finance.yahoo.com/news/nvidia-supplier-foxconn-posts-17-121019595.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:10:19 +0000",
+          "content": "AI boom boosts Foxconn's server business as Nvidia partnership drives growth."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Stocks Gain Pre-Bell Ahead of Looming House Vote to End Government Shutdown",
+          "url": "https://finance.yahoo.com/news/stocks-gain-pre-bell-ahead-120554573.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:05:54 +0000",
+          "content": "The main US stock measures were pointing higher in Wednesday's premarket activity as traders await a"
+        }
+      ],
+      "investing_com": [
+        {
+          "source": "Investing.com",
+          "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+          "publishedAt": "2025-11-07 21:03:40",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+          "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+          "publishedAt": "2025-11-07 12:44:15",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+          "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+          "publishedAt": "2025-11-07 10:02:41",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+          "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+          "publishedAt": "2025-11-07 13:14:53",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+          "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+          "publishedAt": "2025-11-07 11:36:11",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+          "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+          "publishedAt": "2025-11-07 14:35:29",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+          "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+          "publishedAt": "2025-11-07 10:38:34",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+          "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+          "publishedAt": "2025-11-07 11:43:18",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+          "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+          "publishedAt": "2025-11-07 10:18:41",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+          "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+          "publishedAt": "2025-11-07 02:25:10",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Trump to host JP Morgan\u2019s Dimon, other Wall Street CEOs at White House dinner",
+          "url": "https://www.investing.com/news/stock-market-news/trump-expected-to-dine-with-wall-street-ceos-at-white-house-on-wednesday-4349872",
+          "publishedAt": "2025-11-12 13:19:22",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Exclusive-GM wants parts makers to pull supply chains from China",
+          "url": "https://www.investing.com/news/stock-market-news/exclusivegm-wants-parts-makers-to-pull-supply-chains-from-china-4349948",
+          "publishedAt": "2025-11-12 13:19:04",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Canada\u2019s Loblaw raises annual profit forecast on resilient grocery demand",
+          "url": "https://www.investing.com/news/stock-market-news/canadas-loblaw-raises-annual-profit-forecast-on-resilient-grocery-demand-4351174",
+          "publishedAt": "2025-11-12 13:18:32",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "BioNexus Gene Lab stock soars after strategic MRD testing agreements",
+          "url": "https://www.investing.com/news/stock-market-news/bionexus-gene-lab-stock-soars-after-strategic-mrd-testing-agreements-93CH-4351108",
+          "publishedAt": "2025-11-12 13:10:59",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "What will matter to Tesla stock price over the next 6 to 12 months?",
+          "url": "https://www.investing.com/news/stock-market-news/what-will-matter-to-tesla-stock-price-over-the-next-6-to-12-months-4351021",
+          "publishedAt": "2025-11-12 12:58:13",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "AMD, Cisco, Alphabet and Clearwater Analytics rise premarket",
+          "url": "https://www.investing.com/news/stock-market-news/amd-cisco-alphabet-and-clearwater-analytics-rise-premarket-4350935",
+          "publishedAt": "2025-11-12 12:50:37",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Saudi Arabia stocks lower at close of trade; Tadawul All Share down 0.14%",
+          "url": "https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-lower-at-close-of-trade-tadawul-all-share-down-014-4350990",
+          "publishedAt": "2025-11-12 12:50:03",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Jefferies boosts BMW stock target, citing success of Neue Klasse iX3",
+          "url": "https://www.investing.com/news/stock-market-news/jefferies-boosts-bmw-stock-target-citing-success-of-neue-klasse-ix3-4350989",
+          "publishedAt": "2025-11-12 12:49:46",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Polestar plans reverse stock split to keep Nasdaq listing as losses mount",
+          "url": "https://www.investing.com/news/stock-market-news/polestar-plans-reverse-stock-split-to-keep-nasdaq-listing-as-losses-mount-4350732",
+          "publishedAt": "2025-11-12 12:48:27",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "IBM says \u2019Loon\u2019 chip shows path to useful quantum\u00a0computers by 2029",
+          "url": "https://www.investing.com/news/stock-market-news/ibm-says-loon-chip-shows-path-to-useful-quantumcomputers-by-2029-4350427",
+          "publishedAt": "2025-11-12 12:42:46",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Dollar drifts higher ahead of U.S. government reopening",
+          "url": "https://www.investing.com/news/forex-news/dollar-drifts-higher-ahead-of-us-government-reopening-4350189",
+          "publishedAt": "2025-11-12 09:41:28",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Pound faces pressure from U.K. job data and political uncertainty",
+          "url": "https://www.investing.com/news/forex-news/pound-faces-pressure-from-uk-job-data-and-political-uncertainty-4350124",
+          "publishedAt": "2025-11-12 08:58:07",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Asia FX muted amid rate cut uncertainty, dollar steady with shutdown end in sight",
+          "url": "https://www.investing.com/news/forex-news/asia-fx-muted-amid-rate-cut-uncertainty-dollar-steady-with-shutdown-end-in-sight-4349894",
+          "publishedAt": "2025-11-12 04:10:43",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Japan\u2019s yen faces bearish outlook, intervention risks rise",
+          "url": "https://www.investing.com/news/forex-news/japans-yen-faces-bearish-outlook-intervention-risks-rise-93CH-4348381",
+          "publishedAt": "2025-11-11 09:18:24",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Dollar just higher on shutdown news; sterling retreats after jobs data",
+          "url": "https://www.investing.com/news/forex-news/dollar-just-higher-on-shutdown-news-sterling-retreats-after-jobs-data-4348369",
+          "publishedAt": "2025-11-11 09:16:54",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Asia FX weakens, yen at 9-mth low as dollar firms on US shutdown progress",
+          "url": "https://www.investing.com/news/forex-news/asia-fx-weakens-yen-at-9mth-low-as-dollar-firms-on-us-shutdown-progress-4348068",
+          "publishedAt": "2025-11-11 04:27:55",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Yen remains undervalued against dollar- UBS",
+          "url": "https://www.investing.com/news/forex-news/yen-remains-undervalued-against-dollar-ubs-93CH-4344881",
+          "publishedAt": "2025-11-10 09:59:14",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "UBS lowers EUR/CHF fair value to 1.05 as Swiss inflation slows",
+          "url": "https://www.investing.com/news/forex-news/ubs-lowers-eurchf-fair-value-to-105-as-swiss-inflation-slows-93CH-4344878",
+          "publishedAt": "2025-11-10 09:58:57",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Dollar lower as end to U.S. government shutdown draws nearer",
+          "url": "https://www.investing.com/news/forex-news/dollar-lower-as-end-to-us-government-shutdown-draws-nearer-4344714",
+          "publishedAt": "2025-11-10 09:01:41",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "GBP faces pressure ahead of UK jobs data, BoE rate cut prospects",
+          "url": "https://www.investing.com/news/forex-news/gbp-faces-pressure-ahead-of-uk-jobs-data-boe-rate-cut-prospects-4344688",
+          "publishedAt": "2025-11-10 08:24:06",
+          "content": ""
+        }
+      ],
+      "marketwatch": [
+        {
+          "source": "MarketWatch",
+          "title": "What typically comes next when the stock market sputters at the start of November",
+          "url": "https://www.marketwatch.com/story/the-santa-rally-still-arrives-when-the-stock-market-sputters-to-open-november-history-shows-cc272981?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:59:00 GMT",
+          "content": "The S&amp;P 500 slumped 1.6% last week \u2014 but bad first weeks in November usually don\u2019t hang over the stock market."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "It might not be Peak Oil after all. What the IEA\u2019s new scenarios mean for oil prices.",
+          "url": "https://www.marketwatch.com/story/it-might-not-be-peak-oil-after-all-iea-now-says-on-current-path-that-demand-will-grow-until-2050-5c7f8c3d?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:53:00 GMT",
+          "content": "The key international agency forecasting energy demand now says the current path will have consumption of oil and gas growing through 2050, as electric-vehicle adoption misses its earlier estimates."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "I\u2019m in my 50s and divorced with a $1.7 million home. I fell in love with an old school friend. Does it make financial sense to marry?",
+          "url": "https://www.marketwatch.com/story/im-in-my-50s-happily-divorced-and-fell-in-love-with-an-old-school-friend-do-we-marry-5aac37ee?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:37:00 GMT",
+          "content": "\u201cI have a $500,000 Roth IRA, a portfolio account of $500,000 and $300,000 in 529 plans.\u201d"
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Where Goldman Sachs says the S&P 500 is headed next year and the next decade",
+          "url": "https://www.marketwatch.com/story/where-goldman-sachs-says-the-s-p-500-is-headed-next-year-and-the-next-decade-721dc97b?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:35:00 GMT",
+          "content": "Goldman strategists expect the S&amp;P 500 will see annualized gains of 6.5% in the next 10 years. But that\u2019s not exactly shooting for the moon."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "U.S. stocks and gold are rallying on hopes that the shutdown ends. What happens once the government reopens?",
+          "url": "https://www.marketwatch.com/story/u-s-stocks-and-gold-are-rallying-on-hopes-that-the-shutdown-ends-what-happens-once-the-government-reopens-3929055a?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:30:00 GMT",
+          "content": "The S&amp;P 500 and gold are both rallying, with stocks nearing a return to record territory. Why the assets could diverge when the shutdown finally ends."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Citi strategists say a narrowing of index performance doesn\u2019t mean the market won\u2019t rise",
+          "url": "https://www.marketwatch.com/story/citi-strategists-say-a-narrowing-of-index-performance-doesnt-mean-the-market-wont-rise-9ff310fc?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:23:00 GMT",
+          "content": "Citi predicts modest global-equity gains through mid-2026, despite the concentration of stock-market performance."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Banks just sent this upbeat signal about the economy. Here\u2019s why investors aren\u2019t buying it.",
+          "url": "https://www.marketwatch.com/story/banks-just-sent-this-upbeat-signal-about-the-economy-heres-why-investors-arent-buying-it-6433652f?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:19:00 GMT",
+          "content": "Banks stockpiled less money for troubled loans during the most recent quarter despite fears over bad-debt \u201ccockroaches.\u201d"
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Sick of hearing about the AI trade? BofA offers 16 hot stock picks that go far beyond tech.",
+          "url": "https://www.marketwatch.com/story/sick-of-hearing-about-the-ai-trade-bofa-offers-16-hot-stock-picks-that-go-far-beyond-tech-cbf0975a?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:00 GMT",
+          "content": "Valuations for AI stocks could come down if monetization doesn\u2019t play out as expected. But BofA sees plenty of opportunities elsewhere among stocks \u201covershadowed\u201d by the tech buzz."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "IBM sees a big milestone ahead for quantum computing \u2014\u00a0and it hinges on these new chips",
+          "url": "https://www.marketwatch.com/story/ibm-sees-a-big-milestone-ahead-for-quantum-computing-and-it-hinges-on-these-new-chips-4ca0521f?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 11:04:00 GMT",
+          "content": "IBM announced new processors that it said will help it build a \u201cfault-tolerant quantum computer\u201d by the end of the decade."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Professional and wealthy investors still plan to boost crypto holdings even after sharp slide",
+          "url": "https://www.marketwatch.com/story/professional-and-wealthy-investors-still-plan-to-boost-crypto-holdings-even-after-sharp-slide-6354ee75?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 10:38:00 GMT",
+          "content": "The recent drop in crypto prices isn\u2019t denting enthusiasm from wealthy and professional investors to boost allocations."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Jobless claims fall to lowest level since mid-May",
+          "url": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
+          "publishedAt": "Thu, 03 Jul 2025 12:36:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Jobless claims stay low in latest week",
+          "url": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
+          "publishedAt": "Thu, 13 Feb 2025 13:33:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Consumer credit growth soars in December",
+          "url": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
+          "publishedAt": "Fri, 07 Feb 2025 20:26:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "U.S. productivity slows down in fourth quarter while unit labor costs accelerate",
+          "url": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
+          "publishedAt": "Thu, 06 Feb 2025 13:34:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Beyond to buy rights to Buy Buy Baby brand and reunite it with Bed Bath & Beyond",
+          "url": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse",
+          "publishedAt": "Mon, 03 Feb 2025 13:46:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Trump asks Supreme Court to pause TikTok ban",
+          "url": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse",
+          "publishedAt": "Sat, 28 Dec 2024 00:32:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Amazon says it had best-ever Thanksgiving Holiday week with record sales and number of items sold",
+          "url": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse",
+          "publishedAt": "Tue, 03 Dec 2024 14:05:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "U.S. stock futures and bond yields drop on reports Putin has updated nuclear doctrine",
+          "url": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse",
+          "publishedAt": "Tue, 19 Nov 2024 08:55:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Charter Communications announces buyout deal for Liberty Broadband at terms above its previous proposal",
+          "url": "https://www.marketwatch.com/story/charter-communications-announces-buyout-deal-for-liberty-broadband-at-terms-above-its-previous-proposal-552f7acd?mod=mw_rss_marketpulse",
+          "publishedAt": "Wed, 13 Nov 2024 13:52:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "General Motors unveils new all-electric Cadillac called the Vistiq with 300-mile range",
+          "url": "https://www.marketwatch.com/story/general-motors-unveils-new-all-electric-cadillac-called-the-vistiq-with-300-mile-range-c16fb8a6?mod=mw_rss_marketpulse",
+          "publishedAt": "Tue, 12 Nov 2024 13:53:00 GMT",
+          "content": ""
+        }
+      ],
+      "finviz": [
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Nvidia Supplier Foxconn Posts 17% Profit Jump on AI Server Demand",
+          "url": "https://finance.yahoo.com/news/nvidia-supplier-foxconn-posts-17-121019595.html",
+          "publishedAt": "2025-11-12T14:24:48.251515",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Foxconn's profits rise on AI server demand, teases OpenAI announcement",
+          "url": "https://finance.yahoo.com/video/foxconns-profits-rise-ai-server-115730028.html",
+          "publishedAt": "2025-11-12T14:24:48.251539",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html",
+          "publishedAt": "2025-11-12T14:24:48.251554",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Foxconn Profit Tops Estimates Amid Robust AI Server Business",
+          "url": "https://finance.yahoo.com/m/77b0b695-16b9-3a33-b129-ab5d4726a2c0/foxconn-profit-tops-estimates.html",
+          "publishedAt": "2025-11-12T14:24:48.251569",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Nvidia supplier Foxconn bullish on AI demand, teases OpenAI announcement",
+          "url": "https://finance.yahoo.com/news/taiwanese-electronics-firm-foxconns-q3-062652165.html",
+          "publishedAt": "2025-11-12T14:24:48.251584",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "Groww raises nearly $750M in IPO as Indias retail investing boom continues",
+          "url": "https://finance.yahoo.com/news/groww-raises-nearly-750m-ipo-124006782.html",
+          "publishedAt": "2025-11-12T14:24:48.477924",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
+          "url": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html",
+          "publishedAt": "2025-11-12T14:24:48.477948",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html",
+          "publishedAt": "2025-11-12T14:24:48.477964",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "The Zacks Analyst Blog Highlights Oracle, Amazon, Microsoft and Alphabet",
+          "url": "/news/227071/the-zacks-analyst-blog-highlights-oracle-amazon-microsoft-and-alphabet",
+          "publishedAt": "2025-11-12T14:24:48.477980",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "Investors Now See Some Companies as Safer Bets Than Governments",
+          "url": "https://finance.yahoo.com/news/investors-now-see-companies-safer-110012648.html",
+          "publishedAt": "2025-11-12T14:24:48.477996",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "Google Sued Over Claims Gemini AI Spied on Users",
+          "url": "https://finance.yahoo.com/m/7d7ce15e-481d-3e93-8804-4cffee707cb3/google-sued-over-claims.html",
+          "publishedAt": "2025-11-12T14:24:48.754772",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "Google Sues Cybercrime Network Behind Global Text Phishing Scams",
+          "url": "https://finance.yahoo.com/m/c1c1cdeb-9ed5-3e69-a171-f0308b8210fe/google-sues-cybercrime.html",
+          "publishedAt": "2025-11-12T14:24:48.754798",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "S&P 500 May Break 7,000 Barrier Before Year-End, Wells Fargo Predicts",
+          "url": "https://finance.yahoo.com/news/p-500-may-break-7-120049178.html",
+          "publishedAt": "2025-11-12T14:24:48.754814",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "The Best Stocks to Buy With $1,000 Right Now",
+          "url": "/news/227049/the-best-stocks-to-buy-with-1000-right-now",
+          "publishedAt": "2025-11-12T14:24:48.754830",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
+          "url": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html",
+          "publishedAt": "2025-11-12T14:24:48.754846",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Tesla's October Sales Were Awful. The Stock Is Rising.",
+          "url": "https://www.barrons.com/articles/tesla-stock-price-october-sales-b7582880?mod=bar_FV",
+          "publishedAt": "2025-11-12T14:24:49.063947",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Tesla Stock Rises. October Electric Vehicle Sales Were Tougher Than Expected.",
+          "url": "https://www.barrons.com/articles/tesla-stock-october-ev-sales-b7582880?mod=bar_FV",
+          "publishedAt": "2025-11-12T14:24:49.063970",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Cathie Wood Dumps $2.4 Million Worth Of Tesla Shares, Doubles Down On These AI Stocks",
+          "url": "https://finance.yahoo.com/news/cathie-wood-dumps-2-4-123111483.html",
+          "publishedAt": "2025-11-12T14:24:49.063985",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Rivian Surges as CEO RJ Scaringe Lands $4.6 Billion Payday",
+          "url": "https://finance.yahoo.com/news/rivian-surges-ceo-rj-scaringe-121215479.html",
+          "publishedAt": "2025-11-12T14:24:49.063999",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "The Zacks Analyst Blog Highlights Tesla and QuantumScape",
+          "url": "/news/227090/the-zacks-analyst-blog-highlights-tesla-and-quantumscape",
+          "publishedAt": "2025-11-12T14:24:49.064013",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "Stocks to Watch Wednesday: AMD, Circle, Oklo, SoftBank",
+          "url": "https://finance.yahoo.com/m/2c158658-bc47-30dc-ab1f-de95e185b6e3/stocks-to-watch-wednesday%3A.html",
+          "publishedAt": "2025-11-12T14:24:49.301588",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "CoreWeave, Nebius, IREN Stocks Steady After AI Bubble Fears. They're Still High Risk.",
+          "url": "https://www.barrons.com/articles/coreweave-stock-nebius-iren-ai-fears-b538a68a?mod=bar_FV",
+          "publishedAt": "2025-11-12T14:24:49.301610",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "Cathie Wood Dumps $2.4 Million Worth Of Tesla Shares, Doubles Down On These AI Stocks",
+          "url": "https://finance.yahoo.com/news/cathie-wood-dumps-2-4-123111483.html",
+          "publishedAt": "2025-11-12T14:24:49.301624",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "SoftBank completes $5.8bn sale of Nvidia shares",
+          "url": "https://finance.yahoo.com/m/f8865a72-20f7-3a52-bcdf-915c34cbb53e/softbank-completes-%245.8bn.html",
+          "publishedAt": "2025-11-12T14:24:49.301639",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "Nvidia Supplier Foxconn Posts 17% Profit Jump on AI Server Demand",
+          "url": "https://finance.yahoo.com/news/nvidia-supplier-foxconn-posts-17-121019595.html",
+          "publishedAt": "2025-11-12T14:24:49.301652",
+          "content": ""
+        }
+      ],
+      "stock_analysis": [
+        {
+          "source": "Stock Analysis",
+          "ticker": "AAPL",
+          "url": "https://stockanalysis.com/stocks/aapl/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:24:49.302325"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "MSFT",
+          "url": "https://stockanalysis.com/stocks/msft/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:24:49.302333"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "GOOGL",
+          "url": "https://stockanalysis.com/stocks/googl/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:24:49.302334"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "TSLA",
+          "url": "https://stockanalysis.com/stocks/tsla/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:24:49.302335"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "NVDA",
+          "url": "https://stockanalysis.com/stocks/nvda/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:24:49.302336"
+        }
+      ],
+      "simply_wall_st": [
+        {
+          "source": "Simply Wall St",
+          "note": "Requires API key for automation",
+          "url": "https://simplywall.st/",
+          "tickers": [
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "TSLA",
+            "NVDA"
+          ]
+        }
+      ]
+    },
+    "source_counts": {
+      "yahoo_finance": 25,
+      "investing_com": 30,
+      "marketwatch": 20,
+      "finviz": 25,
+      "stock_analysis": 5,
+      "simply_wall_st": 1
+    }
+  },
+  {
+    "timestamp": "2025-11-12T14:48:00.987977",
+    "date": "2025-11-12",
+    "total_count": 106,
+    "sources": {
+      "yahoo_finance": [
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Foxconn, On Running, Circle: Market Movers",
+          "url": "https://finance.yahoo.com/video/foxconn-running-circle-market-movers-134324690.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:43:24 +0000",
+          "content": "The world's largest contract electronics manufacturer is no longer \"just\" the iPhone (AAPL) maker: Foxconn's (FITGF, 2354.TW, 0FJ.SG, 0FJ.F, FXCOF) profits topped estimates as it expands into making AI servers for the likes of Nvidia (NVDA) and Amazon (AMZN). Ramzan Karmali breaks down the latest earnings from the Taiwanese conglomerate and other companies including On Holding (ONON) and Circle (CRCL). For more live coverage of the markets, watch the full episode of Market Sunrise and visit Yahoo Finance."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Quiq Advances Contact Center Quality Management with New Agentic AI Analyst",
+          "url": "https://finance.yahoo.com/news/quiq-advances-contact-center-quality-133000478.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:30:00 +0000",
+          "content": "Quiq, the leader in enterprise-grade agentic AI for CX innovation, today announced agentic AI powered Quality Management. Aptly named Conversation Analyst, this powerful agentic AI solution analyzes every AI and human agent conversation across voice, web chat, SMS, and other asynchronous messaging platforms, like Apple Messages for Business and WhatsApp. With Conversation Analyst, organizations can establish custom prompts and metrics that provide a nuanced understanding of experiences throughou"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Rezolve Ai\u2019s Acceleration Toward $500 Million ARR Exit Rate for 2026 Attracts Industry Titans from Apple, Google, Microsoft, SAP and Tata Digital",
+          "url": "https://finance.yahoo.com/news/rezolve-ai-acceleration-toward-500-130000016.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Top global executives are joining Rezolve Ai to lead the trillion-dollar Agentic Commerce transformationNEW YORK , Nov. 12, 2025 (GLOBE NEWSWIRE) -- Rezolve Ai (NASDAQ: RZLV), the AI-commerce company redefining digital engagement through its proprietary brainpowa LLM, has become a destination for some of the most accomplished leaders in global technology. Executives from Apple, Google, Microsoft, SAP, Tata Digital and other world-leading firms have joined the company, which we believe is a power"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Why Nvidia Stock Is Getting a Boost From Foxconn Earnings",
+          "url": "https://finance.yahoo.com/m/b02a2c67-bf9b-3d30-b942-ed859a29b714/why-nvidia-stock-is-getting-a.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:50:00 +0000",
+          "content": "Nvidia  stock was rising Wednesday as Foxconn Technology Group said there was strong demand for artificial-intelligence hardware.  Nvidia shares were up 1.4% at $195.95 in premarket trading.  The stock fell 3% on Tuesday after Japan\u2019s  SoftBank Group  disclosed that it had sold a $5.83 billion stake in the chip maker."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "AAPL",
+          "title": "Nvidia Supplier Foxconn Posts 17% Profit Jump on AI Server Demand",
+          "url": "https://finance.yahoo.com/news/nvidia-supplier-foxconn-posts-17-121019595.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:10:19 +0000",
+          "content": "AI boom boosts Foxconn's server business as Nvidia partnership drives growth."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "VEIR Successfully Demonstrates 3-Megawatt Superconducting Power Delivery for AI Data Centers, Eliminating Critical Growth Bottleneck",
+          "url": "https://finance.yahoo.com/news/veir-successfully-demonstrates-3-megawatt-130000133.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "WOBURN, Mass., November 12, 2025--Superconducting tech startup VEIR demonstrates first-generation power delivery solution for critical AI data center energy bottleneck."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "Rezolve Ai\u2019s Acceleration Toward $500 Million ARR Exit Rate for 2026 Attracts Industry Titans from Apple, Google, Microsoft, SAP and Tata Digital",
+          "url": "https://finance.yahoo.com/news/rezolve-ai-acceleration-toward-500-130000016.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Top global executives are joining Rezolve Ai to lead the trillion-dollar Agentic Commerce transformationNEW YORK , Nov. 12, 2025 (GLOBE NEWSWIRE) -- Rezolve Ai (NASDAQ: RZLV), the AI-commerce company redefining digital engagement through its proprietary brainpowa LLM, has become a destination for some of the most accomplished leaders in global technology. Executives from Apple, Google, Microsoft, SAP, Tata Digital and other world-leading firms have joined the company, which we believe is a power"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "XiFin Achieves HITRUST i1 Certification for Key Cloud-Hosted Systems, Further Strengthening Its Commitment to Cybersecurity and Data Protection",
+          "url": "https://finance.yahoo.com/news/xifin-achieves-hitrust-i1-certification-125900696.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:59:00 +0000",
+          "content": "SAN DIEGO, November 12, 2025--XiFin, Inc., a leader in revenue cycle management (RCM), including billing solutions enhanced with embedded artificial intelligence (AI), today announced that it has earned HITRUST i1 Certification for multiple platforms residing at Microsoft Azure, reinforcing its longstanding commitment to safeguarding sensitive healthcare and financial data through rigorous information security standards."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "Groww raises nearly $750M in IPO as India\u2019s retail investing boom continues",
+          "url": "https://finance.yahoo.com/news/groww-raises-nearly-750m-ipo-124006782.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:40:06 +0000",
+          "content": "The company's shares opened 12% above their issue price, at \u20b9112, and closed at \u20b9128.85, lending it a market cap of \u20b9795 billion (approximately $9 billion)."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "MSFT",
+          "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
+          "url": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 11:50:43 +0000",
+          "content": "Hon Hai's Nvidia-powered server surge is rewriting the playbook--just as tech giants double down on AI spending."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "Rezolve Ai\u2019s Acceleration Toward $500 Million ARR Exit Rate for 2026 Attracts Industry Titans from Apple, Google, Microsoft, SAP and Tata Digital",
+          "url": "https://finance.yahoo.com/news/rezolve-ai-acceleration-toward-500-130000016.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Top global executives are joining Rezolve Ai to lead the trillion-dollar Agentic Commerce transformationNEW YORK , Nov. 12, 2025 (GLOBE NEWSWIRE) -- Rezolve Ai (NASDAQ: RZLV), the AI-commerce company redefining digital engagement through its proprietary brainpowa LLM, has become a destination for some of the most accomplished leaders in global technology. Executives from Apple, Google, Microsoft, SAP, Tata Digital and other world-leading firms have joined the company, which we believe is a power"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "Gaxos to Participate in Upcoming WAWTech Conference on December 16th and 17th in Warsaw, Poland",
+          "url": "https://finance.yahoo.com/news/gaxos-participate-upcoming-wawtech-conference-130000338.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:00:00 +0000",
+          "content": "Roseland, NJ, Nov. 12, 2025 (GLOBE NEWSWIRE) -- Gaxos.ai Inc. (\"Gaxos\" or the \"Company\"), a company developing artificial intelligence applications across various high-growth sectors, today announced its participation in the upcoming WAWTech Conference, taking place on December 16-17, 2025 in Warsaw, Poland. \u201cWe\u2019re thrilled to take part in this year\u2019s WAWTech Conference ,\u201d said Vadim Mats, CEO of Gaxos. \u201cThis event offers a tremendous opportunity to engage with technology leaders and innovators"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "S&P 500 May Break 7,000 Barrier Before Year-End, Wells Fargo Predicts",
+          "url": "https://finance.yahoo.com/news/p-500-may-break-7-120049178.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:49 +0000",
+          "content": "Wells Fargo Predicts Risk-On Rally as S&amp;P 500 Eyes Record Close"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "The Best Stocks to Buy With $1,000 Right Now",
+          "url": "https://www.fool.com/investing/2025/11/12/the-best-stocks-to-buy-with-1000-right-now/?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:00 +0000",
+          "content": "There are several companies making a ton of money from AI infrastructure build-outs."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "GOOGL",
+          "title": "SOFR Academy Appoints R. Martin \"Marty\" Ch\u00e1vez as Senior Advisor",
+          "url": "https://finance.yahoo.com/news/sofr-academy-appoints-r-martin-120000536.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:00:00 +0000",
+          "content": "NEW YORK, November 12, 2025--SOFR Academy, Inc., a leading financial engineering firm, today announced the appointment of R. Martin \"Marty\" Ch\u00e1vez as Senior Advisor."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "What will matter to Tesla stock price over the next 6 to 12 months?",
+          "url": "https://finance.yahoo.com/news/matter-tesla-stock-price-over-132813036.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:28:13 +0000",
+          "content": "Investing.com -- Tesla\u2019s latest annual general meeting gave investors more than just the approval of Elon Musk\u2019s $1 trillion compensation package to think about, according to Morgan Stanley."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "Tesla\u2019s October Sales Were Awful. The Stock Is Rising.",
+          "url": "https://finance.yahoo.com/m/aa91c807-b4ba-316a-90e7-dc83380c37df/tesla%E2%80%99s-october-sales-were.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:15:00 +0000",
+          "content": "Investors knew the fourth quarter would be tough for electric vehicle makers like  Tesla  They might not have known how tough\u2014or how Tesla stock would react.  In October, Tesla sales fell 23% year over year in four markets, North America, Europe, China, and South Korea, according to industry data tracked by  Wells Fargo  analyst Colin Langan."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "Latest News In Electric Vehicles - Aptera Motors Advances Toward Scalable Solar Vehicle Production",
+          "url": "https://finance.yahoo.com/news/latest-news-electric-vehicles-aptera-123729729.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:37:29 +0000",
+          "content": "Aptera Motors Corp., a solar mobility company focused on ultra-efficient transportation, has commenced construction of its validation vehicle assembly line at its Southern California facility. This development marks a shift from prototype builds to a systematic assembly process, with engineers and technicians refining the systems to aid Aptera\u2019s progression toward scalable manufacturing. The assembly line setup, which includes precision assembly fixtures for consistent production, is crucial..."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "Cathie Wood Dumps $2.4 Million Worth Of Tesla Shares, Doubles Down On These AI Stocks",
+          "url": "https://finance.yahoo.com/news/cathie-wood-dumps-2-4-123111483.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:31:11 +0000",
+          "content": "On Monday, Cathie Wood-led Ark Invest executed significant trades involving Tesla Inc. (NASDAQ:TSLA), Pony AI Inc. (NASDAQ:PONY), Taiwan Semiconductor Manufacturing Co. Ltd. (NYSE:TSM), and Baidu Inc. (NASDAQ:BIDU). These trades highlight Ark\u2019s ..."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "TSLA",
+          "title": "Rivian Surges as CEO RJ Scaringe Lands $4.6 Billion Payday",
+          "url": "https://finance.yahoo.com/news/rivian-surges-ceo-rj-scaringe-121215479.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 12:12:15 +0000",
+          "content": "Tesla-style performance deal fires up investors and stock momentum"
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Shutdown vote, AMD outlook and SoftBank",
+          "url": "https://finance.yahoo.com/video/shutdown-vote-amd-outlook-softbank-134326442.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:43:26 +0000",
+          "content": "Wall Street futures are on the rise with the Dow (^DJI) eyeing a fresh record as upbeat earnings boosted AI optimism and chances grew that the record-long US shutdown will end soon. The House of Representatives will take part in that crucial vote later this afternoon but flight disruptions are expected to continue. AMD (AMD) says it expects to see its data center revenue increase 60% over the next three to five years. Meanwhile, SoftBank (SFTBY, 9984.T) shares slid after it sold its entire stake in Nvidia (NVDA) and bets big on OpenAI. For more live coverage of the markets, watch the full episode of Market Sunrise and visit Yahoo Finance."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Foxconn, On Running, Circle: Market Movers",
+          "url": "https://finance.yahoo.com/video/foxconn-running-circle-market-movers-134324690.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:43:24 +0000",
+          "content": "The world's largest contract electronics manufacturer is no longer \"just\" the iPhone (AAPL) maker: Foxconn's (FITGF, 2354.TW, 0FJ.SG, 0FJ.F, FXCOF) profits topped estimates as it expands into making AI servers for the likes of Nvidia (NVDA) and Amazon (AMZN). Ramzan Karmali breaks down the latest earnings from the Taiwanese conglomerate and other companies including On Holding (ONON) and Circle (CRCL). For more live coverage of the markets, watch the full episode of Market Sunrise and visit Yahoo Finance."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Stock Market Today: Dow Jones Index Rises As Nvidia, AMD Rally (Live Coverage)",
+          "url": "https://finance.yahoo.com/m/1e1e145a-40b5-3a5e-a091-0f15de4eac9e/stock-market-today%3A-dow-jones.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:38:29 +0000",
+          "content": "Stock Market Today: The Dow Jones index rose Wednesday ahead of the market open. And Nvidia stock and AMD rallied premarket trading."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "Stocks to Watch Wednesday: AMD, Circle, Oklo, SoftBank",
+          "url": "https://finance.yahoo.com/m/2c158658-bc47-30dc-ab1f-de95e185b6e3/stocks-to-watch-wednesday%3A.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:13:43 +0000",
+          "content": "\u2197\ufe0f Advanced Micro Devices (AMD): The chip maker said it expects revenue growth to accelerate in coming years due to strong data-center demand. Shares rose about 5% in premarket trading. \u2198\ufe0f Circle (CRCL): Quarterly results from the stablecoin issuer trumped expectations, but the stock sold off ahead of the open."
+        },
+        {
+          "source": "Yahoo Finance",
+          "ticker": "NVDA",
+          "title": "CoreWeave, Nebius, IREN Stocks Steady After AI Bubble Fears. They\u2019re Still High Risk.",
+          "url": "https://finance.yahoo.com/m/ae4f45cd-b0b2-31e9-bffb-b1b85e896946/coreweave%2C-nebius%2C-iren.html?.tsrc=rss",
+          "publishedAt": "Wed, 12 Nov 2025 13:12:00 +0000",
+          "content": "CoreWeave, Nebius and peers such as IREN have surged this year on the back of multibillion-dollar contracts to provide AI computing capacity to large technology companies."
+        }
+      ],
+      "investing_com": [
+        {
+          "source": "Investing.com",
+          "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+          "publishedAt": "2025-11-07 21:03:40",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+          "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+          "publishedAt": "2025-11-07 12:44:15",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+          "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+          "publishedAt": "2025-11-07 10:02:41",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+          "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+          "publishedAt": "2025-11-07 13:14:53",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+          "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+          "publishedAt": "2025-11-07 11:36:11",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+          "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+          "publishedAt": "2025-11-07 14:35:29",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+          "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+          "publishedAt": "2025-11-07 10:38:34",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+          "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+          "publishedAt": "2025-11-07 11:43:18",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+          "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+          "publishedAt": "2025-11-07 10:18:41",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+          "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+          "publishedAt": "2025-11-07 02:25:10",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Trump to host JP Morgan's Dimon, other Wall Street CEOs at White House dinner",
+          "url": "https://www.investing.com/news/stock-market-news/trump-expected-to-dine-with-wall-street-ceos-at-white-house-on-wednesday-4349872",
+          "publishedAt": "2025-11-12 13:36:54",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Morgan Stanley sees up to 20% shortage of US power for data centers through 2028",
+          "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-sees-up-to-20-shortage-of-us-power-for-data-centers-through-2028-4351251",
+          "publishedAt": "2025-11-12 13:29:21",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Exclusive-GM wants parts makers to pull supply chains from China",
+          "url": "https://www.investing.com/news/stock-market-news/exclusivegm-wants-parts-makers-to-pull-supply-chains-from-china-4349948",
+          "publishedAt": "2025-11-12 13:19:04",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Canada\u2019s Loblaw raises annual profit forecast on resilient grocery demand",
+          "url": "https://www.investing.com/news/stock-market-news/canadas-loblaw-raises-annual-profit-forecast-on-resilient-grocery-demand-4351174",
+          "publishedAt": "2025-11-12 13:18:32",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "BioNexus Gene Lab stock soars after strategic MRD testing agreements",
+          "url": "https://www.investing.com/news/stock-market-news/bionexus-gene-lab-stock-soars-after-strategic-mrd-testing-agreements-93CH-4351108",
+          "publishedAt": "2025-11-12 13:10:59",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "What will matter to Tesla stock price over the next 6 to 12 months?",
+          "url": "https://www.investing.com/news/stock-market-news/what-will-matter-to-tesla-stock-price-over-the-next-6-to-12-months-4351021",
+          "publishedAt": "2025-11-12 12:58:13",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "AMD, Cisco, Alphabet and Clearwater Analytics rise premarket",
+          "url": "https://www.investing.com/news/stock-market-news/amd-cisco-alphabet-and-clearwater-analytics-rise-premarket-4350935",
+          "publishedAt": "2025-11-12 12:50:37",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Saudi Arabia stocks lower at close of trade; Tadawul All Share down 0.14%",
+          "url": "https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-lower-at-close-of-trade-tadawul-all-share-down-014-4350990",
+          "publishedAt": "2025-11-12 12:50:03",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Jefferies boosts BMW stock target, citing success of Neue Klasse iX3",
+          "url": "https://www.investing.com/news/stock-market-news/jefferies-boosts-bmw-stock-target-citing-success-of-neue-klasse-ix3-4350989",
+          "publishedAt": "2025-11-12 12:49:46",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Polestar plans reverse stock split to keep Nasdaq listing as losses mount",
+          "url": "https://www.investing.com/news/stock-market-news/polestar-plans-reverse-stock-split-to-keep-nasdaq-listing-as-losses-mount-4350732",
+          "publishedAt": "2025-11-12 12:48:27",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Dollar drifts higher ahead of U.S. government reopening",
+          "url": "https://www.investing.com/news/forex-news/dollar-drifts-higher-ahead-of-us-government-reopening-4350189",
+          "publishedAt": "2025-11-12 09:41:28",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Pound faces pressure from U.K. job data and political uncertainty",
+          "url": "https://www.investing.com/news/forex-news/pound-faces-pressure-from-uk-job-data-and-political-uncertainty-4350124",
+          "publishedAt": "2025-11-12 08:58:07",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Asia FX muted amid rate cut uncertainty, dollar steady with shutdown end in sight",
+          "url": "https://www.investing.com/news/forex-news/asia-fx-muted-amid-rate-cut-uncertainty-dollar-steady-with-shutdown-end-in-sight-4349894",
+          "publishedAt": "2025-11-12 04:10:43",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Japan\u2019s yen faces bearish outlook, intervention risks rise",
+          "url": "https://www.investing.com/news/forex-news/japans-yen-faces-bearish-outlook-intervention-risks-rise-93CH-4348381",
+          "publishedAt": "2025-11-11 09:18:24",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Dollar just higher on shutdown news; sterling retreats after jobs data",
+          "url": "https://www.investing.com/news/forex-news/dollar-just-higher-on-shutdown-news-sterling-retreats-after-jobs-data-4348369",
+          "publishedAt": "2025-11-11 09:16:54",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Asia FX weakens, yen at 9-mth low as dollar firms on US shutdown progress",
+          "url": "https://www.investing.com/news/forex-news/asia-fx-weakens-yen-at-9mth-low-as-dollar-firms-on-us-shutdown-progress-4348068",
+          "publishedAt": "2025-11-11 04:27:55",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Yen remains undervalued against dollar- UBS",
+          "url": "https://www.investing.com/news/forex-news/yen-remains-undervalued-against-dollar-ubs-93CH-4344881",
+          "publishedAt": "2025-11-10 09:59:14",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "UBS lowers EUR/CHF fair value to 1.05 as Swiss inflation slows",
+          "url": "https://www.investing.com/news/forex-news/ubs-lowers-eurchf-fair-value-to-105-as-swiss-inflation-slows-93CH-4344878",
+          "publishedAt": "2025-11-10 09:58:57",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "Dollar lower as end to U.S. government shutdown draws nearer",
+          "url": "https://www.investing.com/news/forex-news/dollar-lower-as-end-to-us-government-shutdown-draws-nearer-4344714",
+          "publishedAt": "2025-11-10 09:01:41",
+          "content": ""
+        },
+        {
+          "source": "Investing.com",
+          "title": "GBP faces pressure ahead of UK jobs data, BoE rate cut prospects",
+          "url": "https://www.investing.com/news/forex-news/gbp-faces-pressure-ahead-of-uk-jobs-data-boe-rate-cut-prospects-4344688",
+          "publishedAt": "2025-11-10 08:24:06",
+          "content": ""
+        }
+      ],
+      "marketwatch": [
+        {
+          "source": "MarketWatch",
+          "title": "\u2018I\u2019m in a financial mess\u2019: My income was cut in half. Do I sell my $600K home and kiss my 2.9% mortgage rate goodbye?",
+          "url": "https://www.marketwatch.com/story/im-in-a-financial-mess-my-income-was-cut-in-half-do-i-sell-my-600k-home-and-kiss-my-2-9-mortgage-rate-goodbye-5d356273?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 13:40:00 GMT",
+          "content": "\u201cWe can move 10 miles south, where property is much cheaper.\u201d"
+        },
+        {
+          "source": "MarketWatch",
+          "title": "My brother is the trustee of our parents\u2019 $10 million estate. He\u2019s threatened to bleed the estate dry. What now?",
+          "url": "https://www.marketwatch.com/story/my-brother-is-the-trustee-of-our-parents-10-million-estate-hes-threatened-to-bleed-the-estate-dry-what-now-9b6eebd5?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 13:34:00 GMT",
+          "content": "\u201cHe is paying himself $40 per hour or $1,600 per week to manage the estate.\u201d"
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Where Goldman Sachs says the S&P 500 is headed next year and the next decade",
+          "url": "https://www.marketwatch.com/story/where-goldman-sachs-says-the-s-p-500-is-headed-next-year-and-the-next-decade-721dc97b?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 13:33:00 GMT",
+          "content": "Goldman strategists expect the S&amp;P 500 will see annualized gains of 6.5% in the next 10 years. But that\u2019s not exactly shooting for the moon."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "How to tariff-proof your holiday shopping list",
+          "url": "https://www.marketwatch.com/story/how-to-tariff-proof-your-holiday-shopping-list-db7bda63?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 13:30:00 GMT",
+          "content": "This year, the strategy for savvy holiday shoppers is not just finding a discount, but entirely avoiding the tariff burden by focusing on U.S.-made gifts, imported products with low tariff rates, gift cards and experiences."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "What typically comes next when the stock market sputters at the start of November",
+          "url": "https://www.marketwatch.com/story/the-santa-rally-still-arrives-when-the-stock-market-sputters-to-open-november-history-shows-cc272981?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:59:00 GMT",
+          "content": "The S&amp;P 500 slumped 1.6% last week \u2014 but bad first weeks in November usually don\u2019t hang over the stock market."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "It might not be Peak Oil after all. What the IEA\u2019s new scenarios mean for oil prices.",
+          "url": "https://www.marketwatch.com/story/it-might-not-be-peak-oil-after-all-iea-now-says-on-current-path-that-demand-will-grow-until-2050-5c7f8c3d?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:53:00 GMT",
+          "content": "The key international agency forecasting energy demand now says the current path will have consumption of oil and gas growing through 2050, as electric-vehicle adoption misses its earlier estimates."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "I\u2019m in my 50s and divorced with a $1.7 million home. I fell in love with an old school friend. Does it make financial sense to marry?",
+          "url": "https://www.marketwatch.com/story/im-in-my-50s-happily-divorced-and-fell-in-love-with-an-old-school-friend-do-we-marry-5aac37ee?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:37:00 GMT",
+          "content": "\u201cI have a $500,000 Roth IRA, a portfolio account of $500,000 and $300,000 in 529 plans.\u201d"
+        },
+        {
+          "source": "MarketWatch",
+          "title": "U.S. stocks and gold are rallying on hopes that the shutdown ends. What happens once the government reopens?",
+          "url": "https://www.marketwatch.com/story/u-s-stocks-and-gold-are-rallying-on-hopes-that-the-shutdown-ends-what-happens-once-the-government-reopens-3929055a?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:30:00 GMT",
+          "content": "The S&amp;P 500 and gold are both rallying, with stocks nearing a return to record territory. Why the assets could diverge when the shutdown finally ends."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Citi strategists say a narrowing of index performance doesn\u2019t mean the market won\u2019t rise",
+          "url": "https://www.marketwatch.com/story/citi-strategists-say-a-narrowing-of-index-performance-doesnt-mean-the-market-wont-rise-9ff310fc?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:23:00 GMT",
+          "content": "Citi predicts modest global-equity gains through mid-2026, despite the concentration of stock-market performance."
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Banks just sent this upbeat signal about the economy. Here\u2019s why investors aren\u2019t buying it.",
+          "url": "https://www.marketwatch.com/story/banks-just-sent-this-upbeat-signal-about-the-economy-heres-why-investors-arent-buying-it-6433652f?mod=mw_rss_topstories",
+          "publishedAt": "Wed, 12 Nov 2025 12:19:00 GMT",
+          "content": "Banks stockpiled less money for troubled loans during the most recent quarter despite fears over bad-debt \u201ccockroaches.\u201d"
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Jobless claims fall to lowest level since mid-May",
+          "url": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
+          "publishedAt": "Thu, 03 Jul 2025 12:36:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Jobless claims stay low in latest week",
+          "url": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
+          "publishedAt": "Thu, 13 Feb 2025 13:33:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Consumer credit growth soars in December",
+          "url": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
+          "publishedAt": "Fri, 07 Feb 2025 20:26:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "U.S. productivity slows down in fourth quarter while unit labor costs accelerate",
+          "url": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
+          "publishedAt": "Thu, 06 Feb 2025 13:34:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Beyond to buy rights to Buy Buy Baby brand and reunite it with Bed Bath & Beyond",
+          "url": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse",
+          "publishedAt": "Mon, 03 Feb 2025 13:46:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Trump asks Supreme Court to pause TikTok ban",
+          "url": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse",
+          "publishedAt": "Sat, 28 Dec 2024 00:32:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Amazon says it had best-ever Thanksgiving Holiday week with record sales and number of items sold",
+          "url": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse",
+          "publishedAt": "Tue, 03 Dec 2024 14:05:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "U.S. stock futures and bond yields drop on reports Putin has updated nuclear doctrine",
+          "url": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse",
+          "publishedAt": "Tue, 19 Nov 2024 08:55:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "Charter Communications announces buyout deal for Liberty Broadband at terms above its previous proposal",
+          "url": "https://www.marketwatch.com/story/charter-communications-announces-buyout-deal-for-liberty-broadband-at-terms-above-its-previous-proposal-552f7acd?mod=mw_rss_marketpulse",
+          "publishedAt": "Wed, 13 Nov 2024 13:52:00 GMT",
+          "content": ""
+        },
+        {
+          "source": "MarketWatch",
+          "title": "General Motors unveils new all-electric Cadillac called the Vistiq with 300-mile range",
+          "url": "https://www.marketwatch.com/story/general-motors-unveils-new-all-electric-cadillac-called-the-vistiq-with-300-mile-range-c16fb8a6?mod=mw_rss_marketpulse",
+          "publishedAt": "Tue, 12 Nov 2024 13:53:00 GMT",
+          "content": ""
+        }
+      ],
+      "finviz": [
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Why Nvidia Stock Is Getting a Boost From Foxconn Earnings",
+          "url": "https://finance.yahoo.com/m/b02a2c67-bf9b-3d30-b942-ed859a29b714/why-nvidia-stock-is-getting-a.html",
+          "publishedAt": "2025-11-12T14:47:57.388281",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Nvidia Supplier Foxconn Posts 17% Profit Jump on AI Server Demand",
+          "url": "https://finance.yahoo.com/news/nvidia-supplier-foxconn-posts-17-121019595.html",
+          "publishedAt": "2025-11-12T14:47:57.388357",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Foxconn's profits rise on AI server demand, teases OpenAI announcement",
+          "url": "https://finance.yahoo.com/video/foxconns-profits-rise-ai-server-115730028.html",
+          "publishedAt": "2025-11-12T14:47:57.388417",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html",
+          "publishedAt": "2025-11-12T14:47:57.388468",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "AAPL",
+          "title": "Foxconn Profit Tops Estimates Amid Robust AI Server Business",
+          "url": "https://finance.yahoo.com/m/77b0b695-16b9-3a33-b129-ab5d4726a2c0/foxconn-profit-tops-estimates.html",
+          "publishedAt": "2025-11-12T14:47:57.388519",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "Groww raises nearly $750M in IPO as Indias retail investing boom continues",
+          "url": "https://finance.yahoo.com/news/groww-raises-nearly-750m-ipo-124006782.html",
+          "publishedAt": "2025-11-12T14:47:58.122116",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
+          "url": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html",
+          "publishedAt": "2025-11-12T14:47:58.122207",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "How buying the dip & selling the rip is fueling investor gains",
+          "url": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html",
+          "publishedAt": "2025-11-12T14:47:58.122254",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "The Zacks Analyst Blog Highlights Oracle, Amazon, Microsoft and Alphabet",
+          "url": "/news/227071/the-zacks-analyst-blog-highlights-oracle-amazon-microsoft-and-alphabet",
+          "publishedAt": "2025-11-12T14:47:58.122299",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "MSFT",
+          "title": "Investors Now See Some Companies as Safer Bets Than Governments",
+          "url": "https://finance.yahoo.com/news/investors-now-see-companies-safer-110012648.html",
+          "publishedAt": "2025-11-12T14:47:58.122343",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "Google Sued Over Claims Gemini AI Spied on Users",
+          "url": "https://finance.yahoo.com/m/7d7ce15e-481d-3e93-8804-4cffee707cb3/google-sued-over-claims.html",
+          "publishedAt": "2025-11-12T14:47:59.158964",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "Google Sues Cybercrime Network Behind Global Text Phishing Scams",
+          "url": "https://finance.yahoo.com/m/c1c1cdeb-9ed5-3e69-a171-f0308b8210fe/google-sues-cybercrime.html",
+          "publishedAt": "2025-11-12T14:47:59.159025",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "S&P 500 May Break 7,000 Barrier Before Year-End, Wells Fargo Predicts",
+          "url": "https://finance.yahoo.com/news/p-500-may-break-7-120049178.html",
+          "publishedAt": "2025-11-12T14:47:59.159069",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "The Best Stocks to Buy With $1,000 Right Now",
+          "url": "/news/227049/the-best-stocks-to-buy-with-1000-right-now",
+          "publishedAt": "2025-11-12T14:47:59.159124",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "GOOGL",
+          "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
+          "url": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html",
+          "publishedAt": "2025-11-12T14:47:59.159166",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "What will matter to Tesla stock price over the next 6 to 12 months?",
+          "url": "https://finance.yahoo.com/news/matter-tesla-stock-price-over-132813036.html",
+          "publishedAt": "2025-11-12T14:48:00.042719",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Tesla's October Sales Were Awful. The Stock Is Rising.",
+          "url": "https://www.barrons.com/articles/tesla-stock-price-october-sales-b7582880?mod=bar_FV",
+          "publishedAt": "2025-11-12T14:48:00.042799",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Tesla Stock Rises. October Electric Vehicle Sales Were Tougher Than Expected.",
+          "url": "https://www.barrons.com/articles/tesla-stock-october-ev-sales-b7582880?mod=bar_FV",
+          "publishedAt": "2025-11-12T14:48:00.042844",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Cathie Wood Dumps $2.4 Million Worth Of Tesla Shares, Doubles Down On These AI Stocks",
+          "url": "https://finance.yahoo.com/news/cathie-wood-dumps-2-4-123111483.html",
+          "publishedAt": "2025-11-12T14:48:00.042906",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "TSLA",
+          "title": "Rivian Surges as CEO RJ Scaringe Lands $4.6 Billion Payday",
+          "url": "https://finance.yahoo.com/news/rivian-surges-ceo-rj-scaringe-121215479.html",
+          "publishedAt": "2025-11-12T14:48:00.042953",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "Foxconn, On Running, Circle: Market Movers",
+          "url": "https://finance.yahoo.com/video/foxconn-running-circle-market-movers-134324690.html",
+          "publishedAt": "2025-11-12T14:48:00.868408",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "Stock Market Today: Dow Jones Index Rises As Nvidia, AMD Rally (Live Coverage)",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-circle-crcl-oklo?mod=IBD_FV",
+          "publishedAt": "2025-11-12T14:48:00.868610",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "Bryson: We're finally seeing monetization of AI, not just model building",
+          "url": "https://www.youtube.com/watch?v=ZwW3yBuaw0c",
+          "publishedAt": "2025-11-12T14:48:00.868706",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "Nebius Stock, CoreWeave Steady After AI Selloff. Why Another Shoe Could Drop.",
+          "url": "https://www.barrons.com/articles/nebius-stock-price-ai-fears-coreweave-iren-b538a68a?mod=bar_FV",
+          "publishedAt": "2025-11-12T14:48:00.868956",
+          "content": ""
+        },
+        {
+          "source": "Finviz",
+          "ticker": "NVDA",
+          "title": "Stocks to Watch Wednesday: AMD, Circle, Oklo, SoftBank",
+          "url": "https://finance.yahoo.com/m/2c158658-bc47-30dc-ab1f-de95e185b6e3/stocks-to-watch-wednesday%3A.html",
+          "publishedAt": "2025-11-12T14:48:00.869063",
+          "content": ""
+        }
+      ],
+      "stock_analysis": [
+        {
+          "source": "Stock Analysis",
+          "ticker": "AAPL",
+          "url": "https://stockanalysis.com/stocks/aapl/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:48:00.874341"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "MSFT",
+          "url": "https://stockanalysis.com/stocks/msft/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:48:00.874381"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "GOOGL",
+          "url": "https://stockanalysis.com/stocks/googl/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:48:00.874388"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "TSLA",
+          "url": "https://stockanalysis.com/stocks/tsla/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:48:00.874392"
+        },
+        {
+          "source": "Stock Analysis",
+          "ticker": "NVDA",
+          "url": "https://stockanalysis.com/stocks/nvda/",
+          "note": "Manual review recommended for fundamentals",
+          "timestamp": "2025-11-12T14:48:00.874396"
+        }
+      ],
+      "simply_wall_st": [
+        {
+          "source": "Simply Wall St",
+          "note": "Requires API key for automation",
+          "url": "https://simplywall.st/",
+          "tickers": [
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "TSLA",
+            "NVDA"
+          ]
+        }
+      ]
+    },
+    "source_counts": {
+      "yahoo_finance": 25,
+      "investing_com": 30,
+      "marketwatch": 20,
+      "finviz": 25,
+      "stock_analysis": 5,
+      "simply_wall_st": 1
+    }
   }
 ]

@@ -34,28 +34,20 @@ def main():
     log.info("🚀 Running initial trade on startup...")
     job()
     
-    # Schedule for multiple times during the day for aggressive trading
-    # US market hours: 9:30 AM - 4:00 PM ET
-    # In Europe/Berlin (CET/CEST), that's approximately:
-    # - 15:30 (3:30 PM) - 22:00 (10:00 PM) during standard time
-    # - 16:30 (4:30 PM) - 23:00 (11:00 PM) during daylight saving time
+    # Schedule once per day for daily summary
+    # Runs at 20:00 CET (8 PM Berlin time)
+    # US market: 2:00 PM ET (still open, closes at 4 PM ET)
     
-    schedule.every().day.at("09:00").do(job)  # Morning pre-market analysis
-    schedule.every().day.at("15:35").do(job)  # Right after US market open
-    schedule.every().day.at("18:00").do(job)  # US midday
-    schedule.every().day.at("21:30").do(job)  # Before US market close
+    schedule.every().day.at("20:00").do(job)  # Daily summary at 8 PM CET
     
     log.info("=" * 60)
-    log.info("⏰ AGGRESSIVE SCHEDULER STARTED")
+    log.info("⏰ DAILY SCHEDULER STARTED")
     log.info("=" * 60)
     log.info(f"Current time: {dt.datetime.now(tz)}")
     log.info(f"Timezone: {cfg.get('timezone')}")
     log.info("")
     log.info("📅 Daily Schedule:")
-    log.info("  • 09:00 - Morning pre-market analysis")
-    log.info("  • 15:35 - Right after US market open")
-    log.info("  • 18:00 - US market midday")
-    log.info("  • 21:30 - Before US market close")
+    log.info("  • 20:00 - Daily summary (8 PM CET)")
     log.info("=" * 60)
     if cfg.get('learning', {}).get('enabled', False):
         log.info("🧠 Learning system will optimize after each run")

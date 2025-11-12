@@ -49,5 +49,95 @@
     "action": "focus_on_best_performers",
     "timestamp": "2025-11-12T13:59:28.306654",
     "date": "2025-11-12"
+  },
+  {
+    "category": "win_rate",
+    "insight": "Low win rate detected",
+    "value": 0.0,
+    "action": "increase_sentiment_threshold",
+    "timestamp": "2025-11-12T14:19:58.040149",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "stock_performance",
+    "insight": "Best: AAPL, Worst: TSLA",
+    "action": "focus_on_best_performers",
+    "timestamp": "2025-11-12T14:19:58.041019",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "win_rate",
+    "insight": "Low win rate detected",
+    "value": 0.0,
+    "action": "increase_sentiment_threshold",
+    "timestamp": "2025-11-12T14:20:13.608548",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "stock_performance",
+    "insight": "Best: AAPL, Worst: TSLA",
+    "action": "focus_on_best_performers",
+    "timestamp": "2025-11-12T14:20:13.609213",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "win_rate",
+    "insight": "Low win rate detected",
+    "value": 0.0,
+    "action": "increase_sentiment_threshold",
+    "timestamp": "2025-11-12T14:24:39.187036",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "stock_performance",
+    "insight": "Best: AAPL, Worst: TSLA",
+    "action": "focus_on_best_performers",
+    "timestamp": "2025-11-12T14:24:39.187436",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "win_rate",
+    "insight": "Low win rate detected",
+    "value": 0.0,
+    "action": "increase_sentiment_threshold",
+    "timestamp": "2025-11-12T14:24:51.060993",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "stock_performance",
+    "insight": "Best: AAPL, Worst: TSLA",
+    "action": "focus_on_best_performers",
+    "timestamp": "2025-11-12T14:24:51.061465",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "win_rate",
+    "insight": "Low win rate detected",
+    "value": 0.0,
+    "action": "increase_sentiment_threshold",
+    "timestamp": "2025-11-12T14:47:43.153675",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "stock_performance",
+    "insight": "Best: AAPL, Worst: TSLA",
+    "action": "focus_on_best_performers",
+    "timestamp": "2025-11-12T14:47:43.158862",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "win_rate",
+    "insight": "Low win rate detected",
+    "value": 0.0,
+    "action": "increase_sentiment_threshold",
+    "timestamp": "2025-11-12T14:48:03.313423",
+    "date": "2025-11-12"
+  },
+  {
+    "category": "stock_performance",
+    "insight": "Best: AAPL, Worst: TSLA",
+    "action": "focus_on_best_performers",
+    "timestamp": "2025-11-12T14:48:03.315568",
+    "date": "2025-11-12"
   }
 ]

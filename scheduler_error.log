@@ -1,0 +1,123 @@
+2025-11-12 14:47:43,110 | INFO | scheduler | 🚀 Running initial trade on startup...
+2025-11-12 14:47:43,110 | INFO | scheduler | 🤖 Running scheduled trading job...
+2025-11-12 14:47:43,143 | INFO | main | ============================================================
+2025-11-12 14:47:43,144 | INFO | main | 🤖 LEARNING-ENABLED TRADING BOT STARTING
+2025-11-12 14:47:43,144 | INFO | main | ============================================================
+2025-11-12 14:47:43,144 | INFO | main | 🧠 Learning system: ENABLED
+2025-11-12 14:47:43,155 | INFO | trade_memory | 💡 New learning: Low win rate detected
+2025-11-12 14:47:43,162 | INFO | trade_memory | 💡 New learning: Best: AAPL, Worst: TSLA
+2025-11-12 14:47:43,165 | INFO | trade_memory | 📊 Performance updated: Win rate 0.0%
+2025-11-12 14:47:43,165 | INFO | analyzer | 📊 Analysis complete: 13 trades, 0.0% win rate, $0.00 P&L
+2025-11-12 14:47:43,166 | INFO | main | 📊 Win rate: 0.0%, Total P&L: $0.00
+2025-11-12 14:47:43,166 | INFO | main |    🔴 Low win rate. Consider adjusting sentiment threshold.
+2025-11-12 14:47:43,166 | INFO | main |    📈 Best performer: AAPL
+2025-11-12 14:47:43,166 | INFO | main |    📉 Worst performer: TSLA
+2025-11-12 14:47:43,179 | INFO | main | ⭐ Best performers: AAPL, GOOGL, MSFT
+2025-11-12 14:47:44,318 | ERROR | yfinance | Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-12 14:47:44,323 | ERROR | yfinance | Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-12 14:47:44,346 | ERROR | yfinance | Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-12 14:47:44,354 | ERROR | yfinance | Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-12 14:47:44,365 | ERROR | yfinance | Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-12 14:47:45,080 | ERROR | yfinance | 
+5 Failed downloads:
+2025-11-12 14:47:45,095 | ERROR | yfinance | ['AAPL', 'NVDA', 'GOOGL', 'MSFT', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+2025-11-12 14:47:45,126 | WARNING | market_data | yfinance returned empty data, trying Alpaca...
+2025-11-12 14:47:45,126 | WARNING | market_data | yfinance failed: Empty data from yfinance. Trying alternative sources...
+2025-11-12 14:47:45,127 | INFO | price_sources | 🔄 Attempting to fetch prices from multiple sources...
+2025-11-12 14:47:45,127 | INFO | price_sources | Trying Twelve Data...
+2025-11-12 14:47:45,127 | WARNING | price_sources | Twelve Data API key not found
+2025-11-12 14:47:45,127 | WARNING | price_sources | ⚠️ Twelve Data returned no data
+2025-11-12 14:47:45,127 | INFO | price_sources | Trying Finnhub...
+2025-11-12 14:47:45,127 | WARNING | price_sources | Finnhub API key not found
+2025-11-12 14:47:45,129 | WARNING | price_sources | ⚠️ Finnhub returned no data
+2025-11-12 14:47:45,129 | INFO | price_sources | Trying Alpha Vantage...
+2025-11-12 14:47:45,129 | WARNING | price_sources | Alpha Vantage API key not found
+2025-11-12 14:47:45,130 | WARNING | price_sources | ⚠️ Alpha Vantage returned no data
+2025-11-12 14:47:45,130 | INFO | price_sources | Trying IEX Cloud...
+2025-11-12 14:47:45,130 | WARNING | price_sources | IEX Cloud API key not found
+2025-11-12 14:47:45,131 | WARNING | price_sources | ⚠️ IEX Cloud returned no data
+2025-11-12 14:47:45,132 | ERROR | price_sources | ❌ All price sources failed!
+2025-11-12 14:47:45,133 | WARNING | market_data | Alternative sources failed, trying Alpaca as last resort...
+2025-11-12 14:47:45,746 | ERROR | market_data | Alpaca market data fetch failed: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2025-11-12 14:47:45,751 | INFO | main | Fetched prices with shape (0, 0)
+2025-11-12 14:47:45,751 | WARNING | data_storage | No market data to store (empty DataFrame)
+2025-11-12 14:47:50,134 | INFO | data_storage | 💾 Stored 10 news articles (avg sentiment: 0.02)
+Version 7.7.1 of praw is outdated. Version 7.8.1 was released Friday October 25, 2024.
+2025-11-12 14:47:51,266 | WARNING | data_storage | No Reddit data to store
+2025-11-12 14:47:51,267 | INFO | main | 🌐 Fetching from additional sources...
+2025-11-12 14:47:51,267 | INFO | additional_sources | 🌐 Fetching data from additional sources...
+2025-11-12 14:47:52,044 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for AAPL
+2025-11-12 14:47:52,618 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for MSFT
+2025-11-12 14:47:53,441 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for GOOGL
+2025-11-12 14:47:53,975 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for TSLA
+2025-11-12 14:47:54,528 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for NVDA
+2025-11-12 14:47:54,690 | INFO | additional_sources | Fetched 10 articles from Investing.com
+2025-11-12 14:47:54,878 | INFO | additional_sources | Fetched 10 articles from Investing.com
+2025-11-12 14:47:55,057 | INFO | additional_sources | Fetched 10 articles from Investing.com
+2025-11-12 14:47:55,881 | INFO | additional_sources | Fetched 10 articles from MarketWatch
+2025-11-12 14:47:56,658 | INFO | additional_sources | Fetched 10 articles from MarketWatch
+2025-11-12 14:47:57,388 | INFO | additional_sources | Fetched articles from Finviz for AAPL
+2025-11-12 14:47:58,122 | INFO | additional_sources | Fetched articles from Finviz for MSFT
+2025-11-12 14:47:59,159 | INFO | additional_sources | Fetched articles from Finviz for GOOGL
+2025-11-12 14:48:00,042 | INFO | additional_sources | Fetched articles from Finviz for TSLA
+2025-11-12 14:48:00,869 | INFO | additional_sources | Fetched articles from Finviz for NVDA
+2025-11-12 14:48:00,874 | INFO | additional_sources | Simply Wall St integration requires API key - placeholder for now
+2025-11-12 14:48:00,874 | INFO | additional_sources | ✅ Fetched 106 total data points from additional sources
+2025-11-12 14:48:00,987 | INFO | main | ✅ Added 106 articles from additional sources
+2025-11-12 14:48:01,086 | INFO | data_storage | 💾 Stored 106 items from 6 additional sources
+2025-11-12 14:48:01,089 | INFO | strategy_optimizer | 🧠 Optimizing strategy based on learnings...
+2025-11-12 14:48:01,089 | INFO | strategy_optimizer | 📈 Increased sentiment threshold: 0.2 → 0.25
+2025-11-12 14:48:01,095 | INFO | strategy_optimizer | ⭐ Focusing on best performers: AAPL, GOOGL, MSFT
+2025-11-12 14:48:01,095 | INFO | strategy_optimizer | ⚠️ Decreased position size by 20% (win rate: 0.0%)
+2025-11-12 14:48:01,095 | INFO | main | 🎯 Optimized sentiment threshold: 0.25
+2025-11-12 14:48:01,100 | INFO | data_storage | 💾 Stored sentiment summary (overall: 0.14)
+2025-11-12 14:48:01,103 | INFO | main | Avg sentiment=0.140, generated 0 signals
+2025-11-12 14:48:01,104 | ERROR | data_storage | Failed to load storage/data_archive/market_data_history.json: Expecting property name enclosed in double quotes: line 16 column 9 (char 258)
+2025-11-12 14:48:01,135 | INFO | main | 📦 Data archived: 0 market, 15 news, 8 reddit entries
+2025-11-12 14:48:01,136 | INFO | main | 🚀 Executing orders via Alpaca (PAPER trading)
+2025-11-12 14:48:01,136 | INFO | main | 📊 Managing swing positions...
+2025-11-12 14:48:01,705 | ERROR | alpaca_broker | Failed to connect to Alpaca: {"message": "unauthorized."}
+
+2025-11-12 14:48:01,706 | ERROR | position_manager | Cannot manage positions without Alpaca connection
+2025-11-12 14:48:02,241 | ERROR | alpaca_broker | Failed to connect to Alpaca: {"message": "unauthorized."}
+
+2025-11-12 14:48:02,766 | ERROR | alpaca_broker | Failed to connect to Alpaca: {"message": "unauthorized."}
+
+2025-11-12 14:48:03,293 | ERROR | alpaca_broker | Failed to connect to Alpaca: {"message": "unauthorized."}
+
+2025-11-12 14:48:03,295 | ERROR | alpaca_broker | Cannot execute orders without Alpaca connection
+2025-11-12 14:48:03,295 | ERROR | main | Failed to execute orders: No Alpaca connection
+2025-11-12 14:48:03,305 | INFO | main | ============================================================
+2025-11-12 14:48:03,305 | INFO | main | ✅ TRADING RUN COMPLETE
+2025-11-12 14:48:03,305 | INFO | main | 🧠 System is learning from every trade!
+2025-11-12 14:48:03,305 | INFO | main | ============================================================
+2025-11-12 14:48:03,315 | INFO | trade_memory | 💡 New learning: Low win rate detected
+2025-11-12 14:48:03,320 | INFO | trade_memory | 💡 New learning: Best: AAPL, Worst: TSLA
+2025-11-12 14:48:03,323 | INFO | trade_memory | 📊 Performance updated: Win rate 0.0%
+2025-11-12 14:48:03,323 | INFO | analyzer | 📊 Analysis complete: 13 trades, 0.0% win rate, $0.00 P&L
+2025-11-12 14:48:03,323 | INFO | scheduler | ============================================================
+2025-11-12 14:48:03,324 | INFO | scheduler | 📊 WEEKLY PERFORMANCE SUMMARY
+2025-11-12 14:48:03,325 | INFO | scheduler | ============================================================
+2025-11-12 14:48:03,325 | INFO | scheduler | Total Trades: 13
+2025-11-12 14:48:03,325 | INFO | scheduler | Win Rate: 0.0%
+2025-11-12 14:48:03,325 | INFO | scheduler | Total P&L: $0.00
+2025-11-12 14:48:03,326 | INFO | scheduler | Best Stock: AAPL
+2025-11-12 14:48:03,326 | INFO | scheduler | ============================================================
+2025-11-12 14:48:03,327 | INFO | scheduler | ============================================================
+2025-11-12 14:48:03,327 | INFO | scheduler | ⏰ DAILY SCHEDULER STARTED
+2025-11-12 14:48:03,327 | INFO | scheduler | ============================================================
+2025-11-12 14:48:03,327 | INFO | scheduler | Current time: 2025-11-12 14:48:03.327630+01:00
+2025-11-12 14:48:03,327 | INFO | scheduler | Timezone: Europe/Berlin
+2025-11-12 14:48:03,327 | INFO | scheduler | 
+2025-11-12 14:48:03,328 | INFO | scheduler | 📅 Daily Schedule:
+2025-11-12 14:48:03,328 | INFO | scheduler |   • 20:00 - Daily summary (8 PM CET)
+2025-11-12 14:48:03,328 | INFO | scheduler | ============================================================
+2025-11-12 14:48:03,328 | INFO | scheduler | 🧠 Learning system will optimize after each run
+2025-11-12 14:48:03,328 | INFO | scheduler | ============================================================
