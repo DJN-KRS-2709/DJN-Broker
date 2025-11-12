@@ -1,0 +1,244 @@
+[
+  {
+    "ticker": "AAPL",
+    "action": "BUY",
+    "strength": 0.23853703703703713,
+    "momentum": 0.0,
+    "sentiment_only": true,
+    "timestamp": "2025-11-12T13:40:42.112754",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.23853703703703713,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "MSFT",
+    "action": "BUY",
+    "strength": 0.23853703703703713,
+    "momentum": 0.0,
+    "sentiment_only": true,
+    "timestamp": "2025-11-12T13:40:42.113582",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.23853703703703713,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "AAPL",
+    "action": "BUY",
+    "strength": 0.24330231481481496,
+    "momentum": 0.0,
+    "sentiment_only": true,
+    "timestamp": "2025-11-12T13:41:18.764031",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.24330231481481496,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "MSFT",
+    "action": "BUY",
+    "strength": 0.24330231481481496,
+    "momentum": 0.0,
+    "sentiment_only": true,
+    "timestamp": "2025-11-12T13:41:18.764232",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.24330231481481496,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "GOOGL",
+    "action": "BUY",
+    "strength": 0.24974305555555568,
+    "momentum": 0.003992568125516183,
+    "timestamp": "2025-11-12T13:44:16.003817",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.24974305555555568,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "TSLA",
+    "action": "BUY",
+    "strength": 0.24974305555555568,
+    "momentum": 0.0070146482360222695,
+    "timestamp": "2025-11-12T13:44:16.004060",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.24974305555555568,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "NVDA",
+    "action": "BUY",
+    "strength": 0.24974305555555568,
+    "momentum": 0.0011605415860733714,
+    "timestamp": "2025-11-12T13:44:16.004259",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.24974305555555568,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "AAPL",
+    "action": "BUY",
+    "strength": 0.25747592592592605,
+    "momentum": 0.010275192660550436,
+    "timestamp": "2025-11-12T13:58:29.717672",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.25747592592592605,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "MSFT",
+    "action": "BUY",
+    "strength": 0.25747592592592605,
+    "momentum": 0.0106664016155249,
+    "timestamp": "2025-11-12T13:58:29.718199",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.25747592592592605,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "GOOGL",
+    "action": "BUY",
+    "strength": 0.25747592592592605,
+    "momentum": 0.009338184014615836,
+    "timestamp": "2025-11-12T13:58:29.718460",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.25747592592592605,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "TSLA",
+    "action": "BUY",
+    "strength": 0.25747592592592605,
+    "momentum": 0.013914184184415257,
+    "timestamp": "2025-11-12T13:58:29.718706",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.25747592592592605,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "NVDA",
+    "action": "BUY",
+    "strength": 0.25747592592592605,
+    "momentum": 0.004444444444444473,
+    "timestamp": "2025-11-12T13:58:29.718971",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.25747592592592605,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "AAPL",
+    "action": "BUY",
+    "strength": 0.25747592592592605,
+    "momentum": 0.010275192660550436,
+    "timestamp": "2025-11-12T13:59:23.652994",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.25747592592592605,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "MSFT",
+    "action": "BUY",
+    "strength": 0.25747592592592605,
+    "momentum": 0.0106664016155249,
+    "timestamp": "2025-11-12T13:59:23.653376",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.25747592592592605,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "GOOGL",
+    "action": "BUY",
+    "strength": 0.25747592592592605,
+    "momentum": 0.009338184014615836,
+    "timestamp": "2025-11-12T13:59:23.653728",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.25747592592592605,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "TSLA",
+    "action": "BUY",
+    "strength": 0.25747592592592605,
+    "momentum": 0.013914184184415257,
+    "timestamp": "2025-11-12T13:59:23.654201",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.25747592592592605,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  },
+  {
+    "ticker": "NVDA",
+    "action": "BUY",
+    "strength": 0.25747592592592605,
+    "momentum": 0.004444444444444473,
+    "timestamp": "2025-11-12T13:59:23.654624",
+    "date": "2025-11-12",
+    "context": {
+      "avg_sentiment": 0.25747592592592605,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 100
+    }
+  }
+]

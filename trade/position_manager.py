@@ -155,3 +155,6 @@ def manage_swing_positions(config: Dict, paper: bool = True):
                     f"${summary['total_pnl']:.2f} P&L, "
                     f"{summary['win_rate']:.0%} winning")
 
+
+
+

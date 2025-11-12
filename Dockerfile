@@ -31,3 +31,6 @@ ENV TZ=Europe/Berlin
 # Run the trading bot
 CMD ["python", "schedule_runner.py"]
 
+
+
+

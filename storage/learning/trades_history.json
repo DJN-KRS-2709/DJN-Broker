@@ -1,0 +1,145 @@
+[
+  {
+    "ticker": "AAPL",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "1383d157-f46c-435e-bafa-b7f1aefcad02",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:41:22.037194",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "MSFT",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "ae26db84-d0c1-4ff9-a76e-3493a100fd39",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:41:22.037628",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "GOOGL",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "1a07a037-5953-440e-8829-6b696d278b09",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:44:18.658813",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "TSLA",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "a8ffdfb6-b7e3-4135-abcb-68d447fa77dc",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:44:18.659156",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "NVDA",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "2ea167c7-e6de-4be8-aab2-07da03061f9e",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:44:18.659417",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "AAPL",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "66ab9c67-ba3c-48a7-b9ac-1ba3535a7a0c",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:58:33.370918",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "MSFT",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "2ab16e25-8eb8-41a8-b18c-0202f4e63e21",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:58:33.371322",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "GOOGL",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "110c2a86-d840-451f-bc7f-42b5ccfb8cb1",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:58:33.371648",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "TSLA",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "c4189d75-430c-4e74-819f-5b1f0997ef8b",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:58:33.371961",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "AAPL",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "fb2a4fc5-ef43-4223-9318-8c48decbdafb",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:59:26.849558",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "MSFT",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "95ac66c1-54e8-42a3-962d-6200667f1cdc",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:59:26.849982",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "GOOGL",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "30941a44-3058-4930-90f6-5f2f8c58dbd3",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:59:26.850308",
+    "date": "2025-11-12"
+  },
+  {
+    "ticker": "TSLA",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "eb8386e4-981e-40c3-b55b-f3be512b7aa9",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-12T13:59:26.850624",
+    "date": "2025-11-12"
+  }
+]

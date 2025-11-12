@@ -309,3 +309,6 @@ python3 show_learnings.py
 
 Built for intelligent, profitable swing trading! 📈
 
+
+
+

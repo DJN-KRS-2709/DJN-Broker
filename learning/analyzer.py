@@ -212,3 +212,6 @@ class PerformanceAnalyzer:
         
         return base_size
 
+
+
+

@@ -46,6 +46,16 @@ reddit:
   subreddits: ["stocks", "investing", "wallstreetbets", "StockMarket"]
   limit_per_sub: 25
 
+# Additional Free Data Sources
+additional_sources:
+  enabled: true  # Enable/disable all additional sources
+  yahoo_finance: true        # Yahoo Finance ticker-specific news
+  investing_com: true         # Investing.com news feeds
+  marketwatch: true           # MarketWatch news
+  finviz: false              # Finviz (requires web scraping - may be slow)
+  stock_analysis: false      # Stock Analysis (manual review URLs)
+  simply_wall_st: false      # Simply Wall St (requires API key)
+
 alpaca:
   paper_trading: true  # Set to false for live trading (careful!)
   use_alpaca: true     # Set to false to use paper simulation instead

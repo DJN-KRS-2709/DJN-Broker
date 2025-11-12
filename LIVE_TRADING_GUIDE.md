@@ -221,3 +221,6 @@ Only move to live trading after:
 
 **Good luck, and trade responsibly!** 🎯
 
+
+
+

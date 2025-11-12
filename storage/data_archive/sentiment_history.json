@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2025-11-12T13:05:48.775358",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.019799999999999984,
+    "news_sentiment": 0.019799999999999984,
+    "reddit_sentiment": 0,
+    "news_count": 10,
+    "reddit_count": 0,
+    "num_signals": 0
+  },
+  {
+    "timestamp": "2025-11-12T13:07:46.021450",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.019799999999999984,
+    "news_sentiment": 0.019799999999999984,
+    "reddit_sentiment": 0,
+    "news_count": 10,
+    "reddit_count": 0,
+    "num_signals": 0
+  },
+  {
+    "timestamp": "2025-11-12T13:19:23.872398",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.1384137931034483,
+    "news_sentiment": 0.1384137931034483,
+    "reddit_sentiment": 0,
+    "news_count": 116,
+    "reddit_count": 0,
+    "num_signals": 0
+  },
+  {
+    "timestamp": "2025-11-12T13:19:59.955562",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.13967413793103453,
+    "news_sentiment": 0.13967413793103453,
+    "reddit_sentiment": 0,
+    "news_count": 116,
+    "reddit_count": 0,
+    "num_signals": 0
+  },
+  {
+    "timestamp": "2025-11-12T13:34:53.693616",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.240426851851852,
+    "news_sentiment": 0.14529655172413797,
+    "reddit_sentiment": 0.350778,
+    "news_count": 116,
+    "reddit_count": 100,
+    "num_signals": 0
+  },
+  {
+    "timestamp": "2025-11-12T13:37:42.720153",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.2413587962962964,
+    "news_sentiment": 0.14151551724137934,
+    "reddit_sentiment": 0.3571770000000001,
+    "news_count": 116,
+    "reddit_count": 100,
+    "num_signals": 0
+  },
+  {
+    "timestamp": "2025-11-12T13:39:29.598090",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.240363888888889,
+    "news_sentiment": 0.13966293103448282,
+    "reddit_sentiment": 0.3571770000000001,
+    "news_count": 116,
+    "reddit_count": 100,
+    "num_signals": 0
+  },
+  {
+    "timestamp": "2025-11-12T13:40:42.112459",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.23853703703703713,
+    "news_sentiment": 0.13747241379310352,
+    "reddit_sentiment": 0.35577200000000003,
+    "news_count": 116,
+    "reddit_count": 100,
+    "num_signals": 2
+  },
+  {
+    "timestamp": "2025-11-12T13:41:18.763668",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.24330231481481496,
+    "news_sentiment": 0.1451344827586208,
+    "reddit_sentiment": 0.3571770000000001,
+    "news_count": 116,
+    "reddit_count": 100,
+    "num_signals": 2
+  },
+  {
+    "timestamp": "2025-11-12T13:44:16.003408",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.24974305555555568,
+    "news_sentiment": 0.1583387931034483,
+    "reddit_sentiment": 0.35577200000000003,
+    "news_count": 116,
+    "reddit_count": 100,
+    "num_signals": 3
+  },
+  {
+    "timestamp": "2025-11-12T13:58:29.716979",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.25747592592592605,
+    "news_sentiment": 0.1690318965517242,
+    "reddit_sentiment": 0.36007100000000003,
+    "news_count": 116,
+    "reddit_count": 100,
+    "num_signals": 5
+  },
+  {
+    "timestamp": "2025-11-12T13:59:23.652652",
+    "date": "2025-11-12",
+    "overall_sentiment": 0.25747592592592605,
+    "news_sentiment": 0.1690318965517242,
+    "reddit_sentiment": 0.36007100000000003,
+    "news_count": 116,
+    "reddit_count": 100,
+    "num_signals": 5
+  }
+]

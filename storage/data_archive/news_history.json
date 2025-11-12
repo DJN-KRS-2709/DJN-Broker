@@ -1,0 +1,1658 @@
+[
+  {
+    "timestamp": "2025-11-12T13:05:47.961641",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  },
+  {
+    "timestamp": "2025-11-12T13:07:44.848751",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  },
+  {
+    "timestamp": "2025-11-12T13:19:18.718762",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  },
+  {
+    "timestamp": "2025-11-12T13:19:54.542883",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  },
+  {
+    "timestamp": "2025-11-12T13:34:41.107744",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  },
+  {
+    "timestamp": "2025-11-12T13:37:29.686029",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  },
+  {
+    "timestamp": "2025-11-12T13:39:16.059104",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  },
+  {
+    "timestamp": "2025-11-12T13:40:29.670519",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Deutsche Bank forecasts S&P 500 to hit 7000 by end of 2025",
+        "url": "https://www.investing.com/news/stock-market-news/deutsche-bank-forecasts-sp-500-to-hit-7000-by-end-of-2025-3741586",
+        "publishedAt": "2024-11-26 10:47:35",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Trump's tariffs, Fed minutes, Rumble's Bitcoin buy - what's moving markets",
+        "url": "https://www.investing.com/news/economy/trumps-tariffs-fed-minutes-rumbles-bitcoin-buy--whats-moving-markets-3741453",
+        "publishedAt": "2024-11-26 08:55:17",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "2025 macro outlook for the US is 'murky at best' says Deutsche Bank",
+        "url": "https://www.investing.com/news/economy/2025-macro-outlook-for-the-us-is-murky-at-best-says-deutsche-bank-3741435",
+        "publishedAt": "2024-11-26 08:26:03",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.741,
+          "pos": 0.259,
+          "compound": 0.6369
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: slips to $94k as risk appetite sours on Trump tariff threat",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-slips-to-94k-as-risk-appetite-sours-on-trump-tariff-threat-3741330",
+        "publishedAt": "2024-11-26 06:22:06",
+        "content": "",
+        "sentiment": {
+          "neg": 0.314,
+          "neu": 0.686,
+          "pos": 0.0,
+          "compound": -0.6705
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Trump says he will impose additional 10% tariffs on China over drug inflow",
+        "url": "https://www.investing.com/news/politics/trump-says-he-will-impose-additional-10-tariffs-on-china-over-drug-inflow-3741069",
+        "publishedAt": "2024-11-26 00:01:07",
+        "content": "",
+        "sentiment": {
+          "neg": 0.155,
+          "neu": 0.845,
+          "pos": 0.0,
+          "compound": -0.296
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Asia stocks fall after Trump threatens tariffs, Japan's Nikkei leads losses",
+        "url": "https://www.investing.com/news/stock-market-news/asia-stocks-fall-after-trump-threatens-tariffs-japans-nikkei-leads-losses-3741249",
+        "publishedAt": "2024-11-26 03:31:51",
+        "content": "",
+        "sentiment": {
+          "neg": 0.371,
+          "neu": 0.629,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "S&P 500 positioning levels at record highs, pullback risks rise, Citi warns",
+        "url": "https://www.investing.com/news/stock-market-news/sp-500-positioning-levels-at-record-highs-pullback-risks-rise-citi-warns-3741245",
+        "publishedAt": "2024-11-26 03:26:47",
+        "content": "",
+        "sentiment": {
+          "neg": 0.259,
+          "neu": 0.741,
+          "pos": 0.0,
+          "compound": -0.3612
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Analyst calls Bitcoin 'global bubble', could soar to infinity",
+        "url": "https://www.investing.com/news/cryptocurrency-news/analyst-calls-bitcoin-global-bubble-could-soar-to-infinity-3740406",
+        "publishedAt": "2024-11-25 18:20:45",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: Dow hits record as Trump's pick for Treasury stokes optimism",
+        "url": "https://www.investing.com/news/stock-market-news/stock-market-today-dow-hits-record-as-trumps-pick-for-treasury-stokes-optimism-3738482",
+        "publishedAt": "2024-11-25 21:05:30",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.675,
+          "pos": 0.325,
+          "compound": 0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Jump in Tesla stock mostly driven by 'animal spirits/momentum' says UBS",
+        "url": "https://www.investing.com/news/stock-market-news/jump-in-tesla-stock-mostly-driven-by-animal-spiritsmomentum-says-ubs-3739718",
+        "publishedAt": "2024-11-25 14:19:31",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      }
+    ],
+    "avg_sentiment": -0.06908
+  },
+  {
+    "timestamp": "2025-11-12T13:41:04.573329",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  },
+  {
+    "timestamp": "2025-11-12T13:44:02.793740",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  },
+  {
+    "timestamp": "2025-11-12T13:58:15.561558",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  },
+  {
+    "timestamp": "2025-11-12T13:59:11.587028",
+    "date": "2025-11-12",
+    "count": 10,
+    "articles": [
+      {
+        "source": "Most Popular News",
+        "title": "Stock market today: S&P 500 ekes gain as hopes for end of shutdown get major boost",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-tick-up-after-tech-selloff-deepens-on-valuation-concerns-4341006",
+        "publishedAt": "2025-11-07 21:03:40",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.594,
+          "pos": 0.406,
+          "compound": 0.836
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BCA warns tariff reversal could shift risks from recession to overheating",
+        "url": "https://www.investing.com/news/stock-market-news/bca-warns-tariff-reversal-could-shift-risks-from-recession-to-overheating-4342313",
+        "publishedAt": "2025-11-07 12:44:15",
+        "content": "",
+        "sentiment": {
+          "neg": 0.441,
+          "neu": 0.559,
+          "pos": 0.0,
+          "compound": -0.6486
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold will do well long term but Bitcoin will do even better: BCA",
+        "url": "https://www.investing.com/news/commodities-news/gold-will-do-well-long-term-but-bitcoin-will-do-even-better-bca-4341486",
+        "publishedAt": "2025-11-07 10:02:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.671,
+          "pos": 0.329,
+          "compound": 0.6597
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Gold prices rise on weaker dollar, Fed easing bets; holds long-term appeal",
+        "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-weaker-dollar-fed-easing-bets-still-set-for-weekly-loss-4341077",
+        "publishedAt": "2025-11-07 13:14:53",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.671,
+          "pos": 0.134,
+          "compound": -0.2263
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Tesla shares choppy premarket after Musk\u2019s $1 trillion pay package approved",
+        "url": "https://www.investing.com/news/stock-market-news/musks-878-billion-tesla-pay-package-approved-by-shareholders-4340428",
+        "publishedAt": "2025-11-07 11:36:11",
+        "content": "",
+        "sentiment": {
+          "neg": 0.097,
+          "neu": 0.556,
+          "pos": 0.347,
+          "compound": 0.5574
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Bitcoin price today: falls to $100k as valuation concerns bring deep weekly loss",
+        "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pinned-at-102k-as-valuation-concerns-bring-deep-weekly-loss-4341107",
+        "publishedAt": "2025-11-07 14:35:29",
+        "content": "",
+        "sentiment": {
+          "neg": 0.161,
+          "neu": 0.839,
+          "pos": 0.0,
+          "compound": -0.3182
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Barclays finds markets reliving 2016-style rally one year into Trump 2.0",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-finds-markets-reliving-2016style-rally-one-year-into-trump-20-4341599",
+        "publishedAt": "2025-11-07 10:38:34",
+        "content": "",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "Futures turn lower; Musk\u2019s $1 trn pay package approved - what\u2019s moving markets",
+        "url": "https://www.investing.com/news/economy-news/futures-edge-higher-musks-1-trn-pay-package-approved--whats-moving-markets-4341309",
+        "publishedAt": "2025-11-07 11:43:18",
+        "content": "",
+        "sentiment": {
+          "neg": 0.234,
+          "neu": 0.584,
+          "pos": 0.182,
+          "compound": 0.0516
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "BofA\u2019s Hartnett says Trump\u2019s 2026 political strategy favors bonds, hurts dollar",
+        "url": "https://www.investing.com/news/stock-market-news/bofas-hartnett-says-trumps-2026-political-strategy-favors-bonds-hurts-dollar-4341544",
+        "publishedAt": "2025-11-07 10:18:41",
+        "content": "",
+        "sentiment": {
+          "neg": 0.22,
+          "neu": 0.638,
+          "pos": 0.142,
+          "compound": -0.2732
+        }
+      },
+      {
+        "source": "Most Popular News",
+        "title": "U.S. to block Nvidia from selling scaled-back AI chips to China - The Information",
+        "url": "https://www.investing.com/news/stock-market-news/us-to-block-nvidia-from-selling-scaledback-ai-chips-to-china-the-information-4341058",
+        "publishedAt": "2025-11-07 02:25:10",
+        "content": "",
+        "sentiment": {
+          "neg": 0.195,
+          "neu": 0.805,
+          "pos": 0.0,
+          "compound": -0.4404
+        }
+      }
+    ],
+    "avg_sentiment": 0.019799999999999984
+  }
+]

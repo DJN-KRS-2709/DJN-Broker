@@ -1,57 +1,125 @@
-/Users/dejank/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
-  warnings.warn(
-2025-11-07 16:24:12,223 | INFO | scheduler | 🚀 Running initial trade on startup...
-2025-11-07 16:24:12,223 | INFO | scheduler | 🤖 Running scheduled trading job...
-2025-11-07 16:24:12,226 | INFO | main | ============================================================
-2025-11-07 16:24:12,226 | INFO | main | 🤖 LEARNING-ENABLED TRADING BOT STARTING
-2025-11-07 16:24:12,226 | INFO | main | ============================================================
-2025-11-07 16:24:12,226 | INFO | main | 🧠 Learning system: ENABLED
-2025-11-07 16:24:12,226 | INFO | analyzer | No trades to analyze yet
-2025-11-07 16:24:12,226 | INFO | main | 📊 Win rate: 0.0%, Total P&L: $0.00
-2025-11-07 16:24:13,401 | ERROR | yfinance | Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
-2025-11-07 16:24:13,401 | ERROR | yfinance | Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
-2025-11-07 16:24:13,401 | ERROR | yfinance | Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
-2025-11-07 16:24:13,403 | ERROR | yfinance | Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
-2025-11-07 16:24:13,404 | ERROR | yfinance | Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
-2025-11-07 16:24:13,919 | ERROR | yfinance | 
+2025-11-12 13:59:05,723 | INFO | scheduler | 🚀 Running initial trade on startup...
+2025-11-12 13:59:05,723 | INFO | scheduler | 🤖 Running scheduled trading job...
+2025-11-12 13:59:05,728 | INFO | main | ============================================================
+2025-11-12 13:59:05,728 | INFO | main | 🤖 LEARNING-ENABLED TRADING BOT STARTING
+2025-11-12 13:59:05,728 | INFO | main | ============================================================
+2025-11-12 13:59:05,728 | INFO | main | 🧠 Learning system: ENABLED
+2025-11-12 13:59:05,730 | INFO | trade_memory | 💡 New learning: Best: AAPL, Worst: TSLA
+2025-11-12 13:59:05,730 | INFO | trade_memory | 📊 Performance updated: Win rate 0.0%
+2025-11-12 13:59:05,730 | INFO | analyzer | 📊 Analysis complete: 9 trades, 0.0% win rate, $0.00 P&L
+2025-11-12 13:59:05,730 | INFO | main | 📊 Win rate: 0.0%, Total P&L: $0.00
+2025-11-12 13:59:05,730 | INFO | main |    📈 Best performer: AAPL
+2025-11-12 13:59:05,730 | INFO | main |    📉 Worst performer: TSLA
+2025-11-12 13:59:05,731 | INFO | main | ⭐ Best performers: AAPL, GOOGL, MSFT
+2025-11-12 13:59:06,477 | ERROR | yfinance | Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-12 13:59:06,483 | ERROR | yfinance | Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-12 13:59:06,483 | ERROR | yfinance | Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-12 13:59:06,483 | ERROR | yfinance | Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-12 13:59:06,484 | ERROR | yfinance | Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-12 13:59:06,988 | ERROR | yfinance | 
 5 Failed downloads:
-2025-11-07 16:24:13,919 | ERROR | yfinance | ['AAPL', 'TSLA', 'GOOGL', 'NVDA', 'MSFT']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
-2025-11-07 16:24:13,924 | INFO | main | Fetched prices with shape (0, 0)
+2025-11-12 13:59:06,989 | ERROR | yfinance | ['AAPL', 'GOOGL', 'NVDA', 'MSFT', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+2025-11-12 13:59:06,997 | WARNING | market_data | yfinance returned empty data, trying Alpaca...
+2025-11-12 13:59:06,997 | WARNING | market_data | yfinance failed: Empty data from yfinance. Trying alternative sources...
+2025-11-12 13:59:06,998 | INFO | price_sources | 🔄 Attempting to fetch prices from multiple sources...
+2025-11-12 13:59:06,998 | INFO | price_sources | Trying Twelve Data...
+2025-11-12 13:59:07,352 | INFO | price_sources | ✅ Twelve Data: Fetched 336 bars for AAPL
+2025-11-12 13:59:07,689 | INFO | price_sources | ✅ Twelve Data: Fetched 336 bars for MSFT
+2025-11-12 13:59:08,026 | INFO | price_sources | ✅ Twelve Data: Fetched 336 bars for GOOGL
+2025-11-12 13:59:08,385 | INFO | price_sources | ✅ Twelve Data: Fetched 336 bars for TSLA
+2025-11-12 13:59:08,742 | INFO | price_sources | ✅ Twelve Data: Fetched 336 bars for NVDA
+2025-11-12 13:59:08,743 | INFO | price_sources | ✅ Twelve Data: Total 336 bars for 5 tickers
+2025-11-12 13:59:08,743 | INFO | price_sources | ✅ SUCCESS! Got 336 bars from Twelve Data
+2025-11-12 13:59:08,743 | INFO | main | Fetched prices with shape (336, 5)
+2025-11-12 13:59:08,747 | ERROR | data_storage | Failed to load storage/data_archive/market_data_history.json: Expecting property name enclosed in double quotes: line 16 column 9 (char 258)
+2025-11-12 13:59:08,748 | ERROR | data_storage | Failed to save storage/data_archive/market_data_history.json: keys must be str, int, float, bool or None, not Timestamp
+2025-11-12 13:59:08,748 | INFO | data_storage | 💾 Stored 336 market data bars from yfinance
+2025-11-12 13:59:11,589 | INFO | data_storage | 💾 Stored 10 news articles (avg sentiment: 0.02)
 Version 7.7.1 of praw is outdated. Version 7.8.1 was released Friday October 25, 2024.
-2025-11-07 16:24:17,780 | INFO | strategy_optimizer | 📚 Not enough data for optimization yet
-2025-11-07 16:24:17,780 | INFO | main | 🎯 Optimized sentiment threshold: 0.40
-2025-11-07 16:24:17,780 | INFO | main | Avg sentiment=-0.078, generated 0 signals
-2025-11-07 16:24:17,780 | INFO | main | 🚀 Executing orders via Alpaca (PAPER trading)
-2025-11-07 16:24:18,211 | INFO | alpaca_broker | Connected to Alpaca (PAPER trading)
-2025-11-07 16:24:18,212 | INFO | alpaca_broker | Account status: ACTIVE, Buying power: $199925.57
-2025-11-07 16:24:18,437 | INFO | main | Account: $100000.56 portfolio, $199925.57 buying power, 1 positions
-2025-11-07 16:24:18,859 | INFO | alpaca_broker | Connected to Alpaca (PAPER trading)
-2025-11-07 16:24:18,859 | INFO | alpaca_broker | Account status: ACTIVE, Buying power: $199925.57
-2025-11-07 16:24:18,968 | INFO | main | ✅ Executed 0 orders, cash_left=$500.00
-2025-11-07 16:24:18,972 | INFO | main | ============================================================
-2025-11-07 16:24:18,972 | INFO | main | ✅ TRADING RUN COMPLETE
-2025-11-07 16:24:18,972 | INFO | main | 🧠 System is learning from every trade!
-2025-11-07 16:24:18,972 | INFO | main | ============================================================
-2025-11-07 16:24:18,973 | INFO | analyzer | No trades to analyze yet
-2025-11-07 16:24:18,973 | INFO | scheduler | ============================================================
-2025-11-07 16:24:18,973 | INFO | scheduler | 📊 WEEKLY PERFORMANCE SUMMARY
-2025-11-07 16:24:18,973 | INFO | scheduler | ============================================================
-2025-11-07 16:24:18,973 | INFO | scheduler | Total Trades: 0
-2025-11-07 16:24:18,973 | INFO | scheduler | Win Rate: 0.0%
-2025-11-07 16:24:18,973 | INFO | scheduler | Total P&L: $0.00
-2025-11-07 16:24:18,973 | INFO | scheduler | Best Stock: N/A
-2025-11-07 16:24:18,973 | INFO | scheduler | ============================================================
-2025-11-07 16:24:18,974 | INFO | scheduler | ============================================================
-2025-11-07 16:24:18,974 | INFO | scheduler | ⏰ AGGRESSIVE SCHEDULER STARTED
-2025-11-07 16:24:18,974 | INFO | scheduler | ============================================================
-2025-11-07 16:24:18,974 | INFO | scheduler | Current time: 2025-11-07 16:24:18.974307+01:00
-2025-11-07 16:24:18,974 | INFO | scheduler | Timezone: Europe/Berlin
-2025-11-07 16:24:18,974 | INFO | scheduler | 
-2025-11-07 16:24:18,974 | INFO | scheduler | 📅 Daily Schedule:
-2025-11-07 16:24:18,974 | INFO | scheduler |   • 09:00 - Morning pre-market analysis
-2025-11-07 16:24:18,974 | INFO | scheduler |   • 15:35 - Right after US market open
-2025-11-07 16:24:18,974 | INFO | scheduler |   • 18:00 - US market midday
-2025-11-07 16:24:18,974 | INFO | scheduler |   • 21:30 - Before US market close
-2025-11-07 16:24:18,974 | INFO | scheduler | ============================================================
-2025-11-07 16:24:18,974 | INFO | scheduler | 🧠 Learning system will optimize after each run
-2025-11-07 16:24:18,974 | INFO | scheduler | ============================================================
+2025-11-12 13:59:19,170 | INFO | data_storage | 💾 Stored 100 Reddit posts from 4 subreddits
+2025-11-12 13:59:19,170 | INFO | main | 🌐 Fetching from additional sources...
+2025-11-12 13:59:19,170 | INFO | additional_sources | 🌐 Fetching data from additional sources...
+2025-11-12 13:59:19,549 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for AAPL
+2025-11-12 13:59:19,911 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for MSFT
+2025-11-12 13:59:20,265 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for GOOGL
+2025-11-12 13:59:20,642 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for TSLA
+2025-11-12 13:59:21,025 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for NVDA
+2025-11-12 13:59:21,132 | INFO | additional_sources | Fetched 10 articles from Investing.com
+2025-11-12 13:59:21,242 | INFO | additional_sources | Fetched 10 articles from Investing.com
+2025-11-12 13:59:21,356 | INFO | additional_sources | Fetched 10 articles from Investing.com
+2025-11-12 13:59:21,935 | INFO | additional_sources | Fetched 10 articles from MarketWatch
+2025-11-12 13:59:22,297 | INFO | additional_sources | Fetched 10 articles from MarketWatch
+2025-11-12 13:59:22,512 | INFO | additional_sources | Fetched articles from Finviz for AAPL
+2025-11-12 13:59:22,778 | INFO | additional_sources | Fetched articles from Finviz for MSFT
+2025-11-12 13:59:23,042 | INFO | additional_sources | Fetched articles from Finviz for GOOGL
+2025-11-12 13:59:23,333 | INFO | additional_sources | Fetched articles from Finviz for TSLA
+2025-11-12 13:59:23,628 | INFO | additional_sources | Fetched articles from Finviz for NVDA
+2025-11-12 13:59:23,629 | INFO | additional_sources | Simply Wall St integration requires API key - placeholder for now
+2025-11-12 13:59:23,629 | INFO | additional_sources | ✅ Fetched 106 total data points from additional sources
+2025-11-12 13:59:23,643 | INFO | main | ✅ Added 106 articles from additional sources
+2025-11-12 13:59:23,651 | INFO | data_storage | 💾 Stored 106 items from 6 additional sources
+2025-11-12 13:59:23,651 | INFO | strategy_optimizer | 🧠 Optimizing strategy based on learnings...
+2025-11-12 13:59:23,652 | INFO | strategy_optimizer | ⭐ Focusing on best performers: AAPL, GOOGL, MSFT
+2025-11-12 13:59:23,652 | INFO | strategy_optimizer | ⚠️ Decreased position size by 20% (win rate: 0.0%)
+2025-11-12 13:59:23,652 | INFO | main | 🎯 Optimized sentiment threshold: 0.20
+2025-11-12 13:59:23,652 | INFO | data_storage | 💾 Stored sentiment summary (overall: 0.26)
+2025-11-12 13:59:23,655 | INFO | main | Avg sentiment=0.257, generated 5 signals
+2025-11-12 13:59:23,655 | ERROR | data_storage | Failed to load storage/data_archive/market_data_history.json: Expecting property name enclosed in double quotes: line 16 column 9 (char 258)
+2025-11-12 13:59:23,659 | INFO | main | 📦 Data archived: 0 market, 12 news, 8 reddit entries
+2025-11-12 13:59:23,659 | INFO | main | 🚀 Executing orders via Alpaca (PAPER trading)
+2025-11-12 13:59:23,659 | INFO | main | 📊 Managing swing positions...
+2025-11-12 13:59:24,108 | INFO | alpaca_broker | Connected to Alpaca (PAPER trading)
+2025-11-12 13:59:24,108 | INFO | alpaca_broker | Account status: ACTIVE, Buying power: $198801.66
+2025-11-12 13:59:24,222 | INFO | position_manager | 📊 Managing 1 open positions...
+2025-11-12 13:59:24,222 | INFO | position_manager |   🟢 AAPL: $1.67 (+2.2%) - Holding
+2025-11-12 13:59:24,740 | INFO | alpaca_broker | Connected to Alpaca (PAPER trading)
+2025-11-12 13:59:24,740 | INFO | alpaca_broker | Account status: ACTIVE, Buying power: $198801.66
+2025-11-12 13:59:24,928 | INFO | position_manager | 📊 Position Summary: 1 open, $1.67 P&L, 100% winning
+2025-11-12 13:59:25,456 | INFO | alpaca_broker | Connected to Alpaca (PAPER trading)
+2025-11-12 13:59:25,456 | INFO | alpaca_broker | Account status: ACTIVE, Buying power: $198801.66
+2025-11-12 13:59:25,681 | INFO | main | Account: $100001.66 portfolio, $198801.66 buying power, 1 positions
+2025-11-12 13:59:26,206 | INFO | alpaca_broker | Connected to Alpaca (PAPER trading)
+2025-11-12 13:59:26,207 | INFO | alpaca_broker | Account status: ACTIVE, Buying power: $198801.66
+2025-11-12 13:59:26,500 | INFO | alpaca_broker | ✅ Order submitted: BUY $125.00 of AAPL (Order ID: fb2a4fc5-ef43-4223-9318-8c48decbdafb)
+2025-11-12 13:59:26,617 | INFO | alpaca_broker | ✅ Order submitted: BUY $125.00 of MSFT (Order ID: 95ac66c1-54e8-42a3-962d-6200667f1cdc)
+2025-11-12 13:59:26,729 | INFO | alpaca_broker | ✅ Order submitted: BUY $125.00 of GOOGL (Order ID: 30941a44-3058-4930-90f6-5f2f8c58dbd3)
+2025-11-12 13:59:26,844 | INFO | alpaca_broker | ✅ Order submitted: BUY $125.00 of TSLA (Order ID: eb8386e4-981e-40c3-b55b-f3be512b7aa9)
+2025-11-12 13:59:26,844 | WARNING | alpaca_broker | Insufficient funds for NVDA, skipping
+2025-11-12 13:59:26,845 | INFO | main | ✅ Executed 4 orders, cash_left=$0.00
+2025-11-12 13:59:26,849 | INFO | trade_memory | Stored trade: AAPL BUY @ $0.00
+2025-11-12 13:59:26,850 | INFO | trade_memory | Stored trade: MSFT BUY @ $0.00
+2025-11-12 13:59:26,850 | INFO | trade_memory | Stored trade: GOOGL BUY @ $0.00
+2025-11-12 13:59:26,850 | INFO | trade_memory | Stored trade: TSLA BUY @ $0.00
+2025-11-12 13:59:26,850 | INFO | main | 💾 Stored 4 trades in learning system
+2025-11-12 13:59:28,303 | INFO | email_notifier | ✅ Email summary sent to dejan.krstic@web.de
+2025-11-12 13:59:28,303 | INFO | main | 📧 Email summary sent to dejan.krstic@web.de
+2025-11-12 13:59:28,303 | INFO | main | ============================================================
+2025-11-12 13:59:28,303 | INFO | main | ✅ TRADING RUN COMPLETE
+2025-11-12 13:59:28,303 | INFO | main | 🧠 System is learning from every trade!
+2025-11-12 13:59:28,303 | INFO | main | ============================================================
+2025-11-12 13:59:28,306 | INFO | trade_memory | 💡 New learning: Low win rate detected
+2025-11-12 13:59:28,307 | INFO | trade_memory | 💡 New learning: Best: AAPL, Worst: TSLA
+2025-11-12 13:59:28,307 | INFO | trade_memory | 📊 Performance updated: Win rate 0.0%
+2025-11-12 13:59:28,307 | INFO | analyzer | 📊 Analysis complete: 13 trades, 0.0% win rate, $0.00 P&L
+2025-11-12 13:59:28,307 | INFO | scheduler | ============================================================
+2025-11-12 13:59:28,307 | INFO | scheduler | 📊 WEEKLY PERFORMANCE SUMMARY
+2025-11-12 13:59:28,307 | INFO | scheduler | ============================================================
+2025-11-12 13:59:28,307 | INFO | scheduler | Total Trades: 13
+2025-11-12 13:59:28,307 | INFO | scheduler | Win Rate: 0.0%
+2025-11-12 13:59:28,307 | INFO | scheduler | Total P&L: $0.00
+2025-11-12 13:59:28,307 | INFO | scheduler | Best Stock: AAPL
+2025-11-12 13:59:28,307 | INFO | scheduler | ============================================================
+2025-11-12 13:59:28,307 | INFO | scheduler | ============================================================
+2025-11-12 13:59:28,307 | INFO | scheduler | ⏰ AGGRESSIVE SCHEDULER STARTED
+2025-11-12 13:59:28,307 | INFO | scheduler | ============================================================
+2025-11-12 13:59:28,308 | INFO | scheduler | Current time: 2025-11-12 13:59:28.308015+01:00
+2025-11-12 13:59:28,308 | INFO | scheduler | Timezone: Europe/Berlin
+2025-11-12 13:59:28,308 | INFO | scheduler | 
+2025-11-12 13:59:28,308 | INFO | scheduler | 📅 Daily Schedule:
+2025-11-12 13:59:28,308 | INFO | scheduler |   • 09:00 - Morning pre-market analysis
+2025-11-12 13:59:28,308 | INFO | scheduler |   • 15:35 - Right after US market open
+2025-11-12 13:59:28,308 | INFO | scheduler |   • 18:00 - US market midday
+2025-11-12 13:59:28,308 | INFO | scheduler |   • 21:30 - Before US market close
+2025-11-12 13:59:28,308 | INFO | scheduler | ============================================================
+2025-11-12 13:59:28,308 | INFO | scheduler | 🧠 Learning system will optimize after each run
+2025-11-12 13:59:28,308 | INFO | scheduler | ============================================================

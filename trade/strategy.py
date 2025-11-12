@@ -19,16 +19,33 @@ def simple_sentiment_momentum(
         cnt += 1
     avg_sent = (agg_sent / cnt) if cnt else 0.0
 
-    # Momentum per ticker
-    for t in tickers:
-        if t not in prices.columns:
-            continue
-        series = prices[t].dropna()
-        if len(series) < momentum_window + 1:
-            continue
-        mom = (series.iloc[-1] / series.iloc[-momentum_window] - 1.0)
-        # Long if sentiment positive and momentum positive
-        if avg_sent >= min_sentiment and mom > 0.0:
-            signals.append({"ticker": t, "action": "BUY", "strength": float(min(avg_sent, 1.0)), "momentum": float(mom)})
-        # Shorting not included for simplicity
+    # Check if we have price data
+    has_price_data = not prices.empty and len(prices.columns) > 0
+    
+    if has_price_data:
+        # Normal mode: Use momentum + sentiment
+        for t in tickers:
+            if t not in prices.columns:
+                continue
+            series = prices[t].dropna()
+            if len(series) < momentum_window + 1:
+                continue
+            mom = (series.iloc[-1] / series.iloc[-momentum_window] - 1.0)
+            # Long if sentiment positive and momentum positive
+            if avg_sent >= min_sentiment and mom > 0.0:
+                signals.append({"ticker": t, "action": "BUY", "strength": float(min(avg_sent, 1.0)), "momentum": float(mom)})
+    else:
+        # FALLBACK MODE: Sentiment-only (when price data unavailable)
+        if avg_sent >= min_sentiment:
+            # Generate buy signals for top 2 tickers based on sentiment only
+            # This is a simplified approach when market data is unavailable
+            for t in tickers[:2]:  # Trade only top 2 tickers (e.g., AAPL, MSFT)
+                signals.append({
+                    "ticker": t, 
+                    "action": "BUY", 
+                    "strength": float(min(avg_sent, 1.0)), 
+                    "momentum": 0.0,  # No momentum data available
+                    "sentiment_only": True
+                })
+    
     return signals, avg_sent
