@@ -20,17 +20,21 @@ from learning.strategy_optimizer import StrategyOptimizer
 load_dotenv()
 log = get_logger("main")
 
-# Initialize learning system
-memory = TradeMemory()
-analyzer = PerformanceAnalyzer(memory)
-optimizer = StrategyOptimizer(memory, analyzer)
-
-# Initialize data storage system
-data_storage = DataStorage()
-
 def load_config(path: str = "config.yaml"):
     with open(path, "r") as f:
         return yaml.safe_load(f)
+
+# Initialize learning system
+memory = TradeMemory()
+analyzer = PerformanceAnalyzer(memory)
+
+# Load config to determine paper/live mode
+cfg = load_config()
+paper_mode = cfg.get('alpaca', {}).get('paper_trading', True)
+optimizer = StrategyOptimizer(memory, analyzer, paper_mode=paper_mode)
+
+# Initialize data storage system
+data_storage = DataStorage()
 
 def run_once(cfg):
     log.info("=" * 60)

@@ -1,18 +1,10 @@
 {
-  "timestamp": "2025-11-12T14:48:03.320971",
-  "analysis_period_days": 7,
-  "total_trades": 13,
+  "total_trades": 0,
   "winning_trades": 0,
   "losing_trades": 0,
   "win_rate": 0.0,
   "total_pnl": 0.0,
   "avg_win": 0,
   "avg_loss": 0,
-  "best_stock": "AAPL",
-  "worst_stock": "TSLA",
-  "insights": [
-    "\ud83d\udd34 Low win rate. Consider adjusting sentiment threshold.",
-    "\ud83d\udcc8 Best performer: AAPL",
-    "\ud83d\udcc9 Worst performer: TSLA"
-  ]
+  "insights": []
 }

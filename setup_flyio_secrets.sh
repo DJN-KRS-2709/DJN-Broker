@@ -31,3 +31,5 @@ flyctl secrets set \
 
 echo "✅ Secrets configured successfully!"
 
+
+
