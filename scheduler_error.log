@@ -702,3 +702,102 @@ Version 7.7.1 of praw is outdated. Version 7.8.1 was released Friday October 25,
 2025-11-18 20:00:23,853 | INFO | scheduler | Total P&L: $0.00
 2025-11-18 20:00:23,853 | INFO | scheduler | Best Stock: AAPL
 2025-11-18 20:00:23,854 | INFO | scheduler | ============================================================
+2025-11-19 20:00:47,056 | INFO | scheduler | 🤖 Running scheduled trading job...
+2025-11-19 20:00:47,094 | INFO | main | ============================================================
+2025-11-19 20:00:47,094 | INFO | main | 🤖 LEARNING-ENABLED TRADING BOT STARTING
+2025-11-19 20:00:47,094 | INFO | main | ============================================================
+2025-11-19 20:00:47,094 | INFO | main | 🧠 Learning system: ENABLED
+2025-11-19 20:00:47,098 | INFO | analyzer | No trades to analyze yet
+2025-11-19 20:00:47,099 | INFO | main | 📊 Win rate: 0.0%, Total P&L: $0.00
+2025-11-19 20:00:47,118 | INFO | main | ⭐ Best performers: AAPL, GOOGL, MSFT
+2025-11-19 20:00:47,118 | INFO | market_data | 🔄 Trying Twelve Data API (primary source)...
+2025-11-19 20:00:47,118 | INFO | price_sources | 🔄 Attempting to fetch prices from multiple sources...
+2025-11-19 20:00:47,118 | INFO | price_sources | Trying Twelve Data...
+2025-11-19 20:00:47,124 | WARNING | price_sources | Twelve Data API key not found
+2025-11-19 20:00:47,132 | WARNING | price_sources | ⚠️ Twelve Data returned no data
+2025-11-19 20:00:47,142 | INFO | price_sources | Trying Finnhub...
+2025-11-19 20:00:47,143 | WARNING | price_sources | Finnhub API key not found
+2025-11-19 20:00:47,143 | WARNING | price_sources | ⚠️ Finnhub returned no data
+2025-11-19 20:00:47,144 | INFO | price_sources | Trying Alpha Vantage...
+2025-11-19 20:00:47,144 | WARNING | price_sources | Alpha Vantage API key not found
+2025-11-19 20:00:47,144 | WARNING | price_sources | ⚠️ Alpha Vantage returned no data
+2025-11-19 20:00:47,144 | INFO | price_sources | Trying IEX Cloud...
+2025-11-19 20:00:47,145 | WARNING | price_sources | IEX Cloud API key not found
+2025-11-19 20:00:47,145 | WARNING | price_sources | ⚠️ IEX Cloud returned no data
+2025-11-19 20:00:47,145 | ERROR | price_sources | ❌ All price sources failed!
+2025-11-19 20:00:47,146 | WARNING | market_data | Twelve Data failed, trying Alpaca...
+2025-11-19 20:00:48,678 | ERROR | market_data | Alpaca market data fetch failed: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2025-11-19 20:00:48,692 | WARNING | market_data | Alpaca failed, trying yfinance as last resort...
+2025-11-19 20:00:48,716 | ERROR | yfinance | Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-19 20:00:48,724 | ERROR | yfinance | Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-19 20:00:48,732 | ERROR | yfinance | Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-19 20:00:48,745 | ERROR | yfinance | Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-19 20:00:48,749 | ERROR | yfinance | Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-19 20:00:49,627 | ERROR | yfinance | 
+5 Failed downloads:
+2025-11-19 20:00:49,627 | ERROR | yfinance | ['NVDA', 'TSLA', 'MSFT', 'GOOGL', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+2025-11-19 20:00:49,652 | ERROR | market_data | ❌ All price sources failed - no data available
+2025-11-19 20:00:49,654 | INFO | main | Fetched prices with shape (0, 0)
+2025-11-19 20:00:49,655 | WARNING | data_storage | No market data to store (empty DataFrame)
+2025-11-19 20:01:03,935 | INFO | data_storage | 💾 Stored 10 news articles (avg sentiment: 0.02)
+2025-11-19 20:01:04,904 | WARNING | data_storage | No Reddit data to store
+2025-11-19 20:01:04,905 | INFO | main | 🌐 Fetching from additional sources...
+2025-11-19 20:01:04,905 | INFO | additional_sources | 🌐 Fetching data from additional sources...
+2025-11-19 20:01:05,672 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for AAPL
+2025-11-19 20:01:06,377 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for MSFT
+2025-11-19 20:01:07,184 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for GOOGL
+2025-11-19 20:01:07,937 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for TSLA
+2025-11-19 20:01:08,615 | INFO | additional_sources | Fetched 5 articles from Yahoo Finance for NVDA
+2025-11-19 20:01:08,772 | INFO | additional_sources | Fetched 10 articles from Investing.com
+2025-11-19 20:01:09,137 | INFO | additional_sources | Fetched 10 articles from Investing.com
+2025-11-19 20:01:09,315 | INFO | additional_sources | Fetched 10 articles from Investing.com
+2025-11-19 20:01:10,196 | INFO | additional_sources | Fetched 10 articles from MarketWatch
+2025-11-19 20:01:10,705 | INFO | additional_sources | Fetched 10 articles from MarketWatch
+2025-11-19 20:01:11,272 | INFO | additional_sources | Fetched articles from Finviz for AAPL
+2025-11-19 20:01:11,770 | INFO | additional_sources | Fetched articles from Finviz for MSFT
+2025-11-19 20:01:12,378 | INFO | additional_sources | Fetched articles from Finviz for GOOGL
+2025-11-19 20:01:13,606 | INFO | additional_sources | Fetched articles from Finviz for TSLA
+2025-11-19 20:01:14,250 | INFO | additional_sources | Fetched articles from Finviz for NVDA
+2025-11-19 20:01:14,252 | INFO | additional_sources | Simply Wall St integration requires API key - placeholder for now
+2025-11-19 20:01:14,253 | INFO | additional_sources | ✅ Fetched 106 total data points from additional sources
+2025-11-19 20:01:14,315 | INFO | main | ✅ Added 106 articles from additional sources
+2025-11-19 20:01:14,390 | INFO | data_storage | 💾 Stored 106 items from 6 additional sources
+2025-11-19 20:01:14,393 | INFO | strategy_optimizer | 📚 Not enough data for optimization yet
+2025-11-19 20:01:14,393 | INFO | main | 🎯 Optimized sentiment threshold: 0.20
+2025-11-19 20:01:14,399 | INFO | data_storage | 💾 Stored sentiment summary (overall: 0.12)
+2025-11-19 20:01:14,399 | INFO | main | Avg sentiment=0.123, generated 0 signals
+2025-11-19 20:01:14,401 | ERROR | data_storage | Failed to load storage/data_archive/market_data_history.json: Expecting property name enclosed in double quotes: line 16 column 9 (char 258)
+2025-11-19 20:01:14,425 | INFO | main | 📦 Data archived: 0 market, 22 news, 8 reddit entries
+2025-11-19 20:01:14,425 | INFO | main | 🚀 Executing orders via Alpaca (PAPER trading)
+2025-11-19 20:01:14,426 | INFO | main | 📊 Managing swing positions...
+2025-11-19 20:01:15,503 | ERROR | alpaca_broker | Failed to connect to Alpaca: {"message": "unauthorized."}
+
+2025-11-19 20:01:15,506 | ERROR | position_manager | Cannot manage positions without Alpaca connection
+2025-11-19 20:01:16,226 | ERROR | alpaca_broker | Failed to connect to Alpaca: {"message": "unauthorized."}
+
+2025-11-19 20:01:16,890 | ERROR | alpaca_broker | Failed to connect to Alpaca: {"message": "unauthorized."}
+
+2025-11-19 20:01:17,512 | ERROR | alpaca_broker | Failed to connect to Alpaca: {"message": "unauthorized."}
+
+2025-11-19 20:01:17,515 | ERROR | alpaca_broker | Cannot execute orders without Alpaca connection
+2025-11-19 20:01:17,515 | ERROR | main | Failed to execute orders: No Alpaca connection
+2025-11-19 20:01:17,529 | INFO | main | ============================================================
+2025-11-19 20:01:17,530 | INFO | main | ✅ TRADING RUN COMPLETE
+2025-11-19 20:01:17,530 | INFO | main | 🧠 System is learning from every trade!
+2025-11-19 20:01:17,530 | INFO | main | ============================================================
+2025-11-19 20:01:17,532 | INFO | analyzer | No trades to analyze yet
+2025-11-19 20:01:17,532 | INFO | scheduler | ============================================================
+2025-11-19 20:01:17,532 | INFO | scheduler | 📊 WEEKLY PERFORMANCE SUMMARY
+2025-11-19 20:01:17,532 | INFO | scheduler | ============================================================
+2025-11-19 20:01:17,533 | INFO | scheduler | Total Trades: 0
+2025-11-19 20:01:17,533 | INFO | scheduler | Win Rate: 0.0%
+2025-11-19 20:01:17,533 | INFO | scheduler | Total P&L: $0.00
+2025-11-19 20:01:17,533 | INFO | scheduler | Best Stock: N/A
+2025-11-19 20:01:17,533 | INFO | scheduler | ============================================================

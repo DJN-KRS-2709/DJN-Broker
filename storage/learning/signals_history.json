@@ -240,5 +240,19 @@
       "news_count": 10,
       "reddit_count": 100
     }
+  },
+  {
+    "ticker": "NVDA",
+    "action": "BUY",
+    "strength": 0.12927758620689664,
+    "momentum": 0.0074977075354658584,
+    "timestamp": "2025-11-20T10:34:31.242118",
+    "date": "2025-11-20",
+    "context": {
+      "avg_sentiment": 0.12927758620689664,
+      "market_conditions": "normal",
+      "news_count": 10,
+      "reddit_count": 0
+    }
   }
 ]

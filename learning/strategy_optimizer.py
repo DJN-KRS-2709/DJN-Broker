@@ -35,6 +35,15 @@ class StrategyOptimizer:
         """
         optimized = base_config.copy()
         
+        # PAPER MODE: Keep sentiment threshold LOW to enable learning (ALWAYS, even without data)
+        if self.paper_mode:
+            # Force low threshold to ensure daily trades for learning
+            optimized['min_sentiment'] = 0.10  # Very low threshold for paper trading
+            log.info(f"🧪 PAPER MODE: Keeping sentiment threshold at 0.10 to maximize learning opportunities")
+            # Return early - no need for complex optimization in paper mode
+            return optimized
+        
+        # LIVE MODE: Use learnings to optimize
         # Get performance metrics
         metrics = self.memory.get_performance_metrics()
         recommendations = self.analyzer.get_strategy_recommendations()
@@ -45,45 +54,37 @@ class StrategyOptimizer:
         
         log.info("🧠 Optimizing strategy based on learnings...")
         
-        # PAPER MODE: Keep sentiment threshold LOW to enable learning
-        if self.paper_mode:
-            # Force low threshold to ensure daily trades for learning
-            optimized['min_sentiment'] = 0.10  # Very low threshold for paper trading
-            log.info(f"🧪 PAPER MODE: Keeping sentiment threshold at 0.10 to maximize learning opportunities")
+        # Apply recommended adjustments
+        for adj in recommendations.get('adjustments', []):
+            action = adj['action']
+            confidence = adj['confidence']
             
-        # LIVE MODE: Apply conservative adjustments
-        else:
-            # Apply recommended adjustments
-            for adj in recommendations.get('adjustments', []):
-                action = adj['action']
-                confidence = adj['confidence']
-                
-                if action == 'increase_sentiment_threshold':
-                    # Require higher sentiment for trades
-                    current_threshold = optimized.get('min_sentiment', 0.4)
-                    new_threshold = min(current_threshold + 0.05, 0.7)  # Max 0.7
-                    optimized['min_sentiment'] = new_threshold
-                    log.info(f"📈 Increased sentiment threshold: {current_threshold} → {new_threshold}")
-                
-                elif action == 'lower_sentiment_threshold':
-                    # Allow more trades with lower sentiment
-                    current_threshold = optimized.get('min_sentiment', 0.4)
-                    new_threshold = max(current_threshold - 0.05, 0.2)  # Min 0.2
-                    optimized['min_sentiment'] = new_threshold
-                    log.info(f"📉 Lowered sentiment threshold: {current_threshold} → {new_threshold}")
-                
-                elif action == 'adjust_take_profit_stop_loss':
-                    # Widen take profit, tighten stop loss
-                    optimized['take_profit_pct'] = optimized.get('take_profit_pct', 0.10) * 1.2
-                    optimized['stop_loss_pct'] = optimized.get('stop_loss_pct', 0.04) * 0.9
-                    log.info(f"🎯 Adjusted TP/SL: TP={optimized['take_profit_pct']:.2%}, SL={optimized['stop_loss_pct']:.2%}")
-                
-                elif action == 'focus_on_best_performers':
-                    # Get best performing stocks
-                    best_stocks = self.memory.get_best_performing_stocks(limit=3)
-                    if best_stocks:
-                        optimized['focus_stocks'] = best_stocks
-                        log.info(f"⭐ Focusing on best performers: {', '.join(best_stocks)}")
+            if action == 'increase_sentiment_threshold':
+                # Require higher sentiment for trades
+                current_threshold = optimized.get('min_sentiment', 0.4)
+                new_threshold = min(current_threshold + 0.05, 0.7)  # Max 0.7
+                optimized['min_sentiment'] = new_threshold
+                log.info(f"📈 Increased sentiment threshold: {current_threshold} → {new_threshold}")
+            
+            elif action == 'lower_sentiment_threshold':
+                # Allow more trades with lower sentiment
+                current_threshold = optimized.get('min_sentiment', 0.4)
+                new_threshold = max(current_threshold - 0.05, 0.2)  # Min 0.2
+                optimized['min_sentiment'] = new_threshold
+                log.info(f"📉 Lowered sentiment threshold: {current_threshold} → {new_threshold}")
+            
+            elif action == 'adjust_take_profit_stop_loss':
+                # Widen take profit, tighten stop loss
+                optimized['take_profit_pct'] = optimized.get('take_profit_pct', 0.10) * 1.2
+                optimized['stop_loss_pct'] = optimized.get('stop_loss_pct', 0.04) * 0.9
+                log.info(f"🎯 Adjusted TP/SL: TP={optimized['take_profit_pct']:.2%}, SL={optimized['stop_loss_pct']:.2%}")
+            
+            elif action == 'focus_on_best_performers':
+                # Get best performing stocks
+                best_stocks = self.memory.get_best_performing_stocks(limit=3)
+                if best_stocks:
+                    optimized['focus_stocks'] = best_stocks
+                    log.info(f"⭐ Focusing on best performers: {', '.join(best_stocks)}")
         
         # Adjust position sizing based on win rate
         win_rate = metrics.get('win_rate', 0.5)

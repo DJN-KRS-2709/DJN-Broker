@@ -141,5 +141,16 @@
     "pnl": 0,
     "timestamp": "2025-11-12T13:59:26.850624",
     "date": "2025-11-12"
+  },
+  {
+    "ticker": "NVDA",
+    "action": "BUY",
+    "price": 0,
+    "notional": 125.0,
+    "order_id": "6ca21ea3-4dca-4372-bc96-d75e1cb7143a",
+    "status": "open",
+    "pnl": 0,
+    "timestamp": "2025-11-20T10:34:33.610852",
+    "date": "2025-11-20"
   }
 ]
