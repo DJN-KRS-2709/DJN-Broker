@@ -183,3 +183,36 @@ def close_all_positions(paper: bool = True) -> bool:
         log.error(f"Failed to close positions: {e}")
         return False
 
+
+def get_positions(paper: bool = True) -> List[Dict]:
+    """
+    Get all open positions.
+    
+    Returns:
+        List of position dictionaries with details
+    """
+    client = get_alpaca_client(paper=paper)
+    if not client:
+        return []
+    
+    try:
+        positions = client.get_all_positions()
+        
+        position_list = []
+        for pos in positions:
+            position_list.append({
+                'symbol': pos.symbol,
+                'qty': float(pos.qty),
+                'avg_entry_price': float(pos.avg_entry_price),
+                'current_price': float(pos.current_price),
+                'market_value': float(pos.market_value),
+                'unrealized_pl': float(pos.unrealized_pl),
+                'unrealized_plpc': float(pos.unrealized_plpc),
+                'side': pos.side
+            })
+        
+        return position_list
+    except Exception as e:
+        log.error(f"Failed to get positions: {e}")
+        return []
+

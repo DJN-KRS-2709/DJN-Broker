@@ -282,3 +282,4 @@ Show me my Alpaca account status
 
 Happy trading! 🚀📈
 
+
