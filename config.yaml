@@ -1,6 +1,6 @@
 # Basic configuration
 timezone: "Europe/Berlin"
-capital_eur: 500
+capital_eur: 5000  # Increased for paper trading (you have $99k available)
 
 # SWING TRADING MODE - Hold 2-5 days
 risk:
