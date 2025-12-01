@@ -6,8 +6,8 @@ capital_eur: 5000  # Increased for paper trading (you have $99k available)
 risk:
   max_positions: 4            # 4 swing positions
   max_alloc_per_trade: 0.25   # 25% per trade (aggressive for swings)
-  stop_loss_pct: 0.05         # 5% stop (room for intraday noise)
-  take_profit_pct: 0.12       # 12% target (capture bigger moves)
+  stop_loss_pct: 0.03         # 3% stop (PAPER MODE: tighter for faster learning)
+  take_profit_pct: 0.06       # 6% target (PAPER MODE: faster cycle for data collection)
   
 # Swing Trading Parameters
 trading_style: "swing"        # swing or day
