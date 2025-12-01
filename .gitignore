@@ -23,9 +23,12 @@ wheels/
 .installed.cfg
 *.egg
 
-# Storage and data files
+# Storage and data files (learning data, trade history, market data)
 storage/*.csv
 storage/*.json
+storage/learning/
+storage/data_archive/
+scheduler_error.log
 
 # Virtual environments
 venv/
