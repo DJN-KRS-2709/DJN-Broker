@@ -1,5 +1,12 @@
 # Environment variables (contains sensitive API keys)
 .env
+.env.local
+.env.*.local
+.env.production
+.env.development
+*.env
+secrets/
+credentials/
 
 # Python
 __pycache__/
@@ -47,3 +54,18 @@ ENV/
 
 # pytest
 .pytest_cache/
+
+# Sensitive files
+*.pem
+*.key
+*.cert
+*.p12
+*_rsa
+*_rsa.pub
+*.ppk
+
+# Backup files that might contain secrets
+*.backup
+*.bak
+*.old
+*~

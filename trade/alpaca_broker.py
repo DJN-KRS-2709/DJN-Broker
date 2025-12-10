@@ -3,6 +3,8 @@ Alpaca broker integration for executing real trades.
 Supports both paper trading and live trading.
 """
 import os
+import json
+from datetime import datetime, timezone
 from typing import List, Dict, Optional
 from dotenv import load_dotenv
 from alpaca.trading.client import TradingClient
@@ -12,6 +14,9 @@ from utils.logger import get_logger
 
 load_dotenv()
 log = get_logger("alpaca_broker")
+
+# Position tracking file path
+POSITION_TRACKING_FILE = "storage/position_tracking.json"
 
 
 def get_alpaca_client(paper: bool = True) -> Optional[TradingClient]:
@@ -45,6 +50,89 @@ def get_alpaca_client(paper: bool = True) -> Optional[TradingClient]:
     except Exception as e:
         log.error(f"Failed to connect to Alpaca: {e}")
         return None
+
+
+def _load_position_tracking() -> Dict:
+    """Load position tracking data from JSON file."""
+    try:
+        if os.path.exists(POSITION_TRACKING_FILE):
+            with open(POSITION_TRACKING_FILE, 'r') as f:
+                return json.load(f)
+        return {"_comment": "Tracks entry times for open positions", "positions": {}}
+    except Exception as e:
+        log.error(f"Failed to load position tracking: {e}")
+        return {"positions": {}}
+
+
+def _save_position_tracking(data: Dict):
+    """Save position tracking data to JSON file."""
+    try:
+        os.makedirs(os.path.dirname(POSITION_TRACKING_FILE), exist_ok=True)
+        with open(POSITION_TRACKING_FILE, 'w') as f:
+            json.dump(data, f, indent=2)
+    except Exception as e:
+        log.error(f"Failed to save position tracking: {e}")
+
+
+def track_position_entry(ticker: str, order_id: str, notional: float, submitted_at: str):
+    """
+    Track when a position was opened (entry time).
+    
+    Args:
+        ticker: Stock symbol
+        order_id: Alpaca order ID
+        notional: Dollar amount invested
+        submitted_at: Timestamp when order was submitted
+    """
+    tracking = _load_position_tracking()
+    
+    tracking["positions"][ticker] = {
+        "entry_time": submitted_at,
+        "order_id": order_id,
+        "notional": notional,
+        "tracked_at": datetime.now(timezone.utc).isoformat()
+    }
+    
+    _save_position_tracking(tracking)
+    log.info(f"📍 Tracking entry for {ticker} at {submitted_at}")
+
+
+def remove_position_tracking(ticker: str):
+    """
+    Remove position tracking when position is closed.
+    
+    Args:
+        ticker: Stock symbol to remove
+    """
+    tracking = _load_position_tracking()
+    
+    if ticker in tracking["positions"]:
+        del tracking["positions"][ticker]
+        _save_position_tracking(tracking)
+        log.info(f"🗑️  Removed tracking for {ticker}")
+
+
+def get_position_entry_time(ticker: str) -> Optional[datetime]:
+    """
+    Get the entry time for a position.
+    
+    Args:
+        ticker: Stock symbol
+    
+    Returns:
+        datetime object or None if not tracked
+    """
+    tracking = _load_position_tracking()
+    
+    if ticker in tracking["positions"]:
+        entry_time_str = tracking["positions"][ticker]["entry_time"]
+        try:
+            return datetime.fromisoformat(entry_time_str.replace('+00:00', '+00:00'))
+        except Exception as e:
+            log.error(f"Failed to parse entry time for {ticker}: {e}")
+            return None
+    
+    return None
 
 
 def execute_orders(signals: List[Dict], capital: float, max_alloc_per_trade: float, paper: bool = True) -> Dict:
@@ -113,6 +201,15 @@ def execute_orders(signals: List[Dict], capital: float, max_alloc_per_trade: flo
                 "status": order.status,
                 "submitted_at": str(order.submitted_at)
             })
+            
+            # Track entry time for BUY orders
+            if action == "BUY":
+                track_position_entry(
+                    ticker=ticker,
+                    order_id=str(order.id),
+                    notional=round(alloc, 2),
+                    submitted_at=str(order.submitted_at)
+                )
             
             cash -= alloc
             
