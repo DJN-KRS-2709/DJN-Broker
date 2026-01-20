@@ -1,13 +1,13 @@
 # Basic configuration
 timezone: "Europe/Berlin"
-capital_eur: 5000  # Increased for paper trading (you have $99k available)
+capital_eur: 500
 
 # SWING TRADING MODE - Hold 2-5 days
 risk:
   max_positions: 4            # 4 swing positions
   max_alloc_per_trade: 0.25   # 25% per trade (aggressive for swings)
-  stop_loss_pct: 0.02         # 2% stop (REALISTIC: based on actual performance)
-  take_profit_pct: 0.03       # 3% target (REALISTIC: positions typically move 0-3%)
+  stop_loss_pct: 0.03         # 3% stop loss (cut losses quickly)
+  take_profit_pct: 0.05       # 5% take profit (achievable in 2-5 days)
   
 # Swing Trading Parameters
 trading_style: "swing"        # swing or day
@@ -46,16 +46,15 @@ reddit:
   subreddits: ["stocks", "investing", "wallstreetbets", "StockMarket"]
   limit_per_sub: 25
 
-# Additional Free Data Sources
-additional_sources:
-  enabled: true  # Enable/disable all additional sources
-  yahoo_finance: true        # Yahoo Finance ticker-specific news
-  investing_com: true         # Investing.com news feeds
-  marketwatch: true           # MarketWatch news
-  finviz: false              # Finviz (requires web scraping - may be slow)
-  stock_analysis: false      # Stock Analysis (manual review URLs)
-  simply_wall_st: false      # Simply Wall St (requires API key)
-
 alpaca:
-  paper_trading: true  # Set to false for live trading (careful!)
+  paper_trading: true  # Note: dual_trading.py runs BOTH paper and live
   use_alpaca: true     # Set to false to use paper simulation instead
+  
+# Dual Trading Mode (runs both paper + live)
+dual_trading:
+  enabled: true                    # Enable dual mode
+  paper_min_sentiment: 0.15        # Paper: Lower threshold = more signals = more learning
+  live_min_sentiment: 0.25         # Live: Higher threshold = only strong signals
+  live_max_positions: 2            # Live: Max 2 positions at a time
+  live_max_alloc: 0.20             # Live: 20% per trade (~$114)
+  require_paper_winrate: 0.30      # Don't trade live if paper win rate < 30%

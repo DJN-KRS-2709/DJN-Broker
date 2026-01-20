@@ -1,29 +1,48 @@
 import schedule, time, pytz, datetime as dt
-from main import run_once, load_config
+from dual_trading import run_dual_trading, load_config
 from learning.trade_memory import TradeMemory
 from learning.analyzer import PerformanceAnalyzer
+from trade.position_manager import get_closed_trades_summary
+from trade.alpaca_broker import get_account_summary
 from utils.logger import get_logger
 
 log = get_logger("scheduler")
 
 def job():
-    log.info("🤖 Running scheduled trading job...")
-    cfg = load_config()
-    run_once(cfg)
+    log.info("🤖 Running DUAL trading job (Paper + Live)...")
     
-    # Show learning summary after each run
+    # Run dual trading (both paper and live)
+    run_dual_trading()
+    
+    # Show comprehensive summary after each run
+    cfg = load_config()
     if cfg.get('learning', {}).get('enabled', False):
         memory = TradeMemory()
         analyzer = PerformanceAnalyzer(memory)
         metrics = analyzer.analyze_performance(days=7)
+        closed = get_closed_trades_summary()
         
         log.info("=" * 60)
-        log.info("📊 WEEKLY PERFORMANCE SUMMARY")
+        log.info("📊 DUAL TRADING SUMMARY")
         log.info("=" * 60)
-        log.info(f"Total Trades: {metrics.get('total_trades', 0)}")
-        log.info(f"Win Rate: {metrics.get('win_rate', 0):.1%}")
-        log.info(f"Total P&L: ${metrics.get('total_pnl', 0):.2f}")
-        log.info(f"Best Stock: {metrics.get('best_stock', 'N/A')}")
+        
+        # Paper account summary
+        paper_account = get_account_summary(paper=True)
+        if paper_account:
+            log.info(f"📝 Paper: ${paper_account['portfolio_value']:.2f} portfolio")
+        
+        # Live account summary  
+        live_account = get_account_summary(paper=False)
+        if live_account:
+            log.info(f"💰 Live: ${live_account['portfolio_value']:.2f} portfolio, "
+                    f"{live_account['num_positions']} positions")
+        
+        # Closed trades (real performance)
+        if closed['total_closed'] > 0:
+            log.info(f"📈 Closed Trades: {closed['total_closed']} "
+                    f"({closed['win_rate']:.0%} win rate, ${closed['total_realized_pnl']:+.2f})")
+        
+        log.info(f"⭐ Best Stock: {metrics.get('best_stock', 'N/A')}")
         log.info("=" * 60)
 
 def main():
@@ -41,16 +60,20 @@ def main():
     schedule.every().day.at("20:00").do(job)  # Daily summary at 8 PM CET
     
     log.info("=" * 60)
-    log.info("⏰ DAILY SCHEDULER STARTED")
+    log.info("⏰ DUAL TRADING SCHEDULER STARTED")
     log.info("=" * 60)
     log.info(f"Current time: {dt.datetime.now(tz)}")
     log.info(f"Timezone: {cfg.get('timezone')}")
     log.info("")
     log.info("📅 Daily Schedule:")
-    log.info("  • 20:00 - Daily summary (8 PM CET)")
+    log.info("  • 20:00 CET - DUAL TRADING (Paper + Live)")
+    log.info("")
+    log.info("🔄 How it works:")
+    log.info("  📝 Paper: Aggressive trading for learning")
+    log.info("  💰 Live: Conservative trading using learnings")
     log.info("=" * 60)
     if cfg.get('learning', {}).get('enabled', False):
-        log.info("🧠 Learning system will optimize after each run")
+        log.info("🧠 Paper learnings → Live trading decisions")
     log.info("=" * 60)
     
     while True:
