@@ -4,30 +4,29 @@ capital_eur: 500
 
 # SWING TRADING MODE - Hold 2-5 days
 risk:
-  max_positions: 4            # 4 swing positions
-  max_alloc_per_trade: 0.25   # 25% per trade (aggressive for swings)
-  stop_loss_pct: 0.03         # 3% stop loss (cut losses quickly)
-  take_profit_pct: 0.05       # 5% take profit (achievable in 2-5 days)
+  max_positions: 3            # 3 positions max (better risk management)
+  max_alloc_per_trade: 0.30   # 30% per trade 
+  stop_loss_pct: 0.05         # 5% stop loss (gives swing trades breathing room)
+  take_profit_pct: 0.08       # 8% take profit (better risk:reward 1.6:1)
   
 # Swing Trading Parameters
 trading_style: "swing"        # swing or day
 min_hold_hours: 24           # Hold at least 24 hours
-max_hold_days: 7             # Exit after 7 days max
+max_hold_days: 5             # Exit after 5 days max (tighter)
   
 # Learning System Settings
 learning:
   enabled: true               # Enable RAG learning system
-  min_trades_for_learning: 10 # Start adapting after 10 trades
-  strategy_update_frequency: 5 # Re-evaluate strategy every 5 trades
-  performance_lookback_days: 7 # Analyze last 7 days
+  min_trades_for_learning: 5  # Start adapting sooner (was 10)
+  strategy_update_frequency: 3 # Re-evaluate strategy every 3 trades (was 5)
+  performance_lookback_days: 14 # Analyze last 14 days (was 7)
 
 universe:
-  # US stocks for Alpaca trading
-  - "AAPL"   # Apple
-  - "MSFT"   # Microsoft
-  - "GOOGL"  # Google
-  - "TSLA"   # Tesla
-  - "NVDA"   # NVIDIA
+  # Best performers only - removed TSLA (consistently worst)
+  - "AAPL"   # Apple - your best performer
+  - "GOOGL"  # Google - solid performer
+  - "MSFT"   # Microsoft - stable
+  - "NVDA"   # NVIDIA - high momentum plays
 
 data:
   yfinance:
@@ -53,8 +52,8 @@ alpaca:
 # Dual Trading Mode (runs both paper + live)
 dual_trading:
   enabled: true                    # Enable dual mode
-  paper_min_sentiment: 0.15        # Paper: Lower threshold = more signals = more learning
-  live_min_sentiment: 0.25         # Live: Higher threshold = only strong signals
+  paper_min_sentiment: 0.20        # Paper: Raised from 0.15 (fewer, higher quality signals)
+  live_min_sentiment: 0.35         # Live: Raised from 0.25 (only strong signals!)
   live_max_positions: 2            # Live: Max 2 positions at a time
-  live_max_alloc: 0.20             # Live: 20% per trade (~$114)
-  require_paper_winrate: 0.30      # Don't trade live if paper win rate < 30%
+  live_max_alloc: 0.25             # Live: 25% per trade (was 20%)
+  require_paper_winrate: 0.40      # Raised from 0.30 - need better paper results first

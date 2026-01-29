@@ -1,0 +1,28 @@
+[
+  {
+    "symbol": "AAPL",
+    "qty": 0.767076872,
+    "entry_price": 260.703988,
+    "exit_price": 248.48,
+    "realized_pnl": -9.376739,
+    "realized_pnl_pct": -0.0468883838383838,
+    "market_value": 190.603261,
+    "reason": "stop_loss",
+    "is_winner": false,
+    "closed_at": "2026-01-20T20:01:43.293303",
+    "date": "2026-01-20"
+  },
+  {
+    "symbol": "GOOGL",
+    "qty": 0.732607317,
+    "entry_price": 333.575701,
+    "exit_price": 323.78,
+    "realized_pnl": -7.176402,
+    "realized_pnl_pct": -0.0293657501815441,
+    "market_value": 237.203597,
+    "reason": "stop_loss",
+    "is_winner": false,
+    "closed_at": "2026-01-20T20:01:43.455032",
+    "date": "2026-01-20"
+  }
+]
