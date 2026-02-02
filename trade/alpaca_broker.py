@@ -3,8 +3,6 @@ Alpaca broker integration for executing real trades.
 Supports both paper trading and live trading.
 """
 import os
-import json
-from datetime import datetime, timezone
 from typing import List, Dict, Optional
 from dotenv import load_dotenv
 from alpaca.trading.client import TradingClient
@@ -14,9 +12,6 @@ from utils.logger import get_logger
 
 load_dotenv()
 log = get_logger("alpaca_broker")
-
-# Position tracking file path
-POSITION_TRACKING_FILE = "storage/position_tracking.json"
 
 
 def get_alpaca_client(paper: bool = True) -> Optional[TradingClient]:
@@ -52,90 +47,7 @@ def get_alpaca_client(paper: bool = True) -> Optional[TradingClient]:
         return None
 
 
-def _load_position_tracking() -> Dict:
-    """Load position tracking data from JSON file."""
-    try:
-        if os.path.exists(POSITION_TRACKING_FILE):
-            with open(POSITION_TRACKING_FILE, 'r') as f:
-                return json.load(f)
-        return {"_comment": "Tracks entry times for open positions", "positions": {}}
-    except Exception as e:
-        log.error(f"Failed to load position tracking: {e}")
-        return {"positions": {}}
-
-
-def _save_position_tracking(data: Dict):
-    """Save position tracking data to JSON file."""
-    try:
-        os.makedirs(os.path.dirname(POSITION_TRACKING_FILE), exist_ok=True)
-        with open(POSITION_TRACKING_FILE, 'w') as f:
-            json.dump(data, f, indent=2)
-    except Exception as e:
-        log.error(f"Failed to save position tracking: {e}")
-
-
-def track_position_entry(ticker: str, order_id: str, notional: float, submitted_at: str):
-    """
-    Track when a position was opened (entry time).
-    
-    Args:
-        ticker: Stock symbol
-        order_id: Alpaca order ID
-        notional: Dollar amount invested
-        submitted_at: Timestamp when order was submitted
-    """
-    tracking = _load_position_tracking()
-    
-    tracking["positions"][ticker] = {
-        "entry_time": submitted_at,
-        "order_id": order_id,
-        "notional": notional,
-        "tracked_at": datetime.now(timezone.utc).isoformat()
-    }
-    
-    _save_position_tracking(tracking)
-    log.info(f"📍 Tracking entry for {ticker} at {submitted_at}")
-
-
-def remove_position_tracking(ticker: str):
-    """
-    Remove position tracking when position is closed.
-    
-    Args:
-        ticker: Stock symbol to remove
-    """
-    tracking = _load_position_tracking()
-    
-    if ticker in tracking["positions"]:
-        del tracking["positions"][ticker]
-        _save_position_tracking(tracking)
-        log.info(f"🗑️  Removed tracking for {ticker}")
-
-
-def get_position_entry_time(ticker: str) -> Optional[datetime]:
-    """
-    Get the entry time for a position.
-    
-    Args:
-        ticker: Stock symbol
-    
-    Returns:
-        datetime object or None if not tracked
-    """
-    tracking = _load_position_tracking()
-    
-    if ticker in tracking["positions"]:
-        entry_time_str = tracking["positions"][ticker]["entry_time"]
-        try:
-            return datetime.fromisoformat(entry_time_str.replace('+00:00', '+00:00'))
-        except Exception as e:
-            log.error(f"Failed to parse entry time for {ticker}: {e}")
-            return None
-    
-    return None
-
-
-def execute_orders(signals: List[Dict], capital: float, max_alloc_per_trade: float, paper: bool = True) -> Dict:
+def execute_orders(signals: List[Dict], capital: float, max_alloc_per_trade: float, paper: bool = True, min_order_size: float = 1.0) -> Dict:
     """
     Execute real trades on Alpaca based on signals.
     
@@ -144,6 +56,7 @@ def execute_orders(signals: List[Dict], capital: float, max_alloc_per_trade: flo
         capital: Total capital available
         max_alloc_per_trade: Maximum allocation per trade (as fraction)
         paper: Use paper trading if True, live trading if False
+        min_order_size: Minimum order size in dollars (default $1)
     
     Returns:
         Dict with executed orders and remaining cash
@@ -162,22 +75,22 @@ def execute_orders(signals: List[Dict], capital: float, max_alloc_per_trade: flo
         return {"orders": [], "cash_left": capital, "error": str(e)}
     
     executed_orders = []
+    standard_alloc = capital * max_alloc_per_trade
+    processed_tickers = set()  # Track which tickers we've already traded
     
+    # PASS 1: Execute standard-size orders for each signal
     for signal in signals:
         ticker = signal['ticker']
         action = signal['action'].upper()
         
-        # Calculate allocation
-        alloc = min(cash, capital * max_alloc_per_trade)
+        # Calculate allocation (standard size or whatever cash is left)
+        alloc = min(cash, standard_alloc)
         
-        if alloc <= 0:
-            log.warning(f"Insufficient funds for {ticker}, skipping")
+        if alloc < min_order_size:
+            log.warning(f"Insufficient funds for {ticker} (${alloc:.2f} < ${min_order_size:.2f}), skipping")
             continue
         
         try:
-            # Get current price (from signal or fetch latest)
-            # For now, we'll use notional orders and let Alpaca determine qty
-            
             # Prepare order
             side = OrderSide.BUY if action == "BUY" else OrderSide.SELL
             
@@ -202,20 +115,66 @@ def execute_orders(signals: List[Dict], capital: float, max_alloc_per_trade: flo
                 "submitted_at": str(order.submitted_at)
             })
             
-            # Track entry time for BUY orders
-            if action == "BUY":
-                track_position_entry(
-                    ticker=ticker,
-                    order_id=str(order.id),
-                    notional=round(alloc, 2),
-                    submitted_at=str(order.submitted_at)
-                )
-            
             cash -= alloc
+            processed_tickers.add(ticker)
             
         except Exception as e:
             log.error(f"Failed to execute order for {ticker}: {e}")
             continue
+    
+    # PASS 2: Use remaining cash on a single additional trade
+    # Only if we have meaningful remaining balance (> $1)
+    if cash >= min_order_size and signals:
+        # Find the best signal we haven't traded yet, or re-invest in top performer
+        remaining_signal = None
+        
+        # First, try to find a signal we haven't traded yet
+        for signal in signals:
+            if signal['ticker'] not in processed_tickers:
+                remaining_signal = signal
+                break
+        
+        # If all signals have been traded, add to the strongest signal (highest strength)
+        if not remaining_signal:
+            # Sort signals by strength and pick the best one
+            sorted_signals = sorted(signals, key=lambda s: s.get('strength', 0), reverse=True)
+            remaining_signal = sorted_signals[0]
+        
+        if remaining_signal:
+            ticker = remaining_signal['ticker']
+            action = remaining_signal['action'].upper()
+            
+            try:
+                side = OrderSide.BUY if action == "BUY" else OrderSide.SELL
+                
+                order_request = MarketOrderRequest(
+                    symbol=ticker,
+                    notional=cash,  # Use ALL remaining cash
+                    side=side,
+                    time_in_force=TimeInForce.DAY
+                )
+                
+                order = client.submit_order(order_request)
+                
+                log.info(f"✅ REMAINDER ORDER: {action} ${cash:.2f} of {ticker} (using leftover cash)")
+                
+                executed_orders.append({
+                    "ticker": ticker,
+                    "action": action,
+                    "notional": round(cash, 2),
+                    "order_id": str(order.id),
+                    "status": order.status,
+                    "submitted_at": str(order.submitted_at),
+                    "is_remainder": True  # Flag this as a remainder order
+                })
+                
+                cash = 0  # All cash used
+                
+            except Exception as e:
+                log.error(f"Failed to execute remainder order for {ticker}: {e}")
+    
+    if cash > 0 and cash < min_order_size:
+        log.info(f"💵 Remaining ${cash:.2f} is below minimum order size (${min_order_size:.2f})")
     
     return {
         "orders": executed_orders,
