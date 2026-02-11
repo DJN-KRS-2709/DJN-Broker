@@ -261,7 +261,7 @@ class DataStorage:
         """Save data to JSON file."""
         try:
             with open(filepath, 'w') as f:
-                json.dump(data, f, indent=2)
+                json.dump(data, f, indent=2, default=str)  # Convert non-serializable types to strings
         except Exception as e:
             log.error(f"Failed to save {filepath}: {e}")
     

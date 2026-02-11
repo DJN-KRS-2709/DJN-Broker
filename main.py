@@ -10,7 +10,7 @@ from nlp.sentiment import score_texts
 from trade.strategy import simple_sentiment_momentum
 from trade.simulation import run_simulation
 from trade.alpaca_broker import execute_orders, get_account_summary
-from trade.position_manager import manage_swing_positions
+from trade.position_manager import manage_swing_positions, get_closed_trades_summary
 
 # Learning system imports
 from learning.trade_memory import TradeMemory
@@ -178,6 +178,16 @@ def run_once(cfg):
         if cfg.get('trading_style') == 'swing':
             log.info("📊 Managing swing positions...")
             manage_swing_positions(cfg, paper=paper_trading)
+            
+            # Show closed trades summary (real win rate!)
+            closed_summary = get_closed_trades_summary()
+            if closed_summary['total_closed'] > 0:
+                log.info(f"💰 CLOSED TRADES: {closed_summary['total_closed']} trades, "
+                        f"{closed_summary['winners']} wins, {closed_summary['losers']} losses")
+                log.info(f"📈 REAL WIN RATE: {closed_summary['win_rate']:.1%} "
+                        f"(${closed_summary['total_realized_pnl']:+.2f} realized P&L)")
+                log.info(f"   Take profits: {closed_summary['take_profits']}, "
+                        f"Stop losses: {closed_summary['stop_losses']}")
         
         # Get current account status
         account_summary = get_account_summary(paper=paper_trading)
@@ -251,6 +261,14 @@ def run_once(cfg):
         summary['total_pnl'] = metrics.get('total_pnl', 0)
         summary['total_trades'] = metrics.get('total_trades', 0)
     
+    # Add REAL closed trades metrics (more accurate than learning metrics)
+    closed_summary = get_closed_trades_summary()
+    summary['closed_trades'] = closed_summary.get('total_closed', 0)
+    summary['real_win_rate'] = closed_summary.get('win_rate', 0)
+    summary['realized_pnl'] = closed_summary.get('total_realized_pnl', 0)
+    summary['take_profits'] = closed_summary.get('take_profits', 0)
+    summary['stop_losses'] = closed_summary.get('stop_losses', 0)
+    
     pd.DataFrame([summary]).to_csv(os.path.join('storage', 'daily_summary.csv'), mode='a', header=not os.path.exists(os.path.join('storage', 'daily_summary.csv')), index=False)
     
     # Send email notification if configured
@@ -270,5 +288,10 @@ def run_once(cfg):
     log.info("=" * 60)
 
 if __name__ == "__main__":
-    cfg = load_config()
-    run_once(cfg)
+    try:
+        cfg = load_config()
+        run_once(cfg)
+    except Exception as e:
+        log.error(f"❌ CRITICAL ERROR: {e}", exc_info=True)
+        # Re-raise to get proper exit code for GitHub Actions
+        raise
