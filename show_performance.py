@@ -58,8 +58,8 @@ def show_performance():
     
     print(f"\n🎯 EXIT REASONS")
     print("-" * 40)
-    print(f"   Take Profits (+5%): {len(take_profits)}")
-    print(f"   Stop Losses (-3%): {len(stop_losses)}")
+    print(f"   Take Profits: {len(take_profits)}")
+    print(f"   Stop Losses: {len(stop_losses)}")
     
     # Recent trades
     print(f"\n📋 RECENT CLOSED TRADES")
@@ -83,6 +83,24 @@ def show_performance():
     if len(trades) > 10:
         print(f"   ... and {len(trades) - 10} more trades")
     
+    # Swing vs Micro comparison (trades with trading_mode recorded)
+    swing_trades = [t for t in trades if t.get('trading_mode', 'swing') == 'swing']
+    micro_trades = [t for t in trades if t.get('trading_mode') == 'micro']
+    if swing_trades or micro_trades:
+        print(f"\n📊 SWING vs MICRO COMPARISON")
+        print("-" * 40)
+        for mode_name, mode_trades in [("Swing", swing_trades), ("Micro", micro_trades)]:
+            if not mode_trades:
+                continue
+            m_winners = [t for t in mode_trades if t.get('is_winner', False)]
+            m_losers = [t for t in mode_trades if not t.get('is_winner', True)]
+            m_pnl = sum(t.get('realized_pnl', 0) for t in mode_trades)
+            m_wr = len(m_winners) / len(mode_trades) if mode_trades else 0
+            emoji = "🟢" if m_pnl >= 0 else "🔴"
+            print(f"   {emoji} {mode_name}: {len(mode_trades)} trades, {m_wr:.0%} win rate, ${m_pnl:+,.2f} P&L")
+        if not micro_trades and swing_trades:
+            print("   (Micro mode: no trades yet - set trading_mode: micro in config.yaml to test)")
+
     # Performance by stock
     print(f"\n📊 PERFORMANCE BY STOCK")
     print("-" * 40)

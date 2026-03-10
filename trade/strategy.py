@@ -43,8 +43,11 @@ def simple_sentiment_momentum(
     tickers: List[str],
     momentum_window: int = 6,  # ~6 hours if using 1h bars
     min_sentiment: float = 0.4,
+    strict_entry_mode: bool = False,  # Require momentum + RSI + trend alignment
+    avoid_tickers: List[str] = None,
 ):
     signals = []
+    avoid_tickers = avoid_tickers or []
     # Aggregate sentiment
     agg_sent = 0.0
     cnt = 0
@@ -62,7 +65,7 @@ def simple_sentiment_momentum(
         ticker_scores = []
         
         for t in tickers:
-            if t not in prices.columns:
+            if t in avoid_tickers or t not in prices.columns:
                 continue
             series = prices[t].dropna()
             if len(series) < momentum_window + 1:
@@ -113,24 +116,34 @@ def simple_sentiment_momentum(
         
         # Sort by score and take top performers
         ticker_scores.sort(key=lambda x: x["score"], reverse=True)
+
+        # Strict entry: require ALL of momentum > 0, RSI 30-65, trend > 0
+        def passes_strict(ts) -> bool:
+            return (ts["momentum"] > 0 and
+                    30 <= ts["rsi"] <= 65 and
+                    ts["trend"] > 0.01 and
+                    avg_sent >= min_sentiment)
         
         # Only generate signals for tickers with positive scores
         for ts in ticker_scores:
-            if ts["score"] > 0.3:  # Minimum score threshold
-                signals.append({
-                    "ticker": ts["ticker"], 
-                    "action": "BUY", 
-                    "strength": float(min(ts["score"], 1.0)), 
-                    "momentum": ts["momentum"],
-                    "rsi": ts["rsi"],
-                    "trend": ts["trend"]
-                })
+            if ts["score"] <= 0.3:
+                continue
+            if strict_entry_mode and not passes_strict(ts):
+                continue
+            signals.append({
+                "ticker": ts["ticker"], 
+                "action": "BUY", 
+                "strength": float(min(ts["score"], 1.0)), 
+                "momentum": ts["momentum"],
+                "rsi": ts["rsi"],
+                "trend": ts["trend"]
+            })
     else:
         # FALLBACK MODE: Sentiment-only (when price data unavailable)
         if avg_sent >= min_sentiment:
             # Generate buy signals for top 2 tickers based on sentiment only
-            # This is a simplified approach when market data is unavailable
-            for t in tickers[:2]:  # Trade only top 2 tickers (e.g., AAPL, MSFT)
+            eligible = [t for t in tickers if t not in avoid_tickers][:2]
+            for t in eligible:
                 signals.append({
                     "ticker": t, 
                     "action": "BUY", 

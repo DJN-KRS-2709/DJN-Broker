@@ -2,6 +2,11 @@
 timezone: "Europe/Berlin"
 capital_eur: 500
 
+# Trading Mode: "swing" (default) or "micro"
+# swing: 5% SL, 8% TP, 24h min hold
+# micro: 1.5% SL, 2% TP, 0h min hold - experimental, paper-only recommended
+trading_mode: "micro"
+
 # SWING TRADING MODE - Hold 2-5 days
 risk:
   max_positions: 3            # 3 positions max (better risk management)
@@ -13,6 +18,15 @@ risk:
 trading_style: "swing"        # swing or day
 min_hold_hours: 24           # Hold at least 24 hours
 max_hold_days: 5             # Exit after 5 days max (tighter)
+
+# Micro mode overrides (applied when trading_mode: "micro")
+# Tighter TP/SL for daily smaller wins - requires higher win rate (~40%+)
+micro_mode:
+  stop_loss_pct: 0.015       # 1.5% stop loss
+  take_profit_pct: 0.02      # 2% take profit
+  min_hold_hours: 0          # No minimum hold
+  trading_style: "day"
+  min_sentiment: 0.15        # Lower threshold for more signals
   
 # Learning System Settings
 learning:
@@ -20,6 +34,12 @@ learning:
   min_trades_for_learning: 5  # Start adapting sooner (was 10)
   strategy_update_frequency: 3 # Re-evaluate strategy every 3 trades (was 5)
   performance_lookback_days: 14 # Analyze last 14 days (was 7)
+
+# Entry quality (Option A from plan - fix entries first)
+entry_quality:
+  strict_mode: false          # Set true for fewer, higher-quality signals
+  min_sentiment_high: 0.45    # Use for higher-quality signals (fewer trades)
+  avoid_tickers: ["MSFT", "GOOGL"]  # Exclude worst performers from closed trades
 
 universe:
   # Best performers only - removed TSLA (consistently worst)

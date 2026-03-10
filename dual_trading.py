@@ -125,9 +125,12 @@ def run_paper_trading(cfg, prices, news_scored, reddit_scored):
     
     # Generate signals with lower threshold for more learning
     min_sentiment = 0.15  # Lower threshold = more signals = more learning
+    eq = cfg.get('entry_quality', {})
     signals, avg_sent = simple_sentiment_momentum(
-        prices, news_scored, reddit_scored, tickers, 
-        momentum_window=6, min_sentiment=min_sentiment
+        prices, news_scored, reddit_scored, tickers,
+        momentum_window=6, min_sentiment=min_sentiment,
+        strict_entry_mode=eq.get('strict_mode', False),
+        avoid_tickers=eq.get('avoid_tickers', [])
     )
     
     log.info(f"📈 Sentiment: {avg_sent:.3f}, Signals: {len(signals)}")
@@ -141,8 +144,7 @@ def run_paper_trading(cfg, prices, news_scored, reddit_scored):
         })
     
     # Manage existing positions
-    if cfg.get('trading_style') == 'swing':
-        manage_swing_positions(cfg, paper=True)
+    manage_swing_positions(cfg, paper=True)
     
     # Execute paper trades
     res = execute_orders(
@@ -215,9 +217,12 @@ def run_live_trading(cfg, prices, news_scored, reddit_scored, paper_signals):
     log.info(f"🎯 Using aggressive sentiment threshold: {min_sentiment}")
     
     # Generate signals with higher threshold
+    eq = cfg.get('entry_quality', {})
     signals, avg_sent = simple_sentiment_momentum(
         prices, news_scored, reddit_scored, tickers,
-        momentum_window=6, min_sentiment=min_sentiment
+        momentum_window=6, min_sentiment=min_sentiment,
+        strict_entry_mode=eq.get('strict_mode', False),
+        avoid_tickers=eq.get('avoid_tickers', [])
     )
     
     log.info(f"📈 Sentiment: {avg_sent:.3f}, Live Signals: {len(signals)}")
@@ -235,8 +240,7 @@ def run_live_trading(cfg, prices, news_scored, reddit_scored, paper_signals):
                 f"${account['buying_power']:.2f} buying power")
     
     # Manage existing positions
-    if cfg.get('trading_style') == 'swing':
-        manage_swing_positions(cfg, paper=False)
+    manage_swing_positions(cfg, paper=False)
     
     # Execute live trades (if any signals pass the filter)
     if signals:

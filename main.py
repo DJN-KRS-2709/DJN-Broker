@@ -24,6 +24,18 @@ def load_config(path: str = "config.yaml"):
     with open(path, "r") as f:
         return yaml.safe_load(f)
 
+
+def apply_trading_mode(cfg: dict) -> dict:
+    """Apply micro mode overrides when trading_mode is 'micro'."""
+    mode = cfg.get('trading_mode', 'swing')
+    if mode == 'micro' and cfg.get('micro_mode'):
+        micro = cfg['micro_mode']
+        cfg = {**cfg}
+        cfg['risk'] = {**cfg.get('risk', {}), 'stop_loss_pct': micro.get('stop_loss_pct', 0.015), 'take_profit_pct': micro.get('take_profit_pct', 0.02)}
+        cfg['trading_style'] = micro.get('trading_style', 'day')
+        cfg['min_hold_hours'] = micro.get('min_hold_hours', 0)
+    return cfg
+
 # Initialize learning system
 memory = TradeMemory()
 analyzer = PerformanceAnalyzer(memory)
@@ -115,7 +127,10 @@ def run_once(cfg):
 
     # Apply learning optimizations if enabled
     min_sentiment = 0.2  # Temporarily lowered to generate signals with current sentiment
-    if learning_enabled:
+    if cfg.get('trading_mode') == 'micro' and cfg.get('micro_mode'):
+        min_sentiment = cfg['micro_mode'].get('min_sentiment', 0.15)
+        log.info(f"🎯 Micro mode: sentiment threshold {min_sentiment:.2f}")
+    elif learning_enabled:
         strategy_params = optimizer.optimize_strategy({
             'min_sentiment': 0.2,  # Lowered threshold
             'take_profit_pct': cfg['risk']['take_profit_pct'],
@@ -124,8 +139,19 @@ def run_once(cfg):
         min_sentiment = strategy_params.get('min_sentiment', 0.2)
         log.info(f"🎯 Optimized sentiment threshold: {min_sentiment:.2f}")
 
+    eq = cfg.get('entry_quality', {})
+    strict_entry = eq.get('strict_mode', False)
+    avoid_tickers = eq.get('avoid_tickers', [])
+    if strict_entry:
+        min_sentiment = max(min_sentiment, eq.get('min_sentiment_high', 0.45))
+        log.info(f"🎯 Strict entry mode: require momentum + RSI 30-65 + trend, min_sentiment={min_sentiment:.2f}")
+    if avoid_tickers:
+        log.info(f"🚫 Avoiding tickers: {avoid_tickers}")
+
     signals, avg_sent = simple_sentiment_momentum(
-        prices, news_scored, reddit_scored, tickers, momentum_window=6, min_sentiment=min_sentiment
+        prices, news_scored, reddit_scored, tickers,
+        momentum_window=6, min_sentiment=min_sentiment,
+        strict_entry_mode=strict_entry, avoid_tickers=avoid_tickers
     )
     
     # Helper to extract compound sentiment
@@ -174,20 +200,20 @@ def run_once(cfg):
     if use_alpaca:
         log.info(f"🚀 Executing orders via Alpaca ({'PAPER' if paper_trading else 'LIVE'} trading)")
         
-        # Manage existing positions (for swing trading)
-        if cfg.get('trading_style') == 'swing':
-            log.info("📊 Managing swing positions...")
-            manage_swing_positions(cfg, paper=paper_trading)
-            
-            # Show closed trades summary (real win rate!)
-            closed_summary = get_closed_trades_summary()
-            if closed_summary['total_closed'] > 0:
-                log.info(f"💰 CLOSED TRADES: {closed_summary['total_closed']} trades, "
-                        f"{closed_summary['winners']} wins, {closed_summary['losers']} losses")
-                log.info(f"📈 REAL WIN RATE: {closed_summary['win_rate']:.1%} "
-                        f"(${closed_summary['total_realized_pnl']:+.2f} realized P&L)")
-                log.info(f"   Take profits: {closed_summary['take_profits']}, "
-                        f"Stop losses: {closed_summary['stop_losses']}")
+        # Manage existing positions (swing and micro modes)
+        mode_label = "micro" if cfg.get('trading_mode') == 'micro' else "swing"
+        log.info(f"📊 Managing positions ({mode_label} mode)...")
+        manage_swing_positions(cfg, paper=paper_trading)
+
+        # Show closed trades summary (real win rate!)
+        closed_summary = get_closed_trades_summary()
+        if closed_summary['total_closed'] > 0:
+            log.info(f"💰 CLOSED TRADES: {closed_summary['total_closed']} trades, "
+                    f"{closed_summary['winners']} wins, {closed_summary['losers']} losses")
+            log.info(f"📈 REAL WIN RATE: {closed_summary['win_rate']:.1%} "
+                    f"(${closed_summary['total_realized_pnl']:+.2f} realized P&L)")
+            log.info(f"   Take profits: {closed_summary['take_profits']}, "
+                    f"Stop losses: {closed_summary['stop_losses']}")
         
         # Get current account status
         account_summary = get_account_summary(paper=paper_trading)
@@ -290,6 +316,7 @@ def run_once(cfg):
 if __name__ == "__main__":
     try:
         cfg = load_config()
+        cfg = apply_trading_mode(cfg)
         run_once(cfg)
     except Exception as e:
         log.error(f"❌ CRITICAL ERROR: {e}", exc_info=True)
