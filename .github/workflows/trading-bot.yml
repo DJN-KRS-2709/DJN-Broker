@@ -2,9 +2,8 @@ name: Automated Trading Bot
 
 on:
   schedule:
-    # Run once daily at 8pm CET (7pm UTC)
-    # Note: Will be 8pm in winter (CET), 9pm in summer (CEST)
-    - cron: '0 19 * * *'    # 20:00 CET / 21:00 CEST
+    # 4x daily: 6am, 12pm, 6pm, 10pm CET (5, 11, 17, 21 UTC)
+    - cron: '0 5,11,17,21 * * *'
   
   # Allow manual trigger anytime
   workflow_dispatch:
@@ -52,24 +51,22 @@ jobs:
         echo "SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }}" >> .env
         
     - name: Create storage directory
-      run: mkdir -p storage/learning
+      run: mkdir -p storage/learning storage/data_archive
       
-    - name: Restore learning data
+    - name: Restore storage data
       uses: actions/cache@v4
       with:
-        path: storage/learning
-        key: learning-data-${{ github.run_number }}
-        restore-keys: |
-          learning-data-
+        path: storage
+        key: trading-bot-storage
         
     - name: Run trading bot
       run: python main.py
       
-    - name: Save learning data
+    - name: Save storage data
       uses: actions/cache@v4
       with:
-        path: storage/learning
-        key: learning-data-${{ github.run_number }}
+        path: storage
+        key: trading-bot-storage
         
     - name: Upload logs
       if: always()
