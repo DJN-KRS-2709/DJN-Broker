@@ -35,6 +35,12 @@ learning:
   strategy_update_frequency: 3 # Re-evaluate strategy every 3 trades (was 5)
   performance_lookback_days: 14 # Analyze last 14 days (was 7)
 
+# Daily buy/sell rhythm: fallback buy when sentiment is flat, time-based sells
+daily_activity:
+  enabled: true
+  fallback_buy_when_no_signals: true   # Once per calendar day: buy strongest momentum name
+  time_exit_hours: 20                  # Close positions after this many hours (daily rotation)
+
 # Entry quality (Option A from plan - fix entries first)
 entry_quality:
   strict_mode: false          # Set true for fewer, higher-quality signals

@@ -153,3 +153,39 @@ def simple_sentiment_momentum(
                 })
     
     return signals, avg_sent
+
+
+def best_momentum_fallback_signal(
+    prices: pd.DataFrame,
+    tickers: List[str],
+    avoid_tickers: List[str] = None,
+    momentum_window: int = 6,
+) -> Dict:
+    """
+    Pick the eligible ticker with highest short-term momentum for daily fallback buy.
+    Returns a single BUY signal dict or None if no usable data.
+    """
+    avoid_tickers = avoid_tickers or []
+    best = None
+    best_mom = float("-inf")
+    if prices.empty:
+        return None
+    for t in tickers:
+        if t in avoid_tickers or t not in prices.columns:
+            continue
+        series = prices[t].dropna()
+        if len(series) < momentum_window + 1:
+            continue
+        mom = float(series.iloc[-1] / series.iloc[-momentum_window] - 1.0)
+        if mom > best_mom:
+            best_mom = mom
+            best = t
+    if best is None:
+        return None
+    return {
+        "ticker": best,
+        "action": "BUY",
+        "strength": 0.35,
+        "momentum": best_mom,
+        "daily_fallback": True,
+    }

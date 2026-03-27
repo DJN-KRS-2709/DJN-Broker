@@ -7,7 +7,12 @@ from data.reddit_data import fetch_submissions
 from data.data_storage import DataStorage
 from data.additional_sources import fetch_all_additional_sources
 from nlp.sentiment import score_texts
-from trade.strategy import simple_sentiment_momentum
+from trade.strategy import simple_sentiment_momentum, best_momentum_fallback_signal
+from trade.position_entry_tracker import (
+    fallback_already_used_today,
+    mark_fallback_used_today,
+    record_buy,
+)
 from trade.simulation import run_simulation
 from trade.alpaca_broker import execute_orders, get_account_summary
 from trade.position_manager import manage_swing_positions, get_closed_trades_summary
@@ -153,7 +158,24 @@ def run_once(cfg):
         momentum_window=6, min_sentiment=min_sentiment,
         strict_entry_mode=strict_entry, avoid_tickers=avoid_tickers
     )
-    
+
+    # Daily activity: if strategy produced no signals, try one momentum fallback buy per day
+    da = cfg.get('daily_activity', {})
+    tz = cfg.get('timezone', 'Europe/Berlin')
+    if (
+        da.get('enabled')
+        and not signals
+        and cfg.get('alpaca', {}).get('use_alpaca', False)
+        and da.get('fallback_buy_when_no_signals', True)
+        and not fallback_already_used_today(tz)
+    ):
+        fb = best_momentum_fallback_signal(prices, tickers, avoid_tickers)
+        if fb:
+            signals = [fb]
+            log.info(
+                f"📅 Daily fallback buy: {fb['ticker']} (no sentiment signals; once per day)"
+            )
+
     # Helper to extract compound sentiment
     def get_compound(item):
         sent = item.get('sentiment', {})
@@ -234,7 +256,12 @@ def run_once(cfg):
             log.error(f"Failed to execute orders: {res['error']}")
         else:
             log.info(f"✅ Executed {res['executed_count']} orders, cash_left=${res['cash_left']:.2f}")
-            
+            if signals and any(s.get('daily_fallback') for s in signals) and res.get('executed_count', 0) > 0:
+                mark_fallback_used_today(tz)
+            for order in res.get('orders', []):
+                if str(order.get('action', '')).upper() == 'BUY':
+                    record_buy(order['ticker'])
+
             # Save executed orders to CSV
             if res['orders']:
                 df = pd.DataFrame(res['orders'])

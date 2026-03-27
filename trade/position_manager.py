@@ -6,6 +6,7 @@ import json
 from typing import Dict, List
 from datetime import datetime, timedelta
 from trade.alpaca_broker import get_alpaca_client
+from trade import position_entry_tracker as entry_tracker
 from utils.logger import get_logger
 
 log = get_logger("position_manager")
@@ -26,6 +27,8 @@ class PositionManager:
         self.max_hold_days = config.get('max_hold_days', 7)
         self.stop_loss_pct = config['risk']['stop_loss_pct']
         self.take_profit_pct = config['risk']['take_profit_pct']
+        da = config.get('daily_activity', {})
+        self.daily_rotation_hours = da.get('time_exit_hours') if da.get('enabled') else None
     
     def should_close_position(self, position: Dict, paper: bool = True) -> tuple[bool, str]:
         """
@@ -54,10 +57,15 @@ class PositionManager:
         if unrealized_pl_pct <= -self.stop_loss_pct:
             log.info(f"🛑 {symbol}: Stop loss hit ({unrealized_pl_pct:.1%} <= -{self.stop_loss_pct:.1%})")
             return True, "stop_loss"
-        
-        # For swing trading, we'd check max hold time here
-        # This requires tracking entry times in our learning system
-        # For now, Alpaca's stops will handle exits
+
+        # Daily rotation: close after max hold time (enables buy/sell rhythm every day)
+        if self.daily_rotation_hours:
+            h = entry_tracker.hours_since_entry(symbol)
+            if h is not None and h >= self.daily_rotation_hours:
+                log.info(
+                    f"⏰ {symbol}: Daily rotation ({h:.1f}h >= {self.daily_rotation_hours}h)"
+                )
+                return True, "daily_rotation"
         
         return False, "hold"
     
@@ -80,6 +88,8 @@ class PositionManager:
             log.info(f"📊 Managing {len(positions)} open positions...")
             
             for position in positions:
+                sym = position.symbol
+                entry_tracker.ensure_entry(sym)
                 should_close, reason = self.should_close_position(position.__dict__, paper)
                 
                 if should_close:
@@ -107,6 +117,7 @@ class PositionManager:
                             market_value=market_value,
                             reason=reason
                         )
+                        entry_tracker.clear_symbol(symbol)
                         
                     except Exception as e:
                         log.error(f"Failed to close {symbol}: {e}")
@@ -156,7 +167,7 @@ class PositionManager:
             with open(CLOSED_TRADES_FILE, 'w') as f:
                 json.dump(closed_trades, f, indent=2)
             
-            emoji = "🎯" if reason == "take_profit" else "🛑"
+            emoji = "🎯" if reason == "take_profit" else ("⏰" if reason == "daily_rotation" else "🛑")
             result = "WIN" if realized_pnl > 0 else "LOSS"
             log.info(f"{emoji} CLOSED TRADE RECORDED: {symbol} {result} ${realized_pnl:+.2f} ({realized_pnl_pct:+.1%})")
             
