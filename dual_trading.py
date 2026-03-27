@@ -126,11 +126,15 @@ def run_paper_trading(cfg, prices, news_scored, reddit_scored):
     # Generate signals with lower threshold for more learning
     min_sentiment = 0.15  # Lower threshold = more signals = more learning
     eq = cfg.get('entry_quality', {})
+    ms = cfg.get('strategy', {}).get('min_score_threshold', 0.3)
+    if cfg.get('micro_mode', {}).get('min_score_threshold') is not None:
+        ms = float(cfg['micro_mode']['min_score_threshold'])
     signals, avg_sent = simple_sentiment_momentum(
         prices, news_scored, reddit_scored, tickers,
         momentum_window=6, min_sentiment=min_sentiment,
         strict_entry_mode=eq.get('strict_mode', False),
-        avoid_tickers=eq.get('avoid_tickers', [])
+        avoid_tickers=eq.get('avoid_tickers', []),
+        min_score_threshold=ms,
     )
     
     log.info(f"📈 Sentiment: {avg_sent:.3f}, Signals: {len(signals)}")
@@ -218,11 +222,15 @@ def run_live_trading(cfg, prices, news_scored, reddit_scored, paper_signals):
     
     # Generate signals with higher threshold
     eq = cfg.get('entry_quality', {})
+    ms = cfg.get('strategy', {}).get('min_score_threshold', 0.3)
+    if cfg.get('micro_mode', {}).get('min_score_threshold') is not None:
+        ms = float(cfg['micro_mode']['min_score_threshold'])
     signals, avg_sent = simple_sentiment_momentum(
         prices, news_scored, reddit_scored, tickers,
         momentum_window=6, min_sentiment=min_sentiment,
         strict_entry_mode=eq.get('strict_mode', False),
-        avoid_tickers=eq.get('avoid_tickers', [])
+        avoid_tickers=eq.get('avoid_tickers', []),
+        min_score_threshold=ms,
     )
     
     log.info(f"📈 Sentiment: {avg_sent:.3f}, Live Signals: {len(signals)}")

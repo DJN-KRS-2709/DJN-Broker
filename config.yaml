@@ -20,14 +20,19 @@ min_hold_hours: 24           # Hold at least 24 hours
 max_hold_days: 5             # Exit after 5 days max (tighter)
 
 # Micro mode overrides (applied when trading_mode: "micro")
-# Tighter TP/SL for daily smaller wins - requires higher win rate (~40%+)
+# Aggressive scalping: small wins, tight stops, many signals
 micro_mode:
-  stop_loss_pct: 0.015       # 1.5% stop loss
-  take_profit_pct: 0.02      # 2% take profit
-  min_hold_hours: 0          # No minimum hold
+  stop_loss_pct: 0.004       # 0.4% stop (tight)
+  take_profit_pct: 0.008     # 0.8% take profit ("minimum win")
+  min_hold_hours: 0
   trading_style: "day"
-  min_sentiment: 0.15        # Lower threshold for more signals
-  
+  min_sentiment: 0.02        # Very low: trade on weak positive sentiment too
+  min_score_threshold: 0.08  # Lower bar for BUY signals (was 0.3)
+
+# Optional default for non-micro; micro_mode overrides when present
+strategy:
+  min_score_threshold: 0.08
+
 # Learning System Settings
 learning:
   enabled: true               # Enable RAG learning system
@@ -35,17 +40,18 @@ learning:
   strategy_update_frequency: 3 # Re-evaluate strategy every 3 trades (was 5)
   performance_lookback_days: 14 # Analyze last 14 days (was 7)
 
-# Daily buy/sell rhythm: fallback buy when sentiment is flat, time-based sells
+# Daily buy/sell rhythm + aggressive rotation
 daily_activity:
   enabled: true
-  fallback_buy_when_no_signals: true   # Once per calendar day: buy strongest momentum name
-  time_exit_hours: 20                  # Close positions after this many hours (daily rotation)
+  fallback_buy_when_no_signals: true
+  aggressive_every_run: true   # Momentum fallback every run when no signals (not once/day)
+  time_exit_hours: 2           # Rotate out of positions after ~2h if TP/SL not hit
 
-# Entry quality (Option A from plan - fix entries first)
+# Entry quality
 entry_quality:
-  strict_mode: false          # Set true for fewer, higher-quality signals
-  min_sentiment_high: 0.45    # Use for higher-quality signals (fewer trades)
-  avoid_tickers: ["MSFT", "GOOGL"]  # Exclude worst performers from closed trades
+  strict_mode: false
+  min_sentiment_high: 0.45
+  avoid_tickers: []            # Empty = trade full universe (aggressive)
 
 universe:
   # Best performers only - removed TSLA (consistently worst)

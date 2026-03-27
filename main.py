@@ -153,27 +153,35 @@ def run_once(cfg):
     if avoid_tickers:
         log.info(f"🚫 Avoiding tickers: {avoid_tickers}")
 
+    min_score = cfg.get('strategy', {}).get('min_score_threshold', 0.3)
+    if cfg.get('trading_mode') == 'micro' and cfg.get('micro_mode', {}).get('min_score_threshold') is not None:
+        min_score = float(cfg['micro_mode']['min_score_threshold'])
+
     signals, avg_sent = simple_sentiment_momentum(
         prices, news_scored, reddit_scored, tickers,
         momentum_window=6, min_sentiment=min_sentiment,
-        strict_entry_mode=strict_entry, avoid_tickers=avoid_tickers
+        strict_entry_mode=strict_entry, avoid_tickers=avoid_tickers,
+        min_score_threshold=min_score,
     )
 
-    # Daily activity: if strategy produced no signals, try one momentum fallback buy per day
+    # Daily activity: momentum fallback when no strategy signals
     da = cfg.get('daily_activity', {})
     tz = cfg.get('timezone', 'Europe/Berlin')
-    if (
+    aggressive_every = da.get('aggressive_every_run', False)
+    allow_fallback = (
         da.get('enabled')
         and not signals
         and cfg.get('alpaca', {}).get('use_alpaca', False)
         and da.get('fallback_buy_when_no_signals', True)
-        and not fallback_already_used_today(tz)
-    ):
+        and (aggressive_every or not fallback_already_used_today(tz))
+    )
+    if allow_fallback:
         fb = best_momentum_fallback_signal(prices, tickers, avoid_tickers)
         if fb:
             signals = [fb]
             log.info(
-                f"📅 Daily fallback buy: {fb['ticker']} (no sentiment signals; once per day)"
+                f"📅 Fallback buy: {fb['ticker']} (no sentiment signals"
+                f"{'; every run' if aggressive_every else '; once per day'})"
             )
 
     # Helper to extract compound sentiment
@@ -256,7 +264,12 @@ def run_once(cfg):
             log.error(f"Failed to execute orders: {res['error']}")
         else:
             log.info(f"✅ Executed {res['executed_count']} orders, cash_left=${res['cash_left']:.2f}")
-            if signals and any(s.get('daily_fallback') for s in signals) and res.get('executed_count', 0) > 0:
+            if (
+                not da.get('aggressive_every_run', False)
+                and signals
+                and any(s.get('daily_fallback') for s in signals)
+                and res.get('executed_count', 0) > 0
+            ):
                 mark_fallback_used_today(tz)
             for order in res.get('orders', []):
                 if str(order.get('action', '')).upper() == 'BUY':

@@ -45,6 +45,7 @@ def simple_sentiment_momentum(
     min_sentiment: float = 0.4,
     strict_entry_mode: bool = False,  # Require momentum + RSI + trend alignment
     avoid_tickers: List[str] = None,
+    min_score_threshold: float = 0.3,
 ):
     signals = []
     avoid_tickers = avoid_tickers or []
@@ -126,7 +127,7 @@ def simple_sentiment_momentum(
         
         # Only generate signals for tickers with positive scores
         for ts in ticker_scores:
-            if ts["score"] <= 0.3:
+            if ts["score"] <= min_score_threshold:
                 continue
             if strict_entry_mode and not passes_strict(ts):
                 continue
