@@ -1,5 +1,9 @@
 name: Automated Trading Bot
 
+# Use Node.js 24 for JS-based actions (GitHub deprecation of Node 20 on runners)
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   schedule:
     # Every 2 hours during market hours: 8am-10pm CET (7,9,11,13,15,17,19,21 UTC)
@@ -36,6 +40,14 @@ jobs:
       run: |
         python -c "import nltk; nltk.download('vader_lexicon', quiet=True)"
         
+    - name: Verify required Alpaca LIVE secrets
+      run: |
+        if [ -z "${{ secrets.ALPACA_LIVE_API_KEY }}" ] || [ -z "${{ secrets.ALPACA_LIVE_API_SECRET }}" ]; then
+          echo "::error::Add repository secrets ALPACA_LIVE_API_KEY and ALPACA_LIVE_API_SECRET (see GITHUB_SECRETS.md)"
+          exit 1
+        fi
+        echo "OK: Alpaca LIVE secrets are configured"
+
     - name: Create .env file
       run: |
         echo "REDDIT_CLIENT_ID=${{ secrets.REDDIT_CLIENT_ID }}" >> .env
