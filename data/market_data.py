@@ -9,6 +9,7 @@ from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 from utils.logger import get_logger
 from data.price_sources import fetch_prices_with_fallback
+from trade.alpaca_broker import sanitize_alpaca_credential
 
 load_dotenv()
 log = get_logger("market_data")
@@ -26,8 +27,12 @@ def fetch_prices_alpaca(tickers: List[str], days: int = 7, interval: str = "1h")
     Returns:
         DataFrame with ticker columns and closing prices
     """
-    api_key = os.getenv("ALPACA_PAPER_API_KEY") or os.getenv("ALPACA_API_KEY")
-    api_secret = os.getenv("ALPACA_PAPER_API_SECRET") or os.getenv("ALPACA_API_SECRET")
+    api_key = sanitize_alpaca_credential(
+        os.getenv("ALPACA_PAPER_API_KEY") or os.getenv("ALPACA_API_KEY")
+    )
+    api_secret = sanitize_alpaca_credential(
+        os.getenv("ALPACA_PAPER_API_SECRET") or os.getenv("ALPACA_API_SECRET")
+    )
     
     if not api_key or not api_secret:
         log.error("Alpaca credentials not found for market data")

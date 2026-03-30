@@ -247,7 +247,7 @@ def run_once(cfg):
     if use_alpaca:
         log.info(
             f"🚀 Alpaca mode: {'PAPER' if paper_trading else 'LIVE'} "
-            f"(config alpaca.paper_trading raw={raw_pt!r} → resolved={paper_trading})"
+            f"(config alpaca.paper_trading raw={raw_pt!r} -> resolved={paper_trading})"
         )
         
         # Manage existing positions (swing and micro modes)

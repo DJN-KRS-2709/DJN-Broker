@@ -14,6 +14,23 @@ load_dotenv()
 log = get_logger("alpaca_broker")
 
 
+def sanitize_alpaca_credential(value: Optional[str]) -> Optional[str]:
+    """
+    Strip whitespace and non-ASCII characters from API key/secret.
+    Alpaca keys are ASCII; pasted Unicode (arrows, smart quotes) breaks HTTP headers (latin-1).
+    """
+    if not value:
+        return None
+    s = value.strip()
+    cleaned = "".join(c for c in s if ord(c) < 128)
+    if len(cleaned) != len(s):
+        log.warning(
+            "Removed non-ASCII characters from an Alpaca credential — "
+            "re-paste keys in GitHub Secrets if connection still fails (ASCII only)."
+        )
+    return cleaned if cleaned else None
+
+
 def get_alpaca_client(paper: bool = True) -> Optional[TradingClient]:
     """
     Initialize Alpaca trading client.
@@ -31,6 +48,9 @@ def get_alpaca_client(paper: bool = True) -> Optional[TradingClient]:
     else:
         api_key = os.getenv("ALPACA_LIVE_API_KEY")
         api_secret = os.getenv("ALPACA_LIVE_API_SECRET")
+    
+    api_key = sanitize_alpaca_credential(api_key)
+    api_secret = sanitize_alpaca_credential(api_secret)
     
     if not api_key or not api_secret:
         log.error(f"Alpaca {'paper' if paper else 'LIVE'} credentials missing in .env file")

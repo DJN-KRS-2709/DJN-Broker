@@ -33,7 +33,7 @@ def send_trading_summary(summary: Dict, to_email: str):
     try:
         # Create message
         msg = MIMEMultipart('alternative')
-        msg['Subject'] = f"🤖 DJN Trading Bot Daily Update - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        msg['Subject'] = f"DJN Trading Bot Daily Update - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
         msg['From'] = from_email
         msg['To'] = to_email
         
@@ -41,9 +41,9 @@ def send_trading_summary(summary: Dict, to_email: str):
         html_body = create_html_email(summary)
         text_body = create_text_email(summary)
         
-        # Attach both plain text and HTML versions
-        part1 = MIMEText(text_body, 'plain')
-        part2 = MIMEText(html_body, 'html')
+        # Attach both plain text and HTML versions (UTF-8 so SMTP does not fail on smart quotes / emoji)
+        part1 = MIMEText(text_body, 'plain', 'utf-8')
+        part2 = MIMEText(html_body, 'html', 'utf-8')
         msg.attach(part1)
         msg.attach(part2)
         
