@@ -1,3 +1,4 @@
+# schema: node24-pins-2026-03 (if your run log still mentions @v4, that run used an older commit)
 name: Automated Trading Bot
 
 # Opt into Node.js 24 for JS-based actions (Node 20 removed from runners later in 2026)
@@ -26,6 +27,8 @@ jobs:
       run: |
         echo "commit=${{ github.sha }}"
         echo "This workflow should NOT show a Node 20 warning for checkout@v4 — pins are checkout@v6, setup-python@v6, cache@v5, upload-artifact@v6."
+        echo "--- .github/workflows/trading-bot.yml (this run) ---"
+        sed -n '1,120p' .github/workflows/trading-bot.yml | grep -E 'uses: actions/|schema:' || true
       
     - name: Set up Python
       uses: actions/setup-python@v6
