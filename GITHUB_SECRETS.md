@@ -54,3 +54,19 @@ python3 verify_live_setup.py
 
 Use **Actions** → **Automated Trading Bot** → **Run workflow** on branch **main** (or wait for the schedule).  
 Judge **Node** / workflow warnings on a **new** run’s **Workflow file** tab (commit SHA), not an old run number.
+
+---
+
+## Trigger the workflow from your Mac (same as “Run workflow”)
+
+Install the [GitHub CLI](https://cli.github.com/) (`brew install gh`), then once: `gh auth login`.
+
+From the repo root:
+
+```bash
+./scripts/trigger_workflow.sh
+```
+
+Override repo or branch if needed: `GITHUB_REPO=owner/repo GITHUB_REF_NAME=main ./scripts/trigger_workflow.sh`
+
+To run on a timer locally (optional; the repo already has a GitHub **schedule**), use macOS `cron` or `launchd` and point it at that script.
