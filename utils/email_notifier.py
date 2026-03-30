@@ -21,8 +21,9 @@ def send_trading_summary(summary: Dict, to_email: str):
         to_email: Recipient email address
     """
     # Email configuration
-    smtp_server = os.getenv("SMTP_SERVER", "smtp.gmail.com")
-    smtp_port = int(os.getenv("SMTP_PORT", "587"))
+    smtp_server = os.getenv("SMTP_SERVER") or "smtp.gmail.com"
+    _port = os.getenv("SMTP_PORT")
+    smtp_port = int(_port) if _port and _port.strip() else 587
     from_email = os.getenv("SMTP_EMAIL")
     smtp_password = os.getenv("SMTP_PASSWORD")
     
