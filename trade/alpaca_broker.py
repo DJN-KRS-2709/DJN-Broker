@@ -39,7 +39,8 @@ def get_alpaca_client(paper: bool = True) -> Optional[TradingClient]:
     try:
         client = TradingClient(api_key, api_secret, paper=paper)
         account = client.get_account()
-        log.info(f"Connected to Alpaca ({'PAPER' if paper else 'LIVE'} trading)")
+        acct_id = getattr(account, "account_number", None) or getattr(account, "id", "?")
+        log.info(f"Connected to Alpaca ({'PAPER' if paper else 'LIVE'} trading), account id: {acct_id}")
         log.info(f"Account status: {account.status}, Buying power: ${float(account.buying_power):.2f}")
         return client
     except Exception as e:

@@ -45,13 +45,22 @@ def apply_trading_mode(cfg: dict) -> dict:
         cfg['min_hold_hours'] = micro.get('min_hold_hours', 0)
     return cfg
 
+
+def resolve_paper_trading(cfg: dict) -> bool:
+    """True = paper API; False = live. Handles YAML string booleans (e.g. 'false' must not be truthy)."""
+    v = cfg.get('alpaca', {}).get('paper_trading', True)
+    if isinstance(v, str):
+        return v.strip().lower() in ('true', '1', 'yes', 'on')
+    return bool(v)
+
+
 # Initialize learning system
 memory = TradeMemory()
 analyzer = PerformanceAnalyzer(memory)
 
 # Load config to determine paper/live mode
 cfg = load_config()
-paper_mode = cfg.get('alpaca', {}).get('paper_trading', True)
+paper_mode = resolve_paper_trading(cfg)
 optimizer = StrategyOptimizer(memory, analyzer, paper_mode=paper_mode)
 
 # Initialize data storage system
@@ -232,10 +241,14 @@ def run_once(cfg):
     
     # Check if we should use Alpaca or paper simulation
     use_alpaca = cfg.get('alpaca', {}).get('use_alpaca', False)
-    paper_trading = cfg.get('alpaca', {}).get('paper_trading', True)
+    raw_pt = cfg.get('alpaca', {}).get('paper_trading', True)
+    paper_trading = resolve_paper_trading(cfg)
     
     if use_alpaca:
-        log.info(f"🚀 Executing orders via Alpaca ({'PAPER' if paper_trading else 'LIVE'} trading)")
+        log.info(
+            f"🚀 Alpaca mode: {'PAPER' if paper_trading else 'LIVE'} "
+            f"(config alpaca.paper_trading raw={raw_pt!r} → resolved={paper_trading})"
+        )
         
         # Manage existing positions (swing and micro modes)
         mode_label = "micro" if cfg.get('trading_mode') == 'micro' else "swing"
