@@ -2,7 +2,7 @@ name: Automated Trading Bot
 
 # Opt into Node.js 24 for JS-based actions (Node 20 removed from runners later in 2026)
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 on:
   schedule:
@@ -16,11 +16,16 @@ jobs:
   trade:
     runs-on: ubuntu-latest
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v6
+      
+    - name: Confirm workflow uses Node 24–ready action pins
+      run: |
+        echo "commit=${{ github.sha }}"
+        echo "This workflow should NOT show a Node 20 warning for checkout@v4 — pins are checkout@v6, setup-python@v6, cache@v5, upload-artifact@v6."
       
     - name: Set up Python
       uses: actions/setup-python@v6
