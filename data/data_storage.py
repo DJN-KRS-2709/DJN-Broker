@@ -12,6 +12,15 @@ from utils.logger import get_logger
 log = get_logger("data_storage")
 
 
+def _dataframe_to_json_safe(prices: pd.DataFrame) -> Dict:
+    """Serialize DataFrame for JSON (avoids Timestamp keys from .to_dict() which break json.dump)."""
+    try:
+        return json.loads(prices.to_json(orient="split", date_format="iso"))
+    except Exception as e:
+        log.warning(f"Market data JSON serialize (split) failed: {e}; using records")
+        return json.loads(prices.to_json(orient="records", date_format="iso"))
+
+
 class DataStorage:
     """
     Centralized storage for all trading data sources.
@@ -48,7 +57,7 @@ class DataStorage:
             'source': source,
             'tickers': tickers,
             'num_bars': len(prices),
-            'data': prices.to_dict(),  # Store actual price data
+            'data': _dataframe_to_json_safe(prices),
             'latest_prices': {ticker: float(prices[ticker].iloc[-1]) if ticker in prices.columns else None 
                              for ticker in tickers}
         }
@@ -247,7 +256,7 @@ class DataStorage:
         return [item for item in items if item.get('timestamp', '') >= cutoff]
     
     def _load_json(self, filepath: str, default):
-        """Load JSON file or return default."""
+        """Load JSON file or return default; quarantine corrupt files once so the next save can recover."""
         if not os.path.exists(filepath):
             return default
         try:
@@ -255,6 +264,12 @@ class DataStorage:
                 return json.load(f)
         except Exception as e:
             log.error(f"Failed to load {filepath}: {e}")
+            try:
+                bad = filepath + '.corrupt.' + datetime.now().strftime('%Y%m%d%H%M%S')
+                os.rename(filepath, bad)
+                log.warning(f"Renamed unreadable file to {bad} (will rebuild on next save)")
+            except OSError:
+                pass
             return default
     
     def _save_json(self, filepath: str, data):

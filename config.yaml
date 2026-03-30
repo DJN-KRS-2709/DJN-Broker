@@ -86,9 +86,9 @@ alpaca:
   paper_trading: false  # LIVE trading - real money
   use_alpaca: true     # Set to false to use paper simulation instead
   
-# Dual Trading Mode (runs both paper + live)
+# Dual Trading Mode — only used if you run `python dual_trading.py` (not `main.py` / not GitHub Actions)
 dual_trading:
-  enabled: true                    # Enable dual mode
+  enabled: false
   paper_min_sentiment: 0.20        # Paper: Raised from 0.15 (fewer, higher quality signals)
   live_min_sentiment: 0.35         # Live: Raised from 0.25 (only strong signals!)
   live_max_positions: 2            # Live: Max 2 positions at a time

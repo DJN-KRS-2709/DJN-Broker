@@ -11,12 +11,14 @@ import sys
 
 from dotenv import load_dotenv
 
+from trade.alpaca_broker import sanitize_alpaca_credential
+
 load_dotenv()
 
 
 def main() -> int:
-    key = os.getenv("ALPACA_LIVE_API_KEY")
-    secret = os.getenv("ALPACA_LIVE_API_SECRET")
+    key = sanitize_alpaca_credential(os.getenv("ALPACA_LIVE_API_KEY"))
+    secret = sanitize_alpaca_credential(os.getenv("ALPACA_LIVE_API_SECRET"))
 
     print("=" * 50)
     print("Alpaca LIVE verification")

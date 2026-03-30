@@ -1,55 +1,56 @@
 # GitHub Actions repository secrets
 
-In GitHub: open your repo, then Settings, Secrets and variables, Actions, Repository secrets, New repository secret.
+GitHub: repo → **Settings** → **Secrets and variables** → **Actions** → **Repository secrets**.
 
-Secret names may only use letters, numbers, and underscores. No spaces.
-
----
-
-**ALPACA_LIVE_API_KEY**  
-Name: `ALPACA_LIVE_API_KEY`  
-Value: Your Alpaca live account Key ID from the Alpaca website under Live trading and API Keys.
-
-**ALPACA_LIVE_API_SECRET**  
-Name: `ALPACA_LIVE_API_SECRET`  
-Value: Your Alpaca live account secret key from the same Live API Keys page.
-
-**ALPACA_PAPER_API_KEY**  
-Name: `ALPACA_PAPER_API_KEY`  
-Value: Your Alpaca paper account Key ID from Paper trading and API Keys.
-
-**ALPACA_PAPER_API_SECRET**  
-Name: `ALPACA_PAPER_API_SECRET`  
-Value: Your Alpaca paper account secret key from the same Paper API Keys page.
-
-**REDDIT_CLIENT_ID**  
-Name: `REDDIT_CLIENT_ID`  
-Value: The client id from a Reddit app you create at reddit.com prefs apps.
-
-**REDDIT_CLIENT_SECRET**  
-Name: `REDDIT_CLIENT_SECRET`  
-Value: The secret from that same Reddit app.
-
-**REDDIT_USER_AGENT**  
-Name: `REDDIT_USER_AGENT`  
-Value: A text string Reddit expects, for example DJNBrokerBot/1.0 by yourusername
-
-**NEWSAPI_KEY**  
-Name: `NEWSAPI_KEY`  
-Value: Your API key from newsapi.org if you use NewsAPI. Optional if you rely on RSS only.
-
-**NOTIFICATION_EMAIL**  
-Name: `NOTIFICATION_EMAIL`  
-Value: Email address that should receive trading notifications. Optional.
-
-**SMTP_EMAIL**  
-Name: `SMTP_EMAIL`  
-Value: The email account used to send mail. Optional.
-
-**SMTP_PASSWORD**  
-Name: `SMTP_PASSWORD`  
-Value: Password or app password for that email account. Optional.
+Secret names may only use letters, numbers, and underscores (no spaces).
 
 ---
 
-After saving secrets, run the workflow under Actions, Automated Trading Bot, Run workflow.
+## Required for live trading + CI
+
+| Name | Value |
+|------|--------|
+| **ALPACA_LIVE_API_KEY** | Live **Key ID** (Alpaca dashboard → **Live** → API keys). ASCII only; re-paste if you copied fancy characters. |
+| **ALPACA_LIVE_API_SECRET** | Live **secret** (shown once when created; regenerate if lost). |
+| **ALPACA_PAPER_API_KEY** | Paper Key ID (used for some market-data fallbacks). |
+| **ALPACA_PAPER_API_SECRET** | Paper secret. |
+
+---
+
+## Strongly recommended
+
+| Name | Value |
+|------|--------|
+| **REDDIT_CLIENT_ID** | From [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) (create a “script” app). |
+| **REDDIT_CLIENT_SECRET** | Same app. |
+| **REDDIT_USER_AGENT** | One line, e.g. `DJNBrokerBot/1.0 by YourRedditUsername` (not a numeric user id). |
+
+---
+
+## Optional
+
+| Name | Value |
+|------|--------|
+| **NEWSAPI_KEY** | From [newsapi.org](https://newsapi.org). If empty, the bot can use RSS only. |
+| **NOTIFICATION_EMAIL** | Where to send the daily summary email. |
+| **SMTP_EMAIL** | Sender mailbox (e.g. Gmail). |
+| **SMTP_PASSWORD** | App password if using Gmail + 2FA. |
+| **SMTP_SERVER** | Defaults to `smtp.gmail.com` if unset. |
+| **SMTP_PORT** | Defaults to `587` if unset. |
+
+---
+
+## Verify locally before debugging CI
+
+From the repo root (with `.env` or exported vars):
+
+```bash
+python3 verify_live_setup.py
+```
+
+---
+
+## After changing secrets
+
+Use **Actions** → **Automated Trading Bot** → **Run workflow** on branch **main** (or wait for the schedule).  
+Judge **Node** / workflow warnings on a **new** run’s **Workflow file** tab (commit SHA), not an old run number.
