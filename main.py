@@ -7,7 +7,11 @@ from data.reddit_data import fetch_submissions
 from data.data_storage import DataStorage
 from data.additional_sources import fetch_all_additional_sources
 from nlp.sentiment import score_texts
-from trade.strategy import simple_sentiment_momentum, best_momentum_fallback_signal
+from trade.strategy import (
+    simple_sentiment_momentum,
+    best_momentum_fallback_signal,
+    guaranteed_rotation_buy,
+)
 from trade.position_entry_tracker import (
     fallback_already_used_today,
     mark_fallback_used_today,
@@ -71,10 +75,13 @@ def run_once(cfg):
         for insight in metrics.get('insights', []):
             log.info(f"   {insight}")
         
-        # Check if we should pause trading
-        if optimizer.should_pause_trading():
-            log.warning("🛑 Trading paused due to poor performance. Review strategy!")
-            return
+        # Pause on loss only if allowed (disable for continuous live micro trading)
+        if cfg.get('learning', {}).get('allow_pause_on_loss', False):
+            if optimizer.should_pause_trading():
+                log.warning("🛑 Trading paused due to poor performance. Review strategy!")
+                return
+        else:
+            log.info("📌 Learning pause disabled — run continues every schedule")
         
         # Get optimization summary
         opt_summary = optimizer.get_optimization_summary()
@@ -251,6 +258,24 @@ def run_once(cfg):
             log.info(f"Account: ${account_summary['portfolio_value']:.2f} portfolio, "
                     f"${account_summary['buying_power']:.2f} buying power, "
                     f"{account_summary['num_positions']} positions")
+
+        # Last resort: guaranteed LIVE buy when flat so the bot never idles a whole run
+        le = cfg.get('live_execution', {})
+        if (
+            le.get('guaranteed_buy_when_flat', True)
+            and not paper_trading
+            and not signals
+            and account_summary
+            and account_summary['num_positions'] < cfg['risk']['max_positions']
+            and float(account_summary.get('buying_power', 0) or 0) >= 5.0
+        ):
+            g = guaranteed_rotation_buy(tickers, avoid_tickers)
+            if g:
+                signals = [g]
+                log.warning(
+                    "⚡ GUARANTEED LIVE BUY — zero signals after strategy + fallback; "
+                    f"placing rotation order on {g['ticker']}"
+                )
         
         # Execute real orders via Alpaca
         res = execute_orders(
@@ -264,6 +289,11 @@ def run_once(cfg):
             log.error(f"Failed to execute orders: {res['error']}")
         else:
             log.info(f"✅ Executed {res['executed_count']} orders, cash_left=${res['cash_left']:.2f}")
+            if res.get('executed_count', 0) == 0:
+                log.error(
+                    "❌ ZERO orders this run — check LIVE API keys in GitHub Secrets, "
+                    "buying power, max_positions, and Actions logs."
+                )
             if (
                 not da.get('aggressive_every_run', False)
                 and signals

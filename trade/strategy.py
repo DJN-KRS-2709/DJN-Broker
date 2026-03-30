@@ -182,6 +182,18 @@ def best_momentum_fallback_signal(
             best_mom = mom
             best = t
     if best is None:
+        # No momentum window satisfied — still return first tradeable name for live rotation
+        for t in tickers:
+            if t in avoid_tickers or t not in prices.columns:
+                continue
+            return {
+                "ticker": t,
+                "action": "BUY",
+                "strength": 0.2,
+                "momentum": 0.0,
+                "daily_fallback": True,
+                "thin_data": True,
+            }
         return None
     return {
         "ticker": best,
@@ -190,3 +202,17 @@ def best_momentum_fallback_signal(
         "momentum": best_mom,
         "daily_fallback": True,
     }
+
+
+def guaranteed_rotation_buy(tickers: List[str], avoid_tickers: List[str] = None) -> Dict:
+    """Always-executable BUY for first symbol in universe (live micro rotation)."""
+    avoid_tickers = avoid_tickers or []
+    for t in tickers:
+        if t not in avoid_tickers:
+            return {
+                "ticker": t,
+                "action": "BUY",
+                "strength": 0.15,
+                "guaranteed_live": True,
+            }
+    return None

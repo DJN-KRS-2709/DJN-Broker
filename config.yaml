@@ -35,10 +35,15 @@ strategy:
 
 # Learning System Settings
 learning:
-  enabled: true               # Enable RAG learning system
-  min_trades_for_learning: 5  # Start adapting sooner (was 10)
-  strategy_update_frequency: 3 # Re-evaluate strategy every 3 trades (was 5)
-  performance_lookback_days: 14 # Analyze last 14 days (was 7)
+  enabled: true
+  allow_pause_on_loss: false  # Must be false for continuous live trading (do not stop the bot)
+  min_trades_for_learning: 5
+  strategy_update_frequency: 3
+  performance_lookback_days: 14
+
+# Live brokerage: never idle a run with cash and room under max_positions
+live_execution:
+  guaranteed_buy_when_flat: true
 
 # Daily buy/sell rhythm + aggressive rotation
 daily_activity:
