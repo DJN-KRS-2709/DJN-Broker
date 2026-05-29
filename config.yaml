@@ -1,6 +1,6 @@
 # Basic configuration
 timezone: "Europe/Berlin"
-capital_eur: 500
+capital_eur: 1200   # dollar budget the bot may deploy (actual fills also capped by Alpaca buying power)
 
 # Trading Mode: "swing" (default) or "micro"
 # swing: 5% SL, 8% TP, 24h min hold
