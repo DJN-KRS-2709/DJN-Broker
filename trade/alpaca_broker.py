@@ -6,12 +6,43 @@ import os
 from typing import List, Dict, Optional
 from dotenv import load_dotenv
 from alpaca.trading.client import TradingClient
-from alpaca.trading.requests import MarketOrderRequest
+from alpaca.trading.requests import MarketOrderRequest, LimitOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
 from utils.logger import get_logger
 
 load_dotenv()
 log = get_logger("alpaca_broker")
+
+
+def get_latest_price(symbol: str) -> Optional[float]:
+    """Best-effort latest trade price for marketable-limit pricing. Returns None on failure."""
+    try:
+        from alpaca.data.historical import StockHistoricalDataClient
+        from alpaca.data.requests import StockLatestTradeRequest
+
+        key = sanitize_alpaca_credential(
+            os.getenv("ALPACA_PAPER_API_KEY") or os.getenv("ALPACA_LIVE_API_KEY") or os.getenv("ALPACA_API_KEY")
+        )
+        secret = sanitize_alpaca_credential(
+            os.getenv("ALPACA_PAPER_API_SECRET") or os.getenv("ALPACA_LIVE_API_SECRET") or os.getenv("ALPACA_API_SECRET")
+        )
+        if not key or not secret:
+            return None
+        data_client = StockHistoricalDataClient(key, secret)
+        resp = data_client.get_stock_latest_trade(StockLatestTradeRequest(symbol_or_symbols=symbol))
+        return float(resp[symbol].price)
+    except Exception as e:
+        log.warning(f"Could not fetch latest price for {symbol}: {e}")
+        return None
+
+
+def is_market_open(client: TradingClient) -> Optional[bool]:
+    """True/False if the US market is open now; None if the check failed."""
+    try:
+        return bool(client.get_clock().is_open)
+    except Exception as e:
+        log.warning(f"Market clock check failed: {e}")
+        return None
 
 
 def sanitize_alpaca_credential(value: Optional[str]) -> Optional[str]:
@@ -68,139 +99,120 @@ def get_alpaca_client(paper: bool = True) -> Optional[TradingClient]:
         return None
 
 
-def execute_orders(signals: List[Dict], capital: float, max_alloc_per_trade: float, paper: bool = True, min_order_size: float = 1.0) -> Dict:
+def _submit_buy(client: TradingClient, ticker: str, alloc: float,
+                order_type: str, slippage_pct: float, extended_hours: bool) -> Dict:
+    """Submit one BUY using a marketable limit (caps slippage) with fallback to market."""
+    if order_type == "limit":
+        price = get_latest_price(ticker)
+        if price and price > 0:
+            limit_price = round(price * (1 + max(slippage_pct, 0.0)), 2)
+            req = LimitOrderRequest(
+                symbol=ticker, notional=round(alloc, 2), side=OrderSide.BUY,
+                time_in_force=TimeInForce.DAY, limit_price=limit_price,
+                extended_hours=extended_hours,
+            )
+            order = client.submit_order(req)
+            log.info(f"✅ LIMIT BUY ${alloc:.2f} {ticker} @ <= ${limit_price} (id {order.id})")
+            return {"order": order, "order_type": "limit", "limit_price": limit_price}
+        log.warning(f"{ticker}: no price for limit order, falling back to market")
+    req = MarketOrderRequest(
+        symbol=ticker, notional=round(alloc, 2), side=OrderSide.BUY, time_in_force=TimeInForce.DAY,
+    )
+    order = client.submit_order(req)
+    log.info(f"✅ MARKET BUY ${alloc:.2f} {ticker} (id {order.id})")
+    return {"order": order, "order_type": "market", "limit_price": None}
+
+
+def execute_orders(
+    signals: List[Dict],
+    capital: float,
+    max_alloc_per_trade: float,
+    paper: bool = True,
+    min_order_size: float = 1.0,
+    max_positions: int = 3,
+    order_type: str = "limit",
+    limit_slippage_pct: float = 0.002,
+    respect_market_hours: bool = True,
+    extended_hours: bool = False,
+    skip_if_already_held: bool = True,
+) -> Dict:
     """
-    Execute real trades on Alpaca based on signals.
-    
-    Args:
-        signals: List of trading signals with ticker, action, etc.
-        capital: Total capital available
-        max_alloc_per_trade: Maximum allocation per trade (as fraction)
-        paper: Use paper trading if True, live trading if False
-        min_order_size: Minimum order size in dollars (default $1)
-    
-    Returns:
-        Dict with executed orders and remaining cash
+    Execute BUY signals on Alpaca with best-execution guards:
+      - skip when the market is closed (unless extended_hours),
+      - never exceed max_positions or pyramid into a held name,
+      - marketable LIMIT orders to cap slippage (fallback to market).
     """
     client = get_alpaca_client(paper=paper)
     if not client:
         log.error("Cannot execute orders without Alpaca connection")
         return {"orders": [], "cash_left": capital, "error": "No Alpaca connection"}
-    
+
+    # Guard: only trade when the market is open (closed-market fills are illiquid/queued).
+    if respect_market_hours and not extended_hours:
+        open_now = is_market_open(client)
+        if open_now is False:
+            log.info("⏸️  Market closed — skipping order execution this run")
+            return {"orders": [], "cash_left": capital, "executed_count": 0, "skipped": "market_closed"}
+
     try:
         account = client.get_account()
         buying_power = float(account.buying_power)
-        cash = min(capital, buying_power)  # Don't exceed buying power
+        cash = min(capital, buying_power)
     except Exception as e:
         log.error(f"Failed to get account info: {e}")
         return {"orders": [], "cash_left": capital, "error": str(e)}
-    
+
+    # Position-aware sizing: how many new names can we open, and which are already held?
+    try:
+        held = {p.symbol for p in client.get_all_positions()}
+    except Exception as e:
+        log.warning(f"Could not list positions ({e}); assuming none held")
+        held = set()
+    open_slots = max(0, max_positions - len(held))
+
+    # Only BUYs flow through here (exits are handled by the position manager).
+    buy_signals = [s for s in signals if str(s.get('action', '')).upper() == 'BUY']
+    buy_signals.sort(key=lambda s: s.get('strength', 0), reverse=True)
+
     executed_orders = []
-    standard_alloc = capital * max_alloc_per_trade
-    processed_tickers = set()  # Track which tickers we've already traded
-    
-    # PASS 1: Execute standard-size orders for each signal
-    for signal in signals:
+    per_trade = capital * max_alloc_per_trade
+
+    for signal in buy_signals:
         ticker = signal['ticker']
-        action = signal['action'].upper()
-        
-        # Calculate allocation (standard size or whatever cash is left)
-        alloc = min(cash, standard_alloc)
-        
-        if alloc < min_order_size:
-            log.warning(f"Insufficient funds for {ticker} (${alloc:.2f} < ${min_order_size:.2f}), skipping")
+        if skip_if_already_held and ticker in held:
+            log.info(f"↩️  Skipping {ticker}: already held (no pyramiding)")
             continue
-        
+        if open_slots <= 0:
+            log.info(f"🧮 Max positions reached ({max_positions}); skipping remaining signals")
+            break
+        alloc = min(cash, per_trade)
+        if alloc < min_order_size:
+            log.warning(f"Insufficient funds for {ticker} (${alloc:.2f} < ${min_order_size:.2f})")
+            continue
         try:
-            # Prepare order
-            side = OrderSide.BUY if action == "BUY" else OrderSide.SELL
-            
-            order_request = MarketOrderRequest(
-                symbol=ticker,
-                notional=alloc,  # Order by dollar amount
-                side=side,
-                time_in_force=TimeInForce.DAY
-            )
-            
-            # Submit order
-            order = client.submit_order(order_request)
-            
-            log.info(f"✅ Order submitted: {action} ${alloc:.2f} of {ticker} (Order ID: {order.id})")
-            
+            res = _submit_buy(client, ticker, alloc, order_type, limit_slippage_pct, extended_hours)
+            order = res["order"]
             executed_orders.append({
                 "ticker": ticker,
-                "action": action,
+                "action": "BUY",
                 "notional": round(alloc, 2),
                 "order_id": str(order.id),
-                "status": order.status,
-                "submitted_at": str(order.submitted_at)
+                "status": str(order.status),
+                "order_type": res["order_type"],
+                "limit_price": res["limit_price"],
+                "submitted_at": str(order.submitted_at),
             })
-            
             cash -= alloc
-            processed_tickers.add(ticker)
-            
+            held.add(ticker)
+            open_slots -= 1
         except Exception as e:
             log.error(f"Failed to execute order for {ticker}: {e}")
             continue
-    
-    # PASS 2: Use remaining cash on a single additional trade
-    # Only if we have meaningful remaining balance (> $1)
-    if cash >= min_order_size and signals:
-        # Find the best signal we haven't traded yet, or re-invest in top performer
-        remaining_signal = None
-        
-        # First, try to find a signal we haven't traded yet
-        for signal in signals:
-            if signal['ticker'] not in processed_tickers:
-                remaining_signal = signal
-                break
-        
-        # If all signals have been traded, add to the strongest signal (highest strength)
-        if not remaining_signal:
-            # Sort signals by strength and pick the best one
-            sorted_signals = sorted(signals, key=lambda s: s.get('strength', 0), reverse=True)
-            remaining_signal = sorted_signals[0]
-        
-        if remaining_signal:
-            ticker = remaining_signal['ticker']
-            action = remaining_signal['action'].upper()
-            
-            try:
-                side = OrderSide.BUY if action == "BUY" else OrderSide.SELL
-                
-                order_request = MarketOrderRequest(
-                    symbol=ticker,
-                    notional=cash,  # Use ALL remaining cash
-                    side=side,
-                    time_in_force=TimeInForce.DAY
-                )
-                
-                order = client.submit_order(order_request)
-                
-                log.info(f"✅ REMAINDER ORDER: {action} ${cash:.2f} of {ticker} (using leftover cash)")
-                
-                executed_orders.append({
-                    "ticker": ticker,
-                    "action": action,
-                    "notional": round(cash, 2),
-                    "order_id": str(order.id),
-                    "status": order.status,
-                    "submitted_at": str(order.submitted_at),
-                    "is_remainder": True  # Flag this as a remainder order
-                })
-                
-                cash = 0  # All cash used
-                
-            except Exception as e:
-                log.error(f"Failed to execute remainder order for {ticker}: {e}")
-    
-    if cash > 0 and cash < min_order_size:
-        log.info(f"💵 Remaining ${cash:.2f} is below minimum order size (${min_order_size:.2f})")
-    
+
     return {
         "orders": executed_orders,
         "cash_left": round(cash, 2),
-        "executed_count": len(executed_orders)
+        "executed_count": len(executed_orders),
     }
 
 

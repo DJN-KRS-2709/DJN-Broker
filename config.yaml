@@ -7,31 +7,31 @@ capital_eur: 500
 # micro: 1.5% SL, 2% TP, 0h min hold - experimental, paper-only recommended
 trading_mode: "micro"
 
-# SWING TRADING MODE - Hold 2-5 days
+# Risk (aggressive). Sized to the ~2h check cadence so stops actually protect.
 risk:
-  max_positions: 3            # 3 positions max (better risk management)
-  max_alloc_per_trade: 0.30   # 30% per trade 
-  stop_loss_pct: 0.05         # 5% stop loss (gives swing trades breathing room)
-  take_profit_pct: 0.08       # 8% take profit (better risk:reward 1.6:1)
+  max_positions: 3            # up to 3 names
+  max_alloc_per_trade: 0.30   # ~30% per trade
+  stop_loss_pct: 0.03         # 3% stop (realistic for 2h polling, not 0.4%)
+  take_profit_pct: 0.05       # 5% target (reward:risk ~1.67:1)
   
 # Swing Trading Parameters
 trading_style: "swing"        # swing or day
 min_hold_hours: 24           # Hold at least 24 hours
 max_hold_days: 5             # Exit after 5 days max (tighter)
 
-# Micro mode overrides (applied when trading_mode: "micro")
-# Aggressive scalping: small wins, tight stops, many signals
+# Micro mode overrides (applied when trading_mode: "micro").
+# Day-style: no minimum hold, but exits sized to the 2h cadence and a real signal bar.
 micro_mode:
-  stop_loss_pct: 0.004       # 0.4% stop (tight)
-  take_profit_pct: 0.008     # 0.8% take profit ("minimum win")
+  stop_loss_pct: 0.03        # match risk.stop_loss_pct (no fake 0.4% stop)
+  take_profit_pct: 0.05      # match risk.take_profit_pct
   min_hold_hours: 0
   trading_style: "day"
-  min_sentiment: 0.02        # Very low: trade on weak positive sentiment too
-  min_score_threshold: 0.08  # Lower bar for BUY signals (was 0.3)
+  min_sentiment: 0.15        # only act on meaningful positive sentiment (was 0.02)
+  min_score_threshold: 0.25  # only real setups, not noise (was 0.08)
 
 # Optional default for non-micro; micro_mode overrides when present
 strategy:
-  min_score_threshold: 0.08
+  min_score_threshold: 0.25
 
 # Learning System Settings
 learning:
@@ -41,16 +41,24 @@ learning:
   strategy_update_frequency: 3
   performance_lookback_days: 14
 
-# Live brokerage: never idle a run with cash and room under max_positions
-live_execution:
-  guaranteed_buy_when_flat: true
+# Execution quality (best-practice order handling)
+execution:
+  order_type: "limit"          # marketable limit caps slippage vs naked market orders
+  limit_slippage_pct: 0.002    # cross the spread by max 0.2% to still get filled
+  respect_market_hours: true   # don't trade when the US market is closed (illiquid/bad fills)
+  extended_hours: false
+  skip_if_already_held: true   # no pyramiding into a name we already hold
 
-# Daily buy/sell rhythm + aggressive rotation
+# Live brokerage: do NOT force a buy when flat (only trade real signals)
+live_execution:
+  guaranteed_buy_when_flat: false
+
+# Forced churn disabled: no fallback buys, no 2h rotation (was bleeding via costs)
 daily_activity:
-  enabled: true
-  fallback_buy_when_no_signals: true
-  aggressive_every_run: true   # Momentum fallback every run when no signals (not once/day)
-  time_exit_hours: 2           # Rotate out of positions after ~2h if TP/SL not hit
+  enabled: false
+  fallback_buy_when_no_signals: false
+  aggressive_every_run: false
+  time_exit_hours: 2           # only used if daily_activity.enabled is true
 
 # Entry quality
 entry_quality:

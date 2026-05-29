@@ -290,12 +290,19 @@ def run_once(cfg):
                     f"placing rotation order on {g['ticker']}"
                 )
         
-        # Execute real orders via Alpaca
+        # Execute real orders via Alpaca (best-execution settings from config)
+        ex = cfg.get('execution', {})
         res = execute_orders(
             signals=signals,
             capital=cfg['capital_eur'],
             max_alloc_per_trade=cfg['risk']['max_alloc_per_trade'],
-            paper=paper_trading
+            paper=paper_trading,
+            max_positions=cfg['risk'].get('max_positions', 3),
+            order_type=ex.get('order_type', 'limit'),
+            limit_slippage_pct=ex.get('limit_slippage_pct', 0.002),
+            respect_market_hours=ex.get('respect_market_hours', True),
+            extended_hours=ex.get('extended_hours', False),
+            skip_if_already_held=ex.get('skip_if_already_held', True),
         )
         
         if 'error' in res:
