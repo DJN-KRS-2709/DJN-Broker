@@ -48,6 +48,7 @@ execution:
   respect_market_hours: true   # don't trade when the US market is closed (illiquid/bad fills)
   extended_hours: false
   skip_if_already_held: true   # no pyramiding into a name we already hold
+  size_from_equity: true       # size off LIVE account equity → compounds with wins, shrinks on losses
 
 # Live brokerage: do NOT force a buy when flat (only trade real signals)
 live_execution:

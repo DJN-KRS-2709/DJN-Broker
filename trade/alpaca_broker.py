@@ -135,9 +135,11 @@ def execute_orders(
     respect_market_hours: bool = True,
     extended_hours: bool = False,
     skip_if_already_held: bool = True,
+    size_from_equity: bool = True,
 ) -> Dict:
     """
     Execute BUY signals on Alpaca with best-execution guards:
+      - size positions off LIVE account equity (compounds with wins) when size_from_equity,
       - skip when the market is closed (unless extended_hours),
       - never exceed max_positions or pyramid into a held name,
       - marketable LIMIT orders to cap slippage (fallback to market).
@@ -157,7 +159,15 @@ def execute_orders(
     try:
         account = client.get_account()
         buying_power = float(account.buying_power)
-        cash = min(capital, buying_power)
+        equity = float(account.equity)
+        # Compounding: size off live equity so the budget grows with wins (and shrinks on losses).
+        base_capital = equity if size_from_equity else capital
+        cash = min(base_capital, buying_power)
+        log.info(
+            f"💼 Sizing base: ${base_capital:.2f} "
+            f"({'live equity' if size_from_equity else 'fixed config'}), "
+            f"buying power ${buying_power:.2f}"
+        )
     except Exception as e:
         log.error(f"Failed to get account info: {e}")
         return {"orders": [], "cash_left": capital, "error": str(e)}
@@ -175,7 +185,7 @@ def execute_orders(
     buy_signals.sort(key=lambda s: s.get('strength', 0), reverse=True)
 
     executed_orders = []
-    per_trade = capital * max_alloc_per_trade
+    per_trade = base_capital * max_alloc_per_trade
 
     for signal in buy_signals:
         ticker = signal['ticker']

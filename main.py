@@ -303,6 +303,7 @@ def run_once(cfg):
             respect_market_hours=ex.get('respect_market_hours', True),
             extended_hours=ex.get('extended_hours', False),
             skip_if_already_held=ex.get('skip_if_already_held', True),
+            size_from_equity=ex.get('size_from_equity', True),
         )
         
         if 'error' in res:
