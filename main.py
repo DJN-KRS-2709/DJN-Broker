@@ -310,10 +310,15 @@ def run_once(cfg):
         else:
             log.info(f"✅ Executed {res['executed_count']} orders, cash_left=${res['cash_left']:.2f}")
             if res.get('executed_count', 0) == 0:
-                log.error(
-                    "❌ ZERO orders this run — check LIVE API keys in GitHub Secrets, "
-                    "buying power, max_positions, and Actions logs."
-                )
+                if res.get('skipped') == 'market_closed':
+                    log.info("⏸️  No orders: US market closed this run (by design).")
+                elif not signals:
+                    log.info("😴 No orders: no signal cleared the entry bar this run (by design — we only trade real setups).")
+                else:
+                    log.info(
+                        "ℹ️  No orders placed despite signals "
+                        "(likely max positions reached, already held, or insufficient buying power)."
+                    )
             if (
                 not da.get('aggressive_every_run', False)
                 and signals
