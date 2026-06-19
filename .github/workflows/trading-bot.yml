@@ -76,20 +76,25 @@ jobs:
     - name: Create storage directory
       run: mkdir -p storage/learning storage/data_archive
       
+    # Rolling cache: a static key is immutable on GitHub (first save sticks forever),
+    # which froze our history. Unique key per run + restore-keys prefix = newest snapshot restored, always saved.
     - name: Restore storage data
-      uses: actions/cache@v5
+      uses: actions/cache/restore@v5
       with:
         path: storage
-        key: trading-bot-storage
+        key: trading-bot-storage-${{ github.run_id }}
+        restore-keys: |
+          trading-bot-storage-
         
     - name: Run trading bot
       run: python main.py
       
     - name: Save storage data
-      uses: actions/cache@v5
+      if: always()
+      uses: actions/cache/save@v5
       with:
         path: storage
-        key: trading-bot-storage
+        key: trading-bot-storage-${{ github.run_id }}
         
     - name: Upload logs
       if: always()

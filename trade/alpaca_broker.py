@@ -19,6 +19,11 @@ def get_latest_price(symbol: str) -> Optional[float]:
     try:
         from alpaca.data.historical import StockHistoricalDataClient
         from alpaca.data.requests import StockLatestTradeRequest
+        try:
+            from alpaca.data.enums import DataFeed
+            feed = DataFeed.IEX
+        except Exception:
+            feed = "iex"
 
         key = sanitize_alpaca_credential(
             os.getenv("ALPACA_PAPER_API_KEY") or os.getenv("ALPACA_LIVE_API_KEY") or os.getenv("ALPACA_API_KEY")
@@ -29,7 +34,10 @@ def get_latest_price(symbol: str) -> Optional[float]:
         if not key or not secret:
             return None
         data_client = StockHistoricalDataClient(key, secret)
-        resp = data_client.get_stock_latest_trade(StockLatestTradeRequest(symbol_or_symbols=symbol))
+        # Free accounts: use the IEX feed (SIP requires a paid subscription).
+        resp = data_client.get_stock_latest_trade(
+            StockLatestTradeRequest(symbol_or_symbols=symbol, feed=feed)
+        )
         return float(resp[symbol].price)
     except Exception as e:
         log.warning(f"Could not fetch latest price for {symbol}: {e}")

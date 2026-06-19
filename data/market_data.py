@@ -7,6 +7,11 @@ from datetime import datetime, timedelta
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
+try:
+    from alpaca.data.enums import DataFeed
+    _IEX_FEED = DataFeed.IEX
+except Exception:  # extremely defensive: never let a feed import crash the bot
+    _IEX_FEED = "iex"
 from utils.logger import get_logger
 from data.price_sources import fetch_prices_with_fallback
 from trade.alpaca_broker import sanitize_alpaca_credential
@@ -50,15 +55,17 @@ def fetch_prices_alpaca(tickers: List[str], days: int = 7, interval: str = "1h")
         }
         timeframe = timeframe_map.get(interval, TimeFrame.Hour)
         
-        # Set time range
-        end_date = datetime.now()
+        # Free Alpaca accounts only have the IEX feed; the default (SIP) returns nothing.
+        # IEX historical data is delayed ~15 min, so end the window a bit in the past.
+        end_date = datetime.now() - timedelta(minutes=16)
         start_date = end_date - timedelta(days=days)
         
         request_params = StockBarsRequest(
             symbol_or_symbols=tickers,
             timeframe=timeframe,
             start=start_date,
-            end=end_date
+            end=end_date,
+            feed=_IEX_FEED,
         )
         
         bars = client.get_stock_bars(request_params)
@@ -76,7 +83,10 @@ def fetch_prices_alpaca(tickers: List[str], days: int = 7, interval: str = "1h")
                 closes[ticker] = df_ticker['close']
         
         df = pd.DataFrame(closes).dropna(how='all')
-        log.info(f"✅ Fetched {len(df)} bars from Alpaca for {len(closes)} tickers")
+        if df.empty:
+            log.warning("Alpaca (IEX) returned no bars for requested window")
+        else:
+            log.info(f"✅ Fetched {len(df)} bars from Alpaca IEX for {len(closes)} tickers")
         return df
         
     except Exception as e:
